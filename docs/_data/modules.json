@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Compétences de base",
+        "slug": "abc",
+        "series": ["projet-pro", "algo", "objet", "web"]
+    },
+    {
+        "id": 2,
+        "name": "Développement Objet",
+        "slug": "objet",
+        "series": ["uml"]
+    },
+    {
+        "id": 3,
+        "name": "Base de données",
+        "slug": "databases",
+        "series": ["merise"]
+    },
+    {
+        "id": 4,
+        "name": "Développement Web",
+        "slug": "web",
+        "series": ["frontend", "backend"]
+    },
+    {
+        "id": 5,
+        "name": "Projets",
+        "slug": "projets",
+        "series": ["web"]
+    }
+]
