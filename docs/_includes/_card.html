@@ -1,0 +1,18 @@
+{% if include.tiles %}
+<article>
+  {% if include.title %}
+  <h2>{{ include.title }}</h2>
+  {% endif %}
+  <section class="flex2">
+  {% assign related_serie = include.tiles  where_exp: "item", "item.type == page.type and item.order == 1" | sort: "order" %}
+  {% for tile in related_serie limit:include.max %}
+    <a class="tile" href="{{ tile.url  | absolute_url  }}" style="height: auto;{% if tile.image %} background-image: url('{{ tile.image | absolute_url }}');{% endif %}">
+      <div class="inner" style="padding: 1em;">
+        <h3>{{ tile.title }}</h3>
+        <p>{{ tile.description }}</p>
+      </div>
+    </a>
+  {% endfor %}
+  </section>
+</article>
+{% endif %}
