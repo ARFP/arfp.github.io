@@ -1,0 +1,32 @@
+{% include _head.html %}
+{% assign formation = site.data.formations | where_exp: "item", "item.name == page.title" %}
+{% assign formation = formation[0] %}
+{% assign modules = site.data.modules | where_exp: "item", "formation.modules contains item.id" | sort: "id" %}
+<h1>{{ page.title }}</h1>
+<p>{{ formation.fullname }}</p>
+<section>
+    {{ content }}
+    <h2>Modules {{ formation.name }}</h2>
+    <div class="flex cards">
+    {% for module in modules %}
+    <article class="card">
+        <h2>{{ module.name }}</h2>
+        <ol>
+            {% for serie in module.series %}
+            {% assign exo = site.pages | where_exp: "item", "item.order == 0" %}
+            {% assign exo = exo | where_exp: "item", "item.module == module.slug" | sort: "order" %}
+            {% assign exo = exo | where_exp: "item", "item.serie == serie" | sort: "order" %}
+            {% if exo.size > 0 %}
+            {% assign exo = exo[0] %}
+            <li><a href="{{ exo.url }}">{{ exo.title }}</a></li>
+            {% else %}
+            <li>Aucune ressource pour {{ serie }}</li>
+            {% endif %}
+            {% endfor %}
+            
+        </ol>
+    </article>
+    {% endfor %}
+    </div>
+</section>
+{% include _foot.html %}

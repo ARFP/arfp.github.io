@@ -1,0 +1,14 @@
+:root {
+    --txt: #FFFFFF;
+    --txt2: #CCCCCC;
+    --bg: #44474E;
+    --bg-dark: #33373E;
+    --bg-light: #55575E;
+    --border: 1px solid #111;
+    --border2: 2px solid #111;
+}
+
+* {
+    box-sizing: border-box;
+}
+

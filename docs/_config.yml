@@ -1,0 +1,49 @@
+# Jekyll!
+#
+domain: arfp.github.io
+url: https://arfp.github.io
+baseurl: "" # subpath 
+
+title: "Kit" 
+subtitle: "Pédagogique"
+
+description: "Ressources et guides pour développeurs et concepteurs<br /> disponibles sous license Creative Commons."
+banner: /assets/img/banner.jpg 
+
+owner: ARFP
+owner_url: "http://www.arfp.asso.fr/"
+github: "https://github.com/ARFP/"
+github_repo: "https://github.com/ARFP/arfp.github.io/"
+linkedin: "https://www.linkedin.com/company/centre-readaptation-mulhouse/"
+
+# permalink: /articles/:categories/:title/
+# permalink: pretty
+permalink: '/articles/:categories/:title.html' # posts permalink format 
+
+# collections_dir: site
+# collections:
+#   abcdev:
+#     output: true
+#     sort_by: module
+#   dwwm:
+#     output: true
+#     sort_by: module
+#   cda:
+#     output: true
+#     sort_by: module
+#   exercices:
+#     output: true
+#     sort_by: module
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-redirect-from 
+
+whitelist:
+  - jekyll-redirect-from

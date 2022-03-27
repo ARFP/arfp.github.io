@@ -1,0 +1,26 @@
+[
+    {
+        "name": "ABCDEV",
+        "slug": "abcdev",
+        "fullname": "Accès aux Bases des Compétences",
+        "level": 4,
+        "modules": [1],
+        "url": "http://www.arfp.asso.fr/medias/orientation-formation/Fiches%20Com/ABC%20DEV%20INFO.pdf"
+    },
+    {
+        "name": "DWWM",
+        "slug": "dwwm",
+        "fullname": "Développeur Web et Web Mobile",
+        "level": 5,
+        "modules": [1, 2, 3, 4, 5],
+        "url": "http://www.arfp.asso.fr/medias/orientation-formation/Fiches%20Com/DWWM.pdf"
+    },
+    {
+        "name": "CDA",
+        "slug": "cda",
+        "fullname": "Concepteur Développeur d'Applications",
+        "level": 6,
+        "modules": [1, 2, 3, 4, 5],
+        "url": "http://www.arfp.asso.fr/medias/orientation-formation/Fiches%20Com/CDA.pdf"
+    }
+]

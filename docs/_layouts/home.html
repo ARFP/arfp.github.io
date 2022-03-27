@@ -1,0 +1,15 @@
+{% include _head.html %}
+<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ site.subtitle }}{% endif %}</h1>
+<section class="flex cards">
+    {{ content }}
+    {% for formation in site.data.formations %}
+        <article class="card">
+            <h2><a href="/{{ formation.slug }}/">{{ formation.name }}</a></h2>
+            <p>{{ formation.fullname }}</p>
+            <p><a href="/{{ formation.slug }}/"><i class="fa fa-code"></i> Travaux pratiques</a></p>
+            <hr>
+            <p><a href="{{ formation.url }}" target="_blank"><i class="fa fa-external-link"></i> Fiche descriptive</a></p>
+        </article>
+    {% endfor %}
+</section>
+{% include _foot.html %}

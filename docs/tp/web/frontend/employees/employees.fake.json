@@ -1,0 +1,158 @@
+{
+    "result": "success",
+    "data": [
+        {
+            "employee_id": 1,
+            "employee_manager": null,
+            "employee_lastname": "Holems",
+            "employee_firstname": "Cathy",
+            "employee_role": "Directrice",
+            "employee_salary": 100000,
+            "employee_hiredate": "2010-01-09"
+        },
+        {
+            "employee_id": 2,
+            "employee_manager": 1,
+            "employee_lastname": "Mannheim",
+            "employee_firstname": "Luc",
+            "employee_role": "DRH",
+            "employee_salary": 87500,
+            "employee_hiredate": "2017-06-17"
+        },
+        {
+            "employee_id": 3,
+            "employee_manager": 2,
+            "employee_lastname": "Kipré",
+            "employee_firstname": "Abdou",
+            "employee_role": "RH",
+            "employee_salary": 42800,
+            "employee_hiredate": "2017-10-09"
+        },
+        {
+            "employee_id": 4,
+            "employee_manager": 2,
+            "employee_lastname": "Martin",
+            "employee_firstname": "Valérie",
+            "employee_role": "Comptable",
+            "employee_salary": 39500,
+            "employee_hiredate": "2018-03-30"
+        },
+        {
+            "employee_id": 5,
+            "employee_manager": 1,
+            "employee_lastname": "Slezak",
+            "employee_firstname": "Daniel",
+            "employee_role": "DSI",
+            "employee_salary": 75000,
+            "employee_hiredate": "2011-09-09"
+        },
+        {
+            "employee_id": 6,
+            "employee_manager": 5,
+            "employee_lastname": "Bahl",
+            "employee_firstname": "Tarik",
+            "employee_role": "Administrateur Système",
+            "employee_salary": 60000,
+            "employee_hiredate": "2014-04-08"
+        },
+        {
+            "employee_id": 7,
+            "employee_manager": 5,
+            "employee_lastname": "Armanetti",
+            "employee_firstname": "Michaël",
+            "employee_role": "Administrateur Réseaux",
+            "employee_salary": 60000,
+            "employee_hiredate": "2014-05-06"
+        },
+        {
+            "employee_id": 8,
+            "employee_manager": 5,
+            "employee_lastname": "Goldman",
+            "employee_firstname": "Estelle",
+            "employee_role": "Cheffe de projet",
+            "employee_salary": 55000,
+            "employee_hiredate": "2016-04-20"
+        },
+        {
+            "employee_id": 9,
+            "employee_manager": 5,
+            "employee_lastname": "Durand",
+            "employee_firstname": "Gabriel",
+            "employee_role": "Chef de projet",
+            "employee_salary": 55000,
+            "employee_hiredate": "2016-12-02"
+        },
+        {
+            "employee_id": 10,
+            "employee_manager": 8,
+            "employee_lastname": "Morel",
+            "employee_firstname": "Audrey",
+            "employee_role": "Développeuse",
+            "employee_salary": 46500,
+            "employee_hiredate": "2012-07-01"
+        },
+        {
+            "employee_id": 11,
+            "employee_manager": 8,
+            "employee_lastname": "Carpentier",
+            "employee_firstname": "Guillaume",
+            "employee_role": "Développeur Sénior",
+            "employee_salary": 58500,
+            "employee_hiredate": "2010-02-03"
+        },
+        {
+            "employee_id": 12,
+            "employee_manager": 9,
+            "employee_lastname": "Lefebvre",
+            "employee_firstname": "Hugo",
+            "employee_role": "Développeur",
+            "employee_salary": 42000,
+            "employee_hiredate": "2015-10-11"
+        },
+        {
+            "employee_id": 13,
+            "employee_manager": 9,
+            "employee_lastname": "Sharif",
+            "employee_firstname": "Sonia",
+            "employee_role": "Développeuse Sénior",
+            "employee_salary": 54500,
+            "employee_hiredate": "2011-01-23"
+        },
+        {
+            "employee_id": 14,
+            "employee_manager": 15,
+            "employee_lastname": "Fournier",
+            "employee_firstname": "Sabrina",
+            "employee_role": "Commerciale",
+            "employee_salary": 42000,
+            "employee_hiredate": "2017-10-27"
+        },
+        {
+            "employee_id": 15,
+            "employee_manager": 5,
+            "employee_lastname": "Bower",
+            "employee_firstname": "Sarah",
+            "employee_role": "Responsable Produit",
+            "employee_salary": 49500,
+            "employee_hiredate": "2018-05-22"
+        },
+        {
+            "employee_id": 16,
+            "employee_manager": 8,
+            "employee_lastname": "Dimario",
+            "employee_firstname": "Jordan",
+            "employee_role": "Développeur Junior",
+            "employee_salary": 32500,
+            "employee_hiredate": "2019-06-30"
+        },
+        {
+            "employee_id": 17,
+            "employee_manager": 9,
+            "employee_lastname": "Macdowel",
+            "employee_firstname": "Cindy",
+            "employee_role": "Développeuse Junior",
+            "employee_salary": 32500,
+            "employee_hiredate": "2019-11-04"
+        }
+    ]
+}

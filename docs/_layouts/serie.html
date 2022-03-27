@@ -1,0 +1,18 @@
+{% include _head.html %}
+<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ site.subtitle }}{% endif %}</h1>
+<section class="">
+    {{ content }}
+    <article>
+        <h2>Exercices</h2>
+        <ul>
+            {% assign exos_tmp = site.pages | where_exp: "item", "item.formations contains page.formation" %}
+            {% assign exos = exos_tmp | where_exp: "item", "item.module == page.module" %}
+            {% for exo in exos %}
+            {% if exo.order > 0 %}
+                <li><a href="{{ exo.url }}">{{ exo.title }}</a></li>   
+            {% endif %} 
+            {% endfor %}
+            </ul>
+    </article>
+</section>
+{% include _foot.html %}

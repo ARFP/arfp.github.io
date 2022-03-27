@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+:root {
+    color-scheme: light;
+    --crm-primary: #1b296a;
+    --crm-secondary: #ed6840;
+    --crm-red: #cf2d4f;
+    --crm-blue: #7db9da;
+    --crm-yellow: #f6af2e;
+    --crm-green: #488287;
+    --crm-hv-light: #7db9da15;
+    --crm-hv-dark: #48828710;
+    --border-radius: .4rem;
+}
+
+@mixin theme-light {
+    --body-bg: #F5F5F5;
+    --body-cl: #111111; 
+    --body-hv: var(--crm-hv-light);
+    /*--box-shadow: none;*/
+    --box-shadow: 0 0 .1rem 0 var(--crm-primary);
+    --text-shadow: 1px 0 1px var(--crm-secondary);
+
+    --link-cl: var(--crm-green);
+    --link-hv: var(--crm-secondary);
+
+    --header-bg: var(--crm-primary);
+    --header-cl: var(--crm-blue);
+
+    --title-cl: var(--crm-primary);
+    --subtitle-cl: var(--crm-green);
+}
+
+@mixin theme-dark {
+    --body-bg: var(--crm-primary);
+    --body-cl: #D9D9FF; 
+    --body-hv: var(--crm-hv-dark);
+    --box-shadow: 0 0 .2rem 0 var(--crm-blue);
+    --text-shadow: 1px 0 1px var(--crm-secondary);
+
+    --link-cl: var(--crm-blue);
+    --link-hv: var(--crm-secondary);
+
+    --header-bg: var(--crm-primary);
+    --header-cl: var(--crm-blue);
+
+    --title-cl: var(--crm-blue);
+    --subtitle-cl: var(--crm-green);
+}
+
+body {
+    @include theme-light;
+}
+
+body.alt {
+    @include theme-dark;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    body {
+        @include theme-dark;
+    }
+    
+    body.alt {
+        @include theme-light;
+    }
+}
+
+@media print {
+    body, body.alt {
+        @include theme-light;
+    }
+    body > header nav {
+        display: none;
+    }
+}
