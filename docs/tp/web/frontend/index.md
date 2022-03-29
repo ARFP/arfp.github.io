@@ -12,7 +12,6 @@ Cette série d’exercices peut être réalisée dans les contextes suivants :
 
 Vous vous aiderez des supports d'apprentissage fournis par vos formateurs.
 
-
 ## Pour vous aider
 
 Développement d'api REST 
