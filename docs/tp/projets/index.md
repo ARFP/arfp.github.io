@@ -1,9 +1,8 @@
 ---
-title: "Projets Web"
+title: "Projets"
 layout: module
-module: "projets"
-serie: "web"
-order: 0
+id: 99
+level: 5
 ---
 
 Projets Web à réaliser en individuel !

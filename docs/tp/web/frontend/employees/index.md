@@ -1,7 +1,5 @@
 ---
 title: "Employés"
-layout: default
-module: "web"
 serie: "frontend"
 order: 21
 ---

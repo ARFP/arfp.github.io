@@ -1,7 +1,6 @@
 ---
 title: "Projet Les Z'amis"
 layout: default
-module: "databases"
 serie: "merise"
 order: 120
 ---

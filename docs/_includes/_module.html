@@ -1,0 +1,18 @@
+{% capture current_module %}{{ include.module }}{% endcapture %}
+{% assign module = site.data.modules | where_exp: "item", "item.slug == include.module" | sort: "id" %}
+{% assign module = module[0] %}
+{% assign exos = site.pages | where_exp: "item", "item.module == include.module" | sort: "order" %}
+{% assign exos = exos | where_exp: "item", "item.order == 0" %}
+
+{% if exos.size > 0 %}
+<article>
+    <h2>Travaux pratiques</h2>
+    {% capture module_name %}{{ page.module }}{% endcapture %}
+    {% capture serie_name %}{{ page.serie }}{% endcapture %}
+    {% include _exos.html module=module_name serie=serie_name %}
+</article> 
+{% endif %}
+
+{% if include.serie %}{% assign exos = exos | where_exp: "item", "item.serie == include.serie" | sort: "order" %}
+{% else %}{% assign exos = exos | where_exp: "item", "item.order == 0" %}{% endif %}
+{% if exos.size > 1000 %}<ol>{% for exo in exos %}<li><a href="{{ exo.url }}">{{ exo.title }}</a></li>{% endfor %}</ol>{% endif %}

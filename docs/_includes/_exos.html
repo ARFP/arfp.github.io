@@ -1,0 +1,7 @@
+{% assign module = site.pages | where: "layout", "module" %}
+{% assign module = module | where_exp: "item", "item.id == include.module_id" | sort: "id" %}
+{% assign module = module[0] %}
+{% assign exos = site.pages | where_exp: "item", "item.module == module.module" | sort: "order" %}
+{% if include.serie %}{% assign exos = exos | where_exp: "item", "item.serie == include.serie" | sort: "order" %}
+{% else %}{% assign exos = exos | where_exp: "item", "item.order == 0" %}{% endif %}
+{% if exos.size > 0 %}<ol>{% for exo in exos %}<li><a href="{{ exo.url }}">{{ exo.title }}</a></li>{% endfor %}</ol>{% endif %}

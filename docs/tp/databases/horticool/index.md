@@ -1,7 +1,6 @@
 ---
-title: "Projet Horticool"
+title: "TP Horticool"
 layout: default
-module: "databases"
 serie: "merise"
 order: 100
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Paradigme Objet"
 layout: module
-module: "objet"
-serie: "uml"
-order: 0
+id: 20
+level: 4
 ---

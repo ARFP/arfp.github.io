@@ -1,9 +1,7 @@
 ---
 title: "Web Backend"
-layout: module
-module: "web"
 serie: "backend"
-order: 0
+index: 3
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

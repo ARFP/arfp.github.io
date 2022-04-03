@@ -1,7 +1,5 @@
 ---
 title: "Jeu de cartes"
-layout: default
-module: "web"
 serie: "frontend"
 order: 20
 --- 
