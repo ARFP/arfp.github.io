@@ -181,6 +181,13 @@ body > footer {
     padding: 1rem;
 }
 
+body > footer p {
+    flex-basis: 100%;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: .8em;
+}
+
 .flex {
     display: flex;
     flex-flow: row wrap;
@@ -220,6 +227,15 @@ body > footer {
 
 .cards a {
     padding: 1rem;
+}
+
+.cards ul {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.cards ul ul {
+    padding: .5rem 0 1.2rem 1.2rem;
 }
 
 .card {

@@ -1,9 +1,15 @@
 ---
 title: "Bases de données"
 layout: module
-module: "databases"
-serie: "merise"
-order: 0
+id: 30
+level: 5
 ---
 
-Exercices de modélisation de bases de données relationnelles.
+Cette série d’exercices peut être réalisée dans les contextes suivants :
+
+- Apprendre à analyser un système d'information.
+- Apprendre à modéliser une base de données relationnelle.
+- Savoir créer et utiliser une base de données.
+- Se familiariser avec le langage SQL.
+
+Vous vous aiderez des supports d'apprentissage fournis par vos formateurs.

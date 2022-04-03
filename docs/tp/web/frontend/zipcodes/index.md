@@ -1,7 +1,5 @@
 ---
 title: Codes postaux
-layout: default
-module: "web"
 serie: "frontend"
 order: 20
 ---

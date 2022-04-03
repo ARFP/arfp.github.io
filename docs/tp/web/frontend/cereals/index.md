@@ -1,7 +1,5 @@
 ---
 title: "Céréales"
-layout: default
-module: "web"
 serie: "frontend"
 order: 22
 ---

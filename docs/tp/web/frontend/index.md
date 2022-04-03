@@ -1,9 +1,7 @@
 ---
 title: "Web Frontend"
-layout: module
-module: "web"
 serie: "frontend"
-order: 0
+index: 2
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

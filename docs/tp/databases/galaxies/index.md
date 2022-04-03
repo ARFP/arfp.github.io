@@ -1,7 +1,6 @@
 ---
-title: "Projet Galaxies"
+title: "TP Galaxies"
 layout: default
-module: "databases"
 serie: "merise"
 order: 110
 ---

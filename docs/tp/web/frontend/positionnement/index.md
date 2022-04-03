@@ -1,7 +1,5 @@
 ---
-layout: default
 title: "HTML CSS Positionnement"
-module: "web"
 serie: "frontend"
 order: 10
 ---

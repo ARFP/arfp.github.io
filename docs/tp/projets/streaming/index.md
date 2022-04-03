@@ -1,8 +1,5 @@
 ---
 title: "Projet Streaming"
-layout: default
-module: "projets"
-serie: "web"
 order: 101
 ---
 

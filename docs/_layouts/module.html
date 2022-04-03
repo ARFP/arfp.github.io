@@ -1,20 +1,10 @@
-{% include _head.html %}
-{% assign exos = site.pages | where_exp: "item", "item.module == page.module" %}
-{% assign exos = exos | where_exp: "item", "item.serie == page.serie" %}
-{% assign exos = exos | where_exp: "item", "item.order > 0" | sort: "order" %}
-
+{% include _head.html %}{% assign series = site.pages | where_exp: "item", "item.index > 0" | sort: "index" %}{% assign series = series | where_exp: "item", "item.module == page.module" %}
 <h1>{{ page.title }}</h1>
-<section>
-    {{ content }}
-    <div class="flex cards">
-        <article>
-            <h2>Travaux pratiques</h2>
-            <ol>
-            {% for exo in exos %}
-                <li><a href="{{ exo.url }}">{{ exo.title }}</a></li>   
-            {% endfor %}
-            </ol>
-        </article>  
-    </div>
-</section>
+<section>{{ content }}
+<div class="flex cards">{% for serie in series %}<article>
+    <h2><a href="{{ serie.url }}">{{ serie.title }}</a></h2> 
+    {% assign exos = site.pages | where_exp: "item", "item.module == serie.module" %}{% assign exos = exos | where_exp: "item", "item.order > 0" %}
+    {% assign exos = exos | where_exp: "item", "item.serie == serie.serie" | sort: "order" %}
+    <ol>{% for exo in exos %}<li><a href="{{ exo.url }}">{{ exo.title }}</a></li>{% endfor %}</ol>
+</article>{% endfor %}</div></section>
 {% include _foot.html %}

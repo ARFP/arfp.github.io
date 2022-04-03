@@ -1,8 +1,5 @@
 ---
 title: "Projet Freelancer"
-layout: default
-module: "projets"
-serie: "web"
 order: 100
 ---
 

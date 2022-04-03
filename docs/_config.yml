@@ -7,11 +7,13 @@ baseurl: "" # subpath
 title: "Kit" 
 subtitle: "Pédagogique"
 
-description: "Ressources et guides pour développeurs et concepteurs<br /> disponibles sous license Creative Commons."
-banner: /assets/img/banner.jpg 
+description: "Ressources et exercices pour concepteurs et développeurs disponibles sous license MIT."
+# banner: /assets/img/banner.jpg 
 
-owner: ARFP
-owner_url: "http://www.arfp.asso.fr/"
+owner: "MDevoldère"
+owner_url: "https://devoldere.net/"
+customer: ARFP
+customer_url: "http://www.arfp.asso.fr/"
 github: "https://github.com/ARFP/"
 github_repo: "https://github.com/ARFP/arfp.github.io/"
 linkedin: "https://www.linkedin.com/company/centre-readaptation-mulhouse/"
@@ -41,6 +43,43 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  -
+    scope:
+      path: "tp"
+    values:
+      layout: exercice
+      module: "autres"
+      serie: "exercices"
+  -
+    scope:
+      path: "tp/algo"
+    values:
+      module: "algo"
+  -
+    scope:
+      path: "tp/databases"
+    values:
+      module: "databases"
+  -
+    scope:
+      path: "tp/objet"
+    values:
+      module: "objet"
+  -
+    scope:
+      path: "tp/projet-pro"
+    values:
+      module: "projet-pro"
+  -
+    scope:
+      path: "tp/projets"
+    values:
+      module: "projets"
+  -
+    scope:
+      path: "tp/web"
+    values:
+      module: "web"
 
 plugins:
   - jekyll-redirect-from 
