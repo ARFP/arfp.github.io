@@ -1,5 +1,5 @@
 ---
-title: "Algorithmes : Exercices partie 1"
+title: "Exercices d'introduction"
 level: 4
 order: 1
 ---
@@ -8,6 +8,7 @@ order: 1
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les variables
+- Les chaines de caractères
 - Les calculs mathématiques simples 
 
 ## Exercice 1.1 : Hello World

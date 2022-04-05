@@ -21,7 +21,12 @@ A l’issue d'une visite médicale, il peut être décidé que le résident soit
 
 Chaque semaine, les éducateurs proposent des activités et ateliers. Il existe plusieurs types d'activités dont la cuisine, le bricolage, le théatre, le sport, une soirée film, etc...
 
-Une activité est référencée par son intitulé, un créneau horaire (date, heure début, heure de fin) et un nombre de participants minimum et maximum. Pour chaque activité, on doit connaitre le nom du ou des éducateurs qui animent l'activité. 2 activités peuvent avoir lieu au même moment si elles son animées par des éducateurs différents.
+Une activité est référencée par son intitulé, un créneau horaire (date, heure début, heure de fin) et un nombre de participants minimum et maximum. Le nombre de participants ne peut être ni inférieur à 3 ni supérieur à 20.
+
+Pour chaque activité, on doit connaitre le nom du ou des éducateurs qui animent l'activité ainsi que l'état de l'activité : 
+- ouvert, terminé, annulé.
+
+Deux activités peuvent avoir lieu au même moment si elles son animées par des éducateurs différents.
 
 Les résidents peuvent s'inscrire à une ou plusieurs activités et bien entendu, ne peuvent pas s'inscrire à 2 activités si elles se déroulent au même moment.
 
@@ -90,7 +95,7 @@ Ajouter :
 
 ***Contraintes et cas particuliers***
 
-Implémenter les contraintes suivantes (déclencheur et/ou procédure stockée) :
+Implémenter les contraintes suivantes :
 
 1. Il ne peut y avoir qu'un seul directeur dans le système.
 
@@ -113,13 +118,13 @@ Créer le script SQL de mise à jour des tables. Ce script SQL doit METTRE A JOU
 
 **Requêtes SQL à implémenter :**
 
-1. Sélectionner tous les résidents du plus jeune au plus âgé.
+1. Sélectionner tous les résidents *actifs* du plus jeune au plus âgé.
 2. Sélectionner tous les résidents suivis par un médecin avec nom et prénom du médecin attitré.
 3. Sélectionner tous les médecins avec le nombre de résidents qu'il suivent.
 
 **Contraintes et cas particuliers :**
 
-Implémenter les contraintes suivantes (déclencheur et/ou procédure stockée) :
+Implémenter les contraintes suivantes :
 
 1. Un médecin peut suivre au maximum 10 résidents.
 2. Un résident ne peut pas être supprimé. Lorsque la date de départ d'un résident est renseignée, il est considéré *inactif* car il n'est plus hébergé dans le centre. Les résidents dont la date de départ n'est pas renseignée sont considérés *actifs*.
@@ -158,7 +163,7 @@ Ajouter :
 
 **Contraintes et cas particuliers :**
 
-Implémenter les contraintes suivantes (déclencheur et/ou procédure stockée) :
+Implémenter les contraintes suivantes :
 
 1. Lors d'une inscription d'un résident à une activité :
     - Le résident doit être actif.
@@ -170,3 +175,12 @@ Implémenter les contraintes suivantes (déclencheur et/ou procédure stockée) 
         - nouvelle valeur = nombre d'inscrits
 3. A la suppression d'une activité :
     - Si le nombre d'inscriptions est supérieur à zéro, refuser la suppression.
+
+**Procédures stockées**
+
+Implémenter les procédures stockées suivantes :
+
+1. Supprimer toutes les activités passées dont le nombre de participants n'a pas atteint le minimum requis.
+2. Reporter de 1 journée les activités du jour correspondant aux critères suivants :
+    - le nombre de résidents inscrits est strictement égal au minimum requis moins 1. 
+    - une activité du même type n'a pas lieu le jour suivant.

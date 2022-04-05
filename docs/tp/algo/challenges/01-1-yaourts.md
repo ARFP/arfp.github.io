@@ -27,6 +27,10 @@ Ces éléments du tableau sont générés aléatoirement à chaque appel de votr
 *Exemple :*
 > [ 'rouge', 'jaune', 'bleu', 'jaune', 'rouge', 'jaune' ]
 
+Les données sont à charger à partir de l'url : [https://api.devoldere.net/polls/yoghurts/](https://api.devoldere.net/polls/yoghurts/).
+
+Chaque appel à l'api génère un nouveau vote.
+
 ### Sortie
 
 Une chaine de caractère représentant les deux couleurs préférées. 

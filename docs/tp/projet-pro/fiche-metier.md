@@ -5,6 +5,7 @@ index: 1
 
 ## Compétences mises en oeuvre : 
 - Découvrir le métier
+- Créer un document texte enrichi (Word ou équivalent)
 - Créer un document HTML
 - Mettre en forme un document HTML avec CSS
 

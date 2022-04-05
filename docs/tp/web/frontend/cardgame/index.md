@@ -4,7 +4,7 @@ serie: "frontend"
 order: 20
 --- 
 
-L'objectif de cet exercice est d'afficher les inforations des cartes d'un jeu en ligne.
+L'objectif de cet exercice est d'afficher les informations des cartes d'un jeu en ligne.
 
 Les informations proviennent d'une API fictive et sont rendues disponibles dans le fichier JSON [cardgame.json](cardgame.json).
 
