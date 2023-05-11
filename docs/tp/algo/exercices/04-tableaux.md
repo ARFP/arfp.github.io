@@ -22,7 +22,7 @@ Chercher si un nombre donné `N` figure parmi les éléments.
 Si oui, afficher la valeur de l'indice correspondant. Sinon, afficher « Nombre non trouvé ».
 
 
-## Exercice 4.2 : Rechercher une lettre dans une phrase
+## Exercice 4.2 : Rechercher le nombre d'occurences d'une lettre dans une phrase
 
 Soit une chaîne de caractères terminée par le caractère « . ». 
 
