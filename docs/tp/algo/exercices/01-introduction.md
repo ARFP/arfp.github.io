@@ -48,7 +48,7 @@ Appuyez sur une touche pour quitter.
 
 Lire le rayon `R` d'une sphère puis calculer et afficher :
 - Son aire = 	`4 π R²`
-- Son volume =	`4/3 π R³`
+- Son volume =	`(4 π R³)/3`
 
 ## Exercice 1.5 : Calcul de la surface d’un secteur circulaire
 
