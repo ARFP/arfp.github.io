@@ -11,7 +11,7 @@ Les informations proviennent d'une API fictive et sont rendues disponibles dans 
 
 Les vols doivent être listés dans un tableau avec toutes les informations de la collection. Chaque colonne peut-être triée en cliquant sur son entête.
 
-Ajouter ensuite 1 colonne qui affichera la `durée` de chaque vol.
+Ajouter ensuite 1 colonne qui affichera la `durée` en heure minutes et secondes (format HH:MM:SS) de chaque vol.
 
 L’affichage « en anglais » devrait ressembler à la capture suivante :
 
