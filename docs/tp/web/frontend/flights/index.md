@@ -15,6 +15,6 @@ Ajouter ensuite 1 colonne qui affichera la `durée` de chaque vol.
 
 L’affichage « en anglais » devrait ressembler à la capture suivante :
 
-![flights](flights.png)
+![flights](flights.jpg)
 
 > Validez le fonctionnement de votre application avec votre formateur.
