@@ -4,7 +4,7 @@ serie: "frontend"
 order: 21
 ---
 
-## Afficher une liste d'employés
+## Afficher une liste de vols
 
 Pour cet exercice, vous devez créer une application web affichant la liste des vols d'une compagnie aérienne 
 Les informations proviennent d'une API fictive et sont rendues disponibles dans le fichier JSON [flights.json](flights.json).
