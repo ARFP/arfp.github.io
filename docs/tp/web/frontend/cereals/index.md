@@ -1,7 +1,7 @@
 ---
 title: "Céréales"
 serie: "frontend"
-order: 22
+order: 24
 ---
 
 ## Les céréales du petit-déjeuner

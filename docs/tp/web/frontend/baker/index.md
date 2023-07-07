@@ -1,7 +1,7 @@
 ---
 title: "Boulangerie"
 serie: "frontend"
-order: 24
+order: 28
 ---
 
 # La boulangerie
