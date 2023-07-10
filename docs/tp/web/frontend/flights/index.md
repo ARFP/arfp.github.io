@@ -17,4 +17,8 @@ L’affichage « en anglais » devrait ressembler à la capture suivante :
 
 ![flights](flights.jpg)
 
+Lorsque vous avez terminé cette 1ère étape, implémentez, au dessus du tableau HTML, un champ de formulaire permettant d'afficher les vols d'une compagnie. Pour ce faire, utilisez un `input` de type `search`
+
+--- 
+
 > Validez le fonctionnement de votre application avec votre formateur.
