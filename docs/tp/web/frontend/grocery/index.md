@@ -18,12 +18,13 @@ Dans un premier temps, vous devez implémenter 2 pages distinctes :
 
 Sur la page d'accueil (index.html), les fruits et légumes doivent être listés dans un tableau avec toutes les informations de la collection. Chaque colonne peut-être triée en cliquant sur son entête.
 
-![legumos-home](legumos-home.png)
+![legumos-home](legumos-list.png)
 
 La page des ventes (sales.html) devra, quant à elle, ressembler à la capture suivante :
 
-![legumos-list](legumos-list.png)
+![legumos-list](legumos-home.png)
 
+Vous pouvez télécharger la bannière en cliquant [sur ce lien](legumos.jpg).
 
 Une fois ces pages implémentées, creéez 2 pages contenant chacune un formulaire pour :
 - Ajouter un légume nouveau légume
