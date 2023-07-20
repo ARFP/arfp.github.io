@@ -1,6 +1,6 @@
 ---
 title: "XML : Exercices"
-order: 1
+order: 2
 ---
 
 ## 1.1 MENU 

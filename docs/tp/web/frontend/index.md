@@ -1,7 +1,7 @@
 ---
 title: "Web Frontend"
 serie: "frontend"
-index: 2
+index: 3
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :
@@ -17,3 +17,4 @@ Vous vous aiderez des supports d'apprentissage fournis par vos formateurs.
 - [Documentation JS](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide)
 - [Manipulation du DOM](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
 - [Manipuler des données JSON](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON)
+

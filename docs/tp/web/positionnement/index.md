@@ -1,10 +1,23 @@
 ---
-title: "HTML CSS Positionnement"
-serie: "frontend"
-order: 10
+title: "Positionnement HTML/CSS"
+serie: "positionnement"
+index: 2
 ---
 
-Réalisez les pages HTML correspondant aux maquettes de chaque exercice.
+Suivez les guides FLEXBOX et GRID et réalisez les exercices d'entrainement sur `Flexbox Froggy` et `Grid Garden`.
+
+## CSS Flexbox
+
+1. [Lire le Tutoriel CSS FLEXBOX](https://www.gekkode.com/developpement/tutoriel-css-flexbox-le-guide-complet/)
+2. [S'entrainer sur FLEXBOX avec Flexbox Froggy](https://flexboxfroggy.com/#fr)
+
+## CSS Grid
+
+- [Tutoriel CSS GRID](https://la-cascade.io/articles/css-grid-layout-guide-complet)
+- [S'entrainer sur GRID avec Grid Garden](https://cssgridgarden.com/#fr)
+
+Lorsque vous avez terminé, réalisez les pages HTML correspondant aux maquettes de chaque exercice listé ci-dessous.
+
 Utilisez en priorité FLEX et GRID pour positionner les éléments.
 
 
