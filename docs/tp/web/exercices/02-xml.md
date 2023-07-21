@@ -1,7 +1,16 @@
 ---
-title: "XML : Exercices"
+title: "Introduction XML"
+serie: "exercices"
 order: 2
 ---
+
+XML signifie `eXtensible Markup Language` (en Français: langage de balisage extensible).
+XML est un langage permettant de structurer et transmettre des informations sur les réseaux informatiques.
+
+Lien vers le support de cours : 
+- [Introduction au format XML](https://devoldere.net/ressources/web/02%20-%20XML%2001%20-%20Le%20format%20XML%20-%20MD%20v1.0.2.pdf)
+
+# Exercices
 
 ## 1.1 MENU 
 
