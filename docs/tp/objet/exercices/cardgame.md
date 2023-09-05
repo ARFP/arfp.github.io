@@ -37,7 +37,7 @@ Pour tous les éléments ci-dessus, tous les attributs sont à minima accessible
 # Partie 2 : Opérations
 
 Les joueurs sont mis en relation via une classe que l'on nommera "Game" qui permet de lancer une nouvelle partie. Le constructeur de cette classe accepte 2 arguments de type "Joueur".
-Elle dispose d'opérations permettant de lancer la partie, vérifier les scores à l'issue de chaque tour et de déclarer le vainqueur. Une classe "Round" permet de formaliser un tour de jeu. Cette classe contient 1 seule opération "fight" qu iprend en paramètres 2 cartes (1 pour le joueur 1, et 1 pour le joueur 2)
+Elle dispose d'opérations permettant de lancer la partie, vérifier les scores à l'issue de chaque tour et de déclarer le vainqueur. Une classe "Round" permet de formaliser un tour de jeu. Cette classe contient 1 seule opération "fight" qui prend en paramètres 2 cartes (1 pour le joueur 1, et 1 pour le joueur 2)
 
 Le jeu se déroule en 4 tours.
 
