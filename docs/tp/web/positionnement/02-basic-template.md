@@ -1,7 +1,7 @@
 ---
 title: "Basic Template"
 serie: "positionnement"
-order: 12
+order: 14
 ---
 
 Réalisez la page HTML correspondant aux maquettes et à la description ci-dessous.

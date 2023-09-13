@@ -9,7 +9,7 @@ Prenez connaissance de la structure d'un document HTML sur le lien suivant :
 - [Introduction à la structure d'un document HTML sur MDN](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure).
 
 
-Lorsque vous avez terminé, réalisez les exercices ci-dessous. **Implémentez uniquement le code HTML** (*pas de CSS*).
+Lorsque vous avez terminé, réalisez les exercices ci-dessous. **Implémentez uniquement le code HTML** (*L'utilisation du langage CSS est interdite*).
 
 
 --- 
@@ -42,7 +42,7 @@ Votre page devrait ressembler à la capture suivante :
 
 ## Mon 1er tableau 
 
-Documentez-vous sur les tableaux HTMl en suivant ce lien : [Tableaux HTML: Notions de base](https://developer.mozilla.org/fr/docs/Learn/HTML/Tables/Basics)
+Documentez-vous sur les tableaux HTML en suivant ce lien : [Tableaux HTML: Notions de base](https://developer.mozilla.org/fr/docs/Learn/HTML/Tables/Basics)
 
 Créez un document HTML `tableau.html` répondant aux exigences suivantes :
 
@@ -70,7 +70,7 @@ Ensuite, créez un document HTML `formulaire.html` correspondant à la capture s
 
 ![Capture Formulaire](./img/formulaire.jpg)
 
-Lorsque le formulaire est soulmis (par un clic sur le bouton *S'inscrire*), les informations saisies apparraisent dans la barre d'adresse : 
+Lorsque le formulaire est soumis (par un clic sur le bouton *S'inscrire*), les informations saisies apparraisent dans la barre d'adresse : 
 
 ![Capture Formulaire](./img/formulaire-resultat.jpg)
 
@@ -80,4 +80,4 @@ Lorsque le formulaire est soulmis (par un clic sur le bouton *S'inscrire*), les 
 > Validez votre travail avec vos formateurs.
 
 
-Lorsque vous avez terminé, vous pouvez commencer la série d'exercices [Positionnement HTML/CSS](../positionnement/)
+Lorsque vous avez terminé, vous pouvez commencer la série d'exercices [Introduction au langage CSS](./04-css.md/)

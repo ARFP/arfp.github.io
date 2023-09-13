@@ -23,14 +23,7 @@ Lorsque vous avez terminé, réalisez les pages HTML correspondant aux maquettes
 
 ---
 
-## GRID 1
 
-![grid1](img/Image3.jpg)
-
-Couleurs : 
--	Bleu : #BBCCFF
-
-Bonus : Proposez une version « mobile » à 1 colonne.
 
  
 ## GRID ? FLEX ?
