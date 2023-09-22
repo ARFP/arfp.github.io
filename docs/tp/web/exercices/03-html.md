@@ -4,12 +4,15 @@ serie: "exercices"
 order: 3
 ---
 
-Prenez connaissance de la structure d'un document HTML sur le lien suivant : 
+Apprenez les bases du HTML en suivant les liens suivants : 
 
-- [Introduction à la structure d'un document HTML sur MDN](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure).
+- [Commencer avec le HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+- [Introduction à la structure d'un document HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure).
 
 
-Lorsque vous avez terminé, réalisez les exercices ci-dessous. **Implémentez uniquement le code HTML** (*L'utilisation du langage CSS est interdite*).
+Lorsque vous avez terminé, réalisez les exercices ci-dessous. 
+
+**Implémentez uniquement le code HTML** (*L'utilisation du langage CSS est interdite*).
 
 
 --- 
@@ -53,11 +56,11 @@ Dans les entêtes de la page (`<head>`) :
 
 Dans le corps de la page (`<body>`), implémentez les éléments suivants, dans l'ordre : 
 - Un titre de niveau 1 : `Les tableaux, c'est beau !`
-- Un paragraphe expliquant dans quels cas on utilisera un tableau suivi d'un autre paragrpahe qui énumère dans quel(s) cas il sera déconseillé d'en utiliser (faites des recherches sur le web).
+- Un paragraphe expliquant dans quels cas on utilisera un tableau suivi d'un autre paragraphe qui énumère dans quel(s) cas il sera déconseillé d'en utiliser (faites des recherches sur le web).
 - Une barre horizontale
 - Un tableau contenant 3 colonnes et 5 lignes (voir la capture suivante pour voir le contenu du tableau).
 
-Votre page doit respecter la mise en page et les données de la capture suivante : 
+Votre page doit respecter la structure et les données de la capture suivante : 
 
 ![Capture Tableau](./img/tableau.jpg)
 

@@ -26,8 +26,8 @@ La page des ventes (sales.html) devra, quant à elle, ressembler à la capture s
 
 Vous pouvez télécharger la bannière en cliquant [sur ce lien](legumos.jpg).
 
-Une fois ces pages implémentées, creéez 2 pages contenant chacune un formulaire pour :
-- Ajouter un légume nouveau légume
+Une fois ces pages implémentées, créez 2 pages contenant chacune un formulaire pour :
+- Ajouter un nouveau légume
 - Ajouter une nouvelle vente
 
 Ces enregistrements seront sauvegardés dans le `localStorage` du navigateur.

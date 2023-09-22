@@ -24,9 +24,9 @@ order: 11
 
 Nous avons tous l'habitude d'utiliser une suite bureautique pour la création et l'édition de nos CV. L'avantage est de pouvoir facilement transmettre le document particulièrement lorsqu'il est converti au format PDF (ce qui assure que la mise en page restera intacte).
 
-Les développeurs ont généralement un compte sur une plateforme de gestion de version comme github ou gitlab. Cela leur permet de gérer leurs projets et de partager leur savoir-faire. Ces plateformes proposent des fonctionnalités similaires aux réseaux sociaux mais adaptés aux développeurs. Sur de telles plateformes, on échange du code plutôt que des photos de vacances.
+Les développeurs ont généralement un compte sur une plateforme de gestion de version comme github ou gitlab. Cela leur permet de gérer leurs projets et de partager leur savoir-faire. Ces plateformes proposent des fonctionnalités similaires aux réseaux sociaux mais adaptés aux développeurs. Sur de telles plateformes, on publie du code plutôt que des photos de vacances.
 
-Ces grandes plateformes proposent une fonctionnalité intéressante : publier automatiquement un site web à partir d'un dépôt GIT, c'est l'intégration continue. Le site est alors accessible via un sous domaine de la plateforme.
+Ces grandes plateformes proposent une fonctionnalité intéressante : publier automatiquement un site web à partir d'un dépôt GIT grâce à l'intégration continue. Le site est alors accessible via un sous domaine de la plateforme.
 
 Cette fonctionalité permet à des millions de développeurs de publier leur CV, leur portfolio ou de mettre en avant un projet de manière simple, efficace, gratuite et automatisée.
 
@@ -63,14 +63,13 @@ Votre CV doit contenir tous les éléments suivants :
 
 - Un entête avec: 
     - Le titre du CV (poste recherché)
+    - Les dates de début et de fin de votre futur stage
     - Votre photo (facultatif mais recommandé)
     - Votre nom
     - Votre prénom 
     - Votre âge (ne mettez pas votre date de naissance)
-    - Votre adresse postale (au moins la ville et le pays)
-    - Votre numéro de téléphone
-    - Votre adresse email
-    - Votre mobilité
+    - Votre ville et pays
+    - Votre mobilité 
 - Une phrase d'accroche 
 - La liste de vos compétences principales
 - Votre parcours pédagogique (Du plus récent au plus ancien)

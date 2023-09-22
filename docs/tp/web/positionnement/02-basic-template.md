@@ -4,9 +4,9 @@ serie: "positionnement"
 order: 14
 ---
 
-Réalisez la page HTML correspondant aux maquettes et à la description ci-dessous.
+Réalisez la page HTML correspondant à la description ci-dessous.
 
-Utilisez en priorité FLEX et GRID pour positionner les éléments.
+Utilisez FLEXBOX et GRID pour positionner les éléments.
  
 
 ## Basic Template
@@ -17,7 +17,13 @@ Utilisez en priorité FLEX et GRID pour positionner les éléments.
 ### Mode clair 
 ![Maquette, mode clair](img/02-basic-template-light.jpg)
 
-L'affichage doit respecter le choix de l'utilisateur (mode clair ou sombre).  Au chargement de la page, la version correspondant au choix de l'utilisateur est affichée. Ceci est réalisé grâce à *prefers-color-scheme* du langage CSS. Documentez-vous sur le site MDN :  [prefers-color-scheme sur MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
+L'affichage doit respecter le choix de l'utilisateur (mode clair ou sombre). 
+
+Au chargement de la page, la version correspondant au choix de l'utilisateur est affichée. 
+
+Ceci est réalisé grâce à *prefers-color-scheme* du langage CSS. 
+
+Documentez-vous sur le site MDN : [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
 
 ### Couleurs : 
 ![basic-template-colors](img/02-basic-template-colors.jpg)

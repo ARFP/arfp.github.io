@@ -6,7 +6,7 @@ order: 11
 
 Réalisez la page HTML correspondant à la maquette et à la description ci-dessous.
 
-Utilisez en priorité FLEX et GRID pour positionner les éléments.
+Utilisez FLEXBOX pour positionner les éléments.
 
 
 ## CATS

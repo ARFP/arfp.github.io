@@ -1,7 +1,7 @@
 ---
 title: "Jeu de cartes"
 serie: "frontend"
-order: 20
+order: 14
 --- 
 
 L'objectif de cet exercice est d'afficher les informations des cartes d'un jeu en ligne.
@@ -13,8 +13,8 @@ Afficher les données reçues dans un tableau HTML. Appliquez les règles CSS n�
 ![cardgame](cardgame.png)
 
 
-A la suite de ce tableau, afficher les informations complètes des cartes suivantes :
--	La carte possédant le plus de puissance d’attaque
--	La carte possédant le plus d’armure
--	La carte ayant le plus de parties jouées
--	La carte ayant le plus grand nombre de victoires 
+A la suite de ce tableau, afficher les informations suivantes :
+- Le nom et la puissance d'attaque de la carte possédant le plus de puissance d’attaque.
+- Le nom et l'armure de la carte de la carte possédant le plus d’armure.
+- Le nom et le nombre de victoires carte ayant le plus de parties jouées.
+- Le nom, nombre de parties et nombre de victoires de la carte ayant le plus grand nombre de victoires.

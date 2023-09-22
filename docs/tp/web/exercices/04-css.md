@@ -41,7 +41,7 @@ Soit le document HTML suivant :
         </ol>
     </main>
     <footer>
-        Copyright Année NOM Prénom 
+        Design: Prénom NOM - Année
     </footer>
 </body>
 </html>
@@ -50,10 +50,10 @@ Soit le document HTML suivant :
 
 1. Créez un document `css-introduction.html`
 2. Collez-y le code HTML ci-dessus
-3. Dans la balse `<footer>`, remplacez `Année NOM Prénom` par l'année en cours, votre nom et votre prénom
+3. Dans la balse `<footer>`, remplacez `Prénom NOM Année` par l'année en cours, votre nom et votre prénom
 3. Créez un fichier `style.css` et liez-le au document HTML (utlisez la balise `<link>`)
 4. Appliquez les règles CSS pour que la page respecte la mise en page de la capture ci-dessous
-    - Vous pouvez ajouter des identifiants et des classes dans le code HTML
+    - Le code HTML ne doit pas être modifié !
 
 ![Capture CSS intro](./img/css-intro.jpg)
 

@@ -23,9 +23,6 @@ Lorsque vous avez terminé, réalisez les pages HTML correspondant aux maquettes
 
 ---
 
-
-
- 
 ## GRID ? FLEX ?
 
 ![gridflex](img/Image4.jpg)
