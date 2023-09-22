@@ -1,5 +1,5 @@
 ---
-title: "Tableaux"
+title: "Tableaux #1"
 level: 4
 order: 4
 ---
@@ -11,78 +11,76 @@ Cette partie vous permettra de mettre en pratique les notions suivantes :
 - Les tableaux
 
 
-## Exercice 4.1 : Rechercher un nombre dans un tableau
+## Exercice 4.1 : Créer un tableau d'entiers
 
-Soit un tableau de nombres entier triés par ordre croissant.
-
-Exemple: `[8, 16, 32, 64, 128, 256, 512]`
-
-Chercher si un nombre donné `N` figure parmi les éléments. 
-
-Si oui, afficher la valeur de l'indice correspondant. Sinon, afficher « Nombre non trouvé ».
+Écrire un algorithme qui déclare un tableau d'entiers et le remplit avec 7 valeurs numériques en les mettant toutes à 
+zéro.
 
 
-## Exercice 4.2 : Rechercher le nombre d'occurences d'une lettre dans une phrase
+## Exercice 4.2 : Créer un tableau de chaines de caractères
 
-Soit une chaîne de caractères terminée par le caractère « . ». 
-
-Donnez l'algorithme d'un programme qui compte le nombre d'occurrences d'une lettre donnée ("a" par exemple) dans cette chaîne. 
-
-Si la chaîne de caractères est vide ou n'est composée que d'un caractère « . », le message "LA CHAINE EST VIDE" sera affiché.
-
-Proposez un jeu d'essai prévoyant les 3 cas suivants :
-- La phrase est vide
-- La lettre n'est pas présente
-- La lettre est présente une ou plusieurs fois
+Écrire un algorithme qui déclare et remplit un tableau contenant les six voyelles de l’alphabet latin.
 
 
-## Exercice 4.3 : Dénombrer les lettres de l'alphabet dans un tableau 
+## Exercice 4.3 : Alimenter un tableau
 
-Lire un texte d'au moins 120 caractères (à contrôler). 
+Écrire un algorithme permettant à l’utilisateur de saisir un nombre quelconque de valeurs, qui devront 
+être stockées dans un tableau. 
 
-Compter et afficher le nombre d'occurrences (d'apparitions) de chacune des lettres de l'alphabet.
-
-
-## Exercice 4.4 : Tri d'un tableau 
-
-Nous désignerons par `a1`, `a2`, ..., `aN` les éléments d'un tableau à trier par ordre croissant.
-
-Exemple: `[128, 64, 8, 512, 16, 32, 256]`
-
-On commence par chercher l'indice du plus petit des éléments, soit `j` cet indice. 
-
-On permute alors les valeurs de `a1` (128) et `aj` (8).
-
-Le tableau devient `[8, 64, 128, 512, 16, 32, 256]`.
-
-On cherche ensuite l'indice du plus petit des éléments entre `a2` et `aN` et on permute avec `a2`.
-
-Le tableau devient `[8, 16, 128, 512, 64, 32, 256]`.
-
-On cherche ensuite l'indice du plus petit des éléments `a3`, `a4`, ..., `aN` etc... 
+L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs positives.
 
 
-## Exercice 4.5 : Palindrome 
+## Exercice 4.4 : Somme des valeurs d'un tableau 
 
-Un palindrome est une chaîne de caractères que l'on peut lire identiquement de droite à gauche, et gauche à droite.
+Écrire un algorithme calculant la somme des valeurs d’un tableau (on suppose que le tableau a été 
+préalablement saisi avec 10 nombres réels (float)).
 
-Par exemple:
-- AA
-- 38783
-- LAVAL
-- LAVAL A ETE A LAVAL
-- ET LA MARINE VA VENIR A MALTE
 
-L'utilisateur saisit une chaîne de caractères terminée par un point `.` (à contrôler).
+## Exercice 4.5 : Somme des valeurs de 2 tableaux
 
-Ecrivez l'algorithme et le programme permettant d'affirmer si cette phrase est ou non un palindrome.
+Écrire un algorithme qui respecte la demande suivante :
+1. Créer 2 tableaux d'entiers de même longueur.
+2. Créer un 3ème tableau dont les valeurs sont la somme des valeurs des 2 tableaux précédents.
 
-Si la chaîne de caractères n'est composée que du caractère '.', l'utilisateur est invité à recommencer.
+Exemple : 
 
-L'algorithme doit prévoir les 3 cas suivants :
-- la phrase est vide
-- la chaîne de caractères n'est pas un palindrome
-- la chaîne de caractères est un palindrome
+![Exemple somme de 2 tableaux](./img/tableaux-somme-2.jpg)
+
+
+## Exercice 4.6 : Somme des valeurs de 2 tableaux
+
+Toujours à partir de deux tableaux d'entiers précédemment saisis, écrivez un algorithme qui calcule la somme 
+des produits des deux tableaux. Pour calculer le résultat, il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout. 
+
+Par exemple si l'on a :
+
+![Exemple produit 2 tableaux](./img/tableaux-produit-3.jpg)
+
+Le résultat sera :
+
+`3 * 4` + `3 * 8` + `3 * 7` + `3 * 12` + `6 * 4` + `6 * 8` + `6 * 7` + `6 * 12` = `279`
+
+
+## Exercice 4.7 : Modifier un tableau
+
+Écrire un algorithme qui permet la saisie d’un nombre quelconque de valeurs, sur le principe de l’exercice 4.3. 
+
+Toutes les valeurs doivent être ensuite augmentées de 1, et le nouveau tableau sera affiché à l’écran.
+
+
+## Exercice 4.8 : Recherche dans un tableau
+
+Écrire un algorithme permettant, toujours sur le même principe, à l’utilisateur de saisir un nombre 
+déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant 
+quelle position elle occupe dans le tableau. On prendra soin d’effectuer la saisie dans un premier temps, et 
+la recherche de la plus grande valeur du tableau dans un second temps.
+
+
+## Exercice 4.9 : Recherche spécifique dans un tableau
+
+Toujours et encore sur le même principe, écrivez un algorithme permettant, à l’utilisateur de saisir les 
+notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieures 
+à la moyenne de la classe.
 
 
 > Validez votre travail avec votre formateur avant de passer à la suite.

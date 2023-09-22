@@ -1,7 +1,7 @@
 ---
 title: "Révisions #1"
 level: 5
-order: 5
+order: 10
 ---
 
 Cette série d'exercices vous permettra de réviser les parties précédentes.

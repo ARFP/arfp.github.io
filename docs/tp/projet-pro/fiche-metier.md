@@ -6,8 +6,6 @@ index: 1
 ## Compétences mises en oeuvre : 
 - Découvrir le métier
 - Créer un document texte enrichi (Word ou équivalent)
-- Créer un document HTML
-- Mettre en forme un document HTML avec CSS
 
 
 ## Réalisation d'une fiche métier
@@ -18,7 +16,7 @@ index: 1
 
 A partir de cette description générale du métier de développeur et à partir de recherches sur le web que vous effectuerez, vous devez créer une `fiche métier` exposant **votre vision** du métier de développeur. 
 
-Vous réaliserez cette fiche métier au format Word (ou équivalent) puis, dans un 2ème temps, au format HTML.
+Vous réaliserez cette fiche métier au format Word (ou équivalent).
 
 
 ## La fiche métier
@@ -66,16 +64,6 @@ Dans ce répertoire,
 1. Rédigez et complétez votre fiche métier dans un document **Word** ou équivalent.
 
 2. Validez votre fiche métier avec vos formateurs.
-
-3. Créez un fichier `metier.html` qui contiendra votre fiche métier au format HTML.
-    1. Créez la structure HTML
-    2. Créez l'entête de page et mettez la en forme avec CSS
-    2. Ajoutez la 1ère section et mettez la en forme avec CSS
-    3. Complétez section par section
-
-Lorsque vous avez terminé, validez votre code HTML et CSS avec vos formateurs.
-
-> Note: Tous les fichiers de votre site (html, css, images) doivent être situés dans le répertoire de votre projet. Vous pouvez ajouter autant de fichiers et sous-répertoires que nécessaire.
 
 ---
 

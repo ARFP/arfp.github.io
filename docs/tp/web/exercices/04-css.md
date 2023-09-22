@@ -68,7 +68,7 @@ Informations :
 
 > Une fois terminé, validez votre travail avec vos formateurs avant de passer à la suite.
 
-## Exercices de positionnement CSS 
-
-- [Accéder aux exercices de positionnement CSS](../positionnement/)
+## La suite 
+- [Créez une fiche métier au format HTML](./05-fiche-metier)
+- [Exercices de positionnement CSS](../positionnement/)
 
