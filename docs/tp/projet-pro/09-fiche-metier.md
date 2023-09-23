@@ -1,9 +1,10 @@
 ---
-title: "Fiche Métier"
-index: 1
+title: "Ma Fiche Métier"
+order: 9
 ---
 
 ## Compétences mises en oeuvre : 
+
 - Découvrir le métier
 - Créer un document texte enrichi (Word ou équivalent)
 

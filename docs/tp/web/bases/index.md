@@ -1,5 +1,5 @@
 ---
-title: "Web Bases"
+title: "Bases"
 serie: "exercices"
 index: 1
 ---

@@ -3,6 +3,15 @@ title: "RapidColis"
 order: 31
 ---
 
+
+## Consignes 
+
+On désire informatiser les travaux du service des souscriptions. Pour cela, on effectue une analyse en utilisant la notation UML.
+
+Proposez le diagramme de classes correspondant à la description ci-dessous.
+
+## Contexte 
+
 RAPIDCOLIS est une société spécialisée dans la vente de collections de livres par correspondance, livrés à la cadence d'un volume tous les mois.
 
 Chaque publication (collection) comprend de 12 à 24 volumes. Les clients souscrivent à une collection précise directement en renvoyant un bulletin de souscription pré-imprimé qu'ils ont reçus préalablement. Le service des souscriptions assure la gestion et le suivi des relations avec les clients ; la suite expose en détail l'essentiel des travaux dont il a la charge.
@@ -21,9 +30,3 @@ Lorsque le nombre de souscriptions n'est pas jugé suffisant à la fin de la pé
 Les clients ayant souscrit à cette collection sont avisés par lettre personnalisée de la décision de la société.
 
 15 ans aprés le lancement d'une collection, toutes les informations relatives à celle-ci sont détruites.
-
-## Consignes 
-
-On désire informatiser les travaux du service des souscriptions. Pour cela, on effectue une analyse en utilisant la notation UML.
-
-Proposez le diagramme de classes correspondant à la description ci-dessous.

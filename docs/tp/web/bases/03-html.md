@@ -81,6 +81,3 @@ Lorsque le formulaire est soumis (par un clic sur le bouton *S'inscrire*), les i
 
 
 > Validez votre travail avec vos formateurs.
-
-
-Lorsque vous avez terminé, vous pouvez commencer la série d'exercices [Introduction au langage CSS](./04-css.md/)

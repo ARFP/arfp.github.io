@@ -1,5 +1,5 @@
 ---
-title: "Web Frontend"
+title: "Frontend"
 serie: "frontend"
 index: 3
 ---

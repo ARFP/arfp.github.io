@@ -1,5 +1,5 @@
 ---
-title: "Positionnement HTML/CSS"
+title: "HTML/CSS"
 serie: "positionnement"
 index: 2
 ---
@@ -14,20 +14,8 @@ Suivez les guides FLEXBOX et GRID et réalisez les exercices d'entrainement sur 
 2. [S'entrainer sur FLEXBOX avec Flexbox Froggy](https://flexboxfroggy.com/#fr)
 
 ## CSS Grid
-
-- [Tutoriel CSS GRID](https://la-cascade.io/articles/css-grid-layout-guide-complet)
-- [S'entrainer sur GRID avec Grid Garden](https://cssgridgarden.com/#fr)
+1. [Lire le tutoriel CSS GRID](https://la-cascade.io/articles/css-grid-layout-guide-complet)
+2. [S'entrainer sur GRID avec Grid Garden](https://cssgridgarden.com/#fr)
 
 Lorsque vous avez terminé, réalisez les pages HTML correspondant aux maquettes de chaque exercice listé ci-dessous.
 
-
----
-
-## GRID ? FLEX ?
-
-![gridflex](img/Image4.jpg)
-
-Couleurs : 
--	Jaune/Vert : #CCCC33
-
-Bonus : Proposez une version « mobile » à 2 colonnes (sauf les éléments 1 et 10 qui utilisent toute la largeur).

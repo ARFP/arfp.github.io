@@ -5,7 +5,7 @@ id: 1
 level: 4
 ---
 
-Exercices de découverte des métiers du développement.
+Découverte des métiers du développement.
 
 Tout au long de ce parcours, vous serez sensibilisé sur les thèmes suivants :
 
@@ -14,4 +14,3 @@ Tout au long de ce parcours, vous serez sensibilisé sur les thèmes suivants :
 - Gérer son profil professionnel
 - Gérer la confidentialité des données
 - Gérer sa documentation avec un système de gestion de version
-- Développer une page web statique

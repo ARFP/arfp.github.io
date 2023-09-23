@@ -79,3 +79,6 @@ Vous déterminerez vous même les informations à ajouter.
 
 -	**legumes.xml**
     - Les 6 légumes produits par un maraîcher
+
+
+> Validez votre travail avec vos formateurs.

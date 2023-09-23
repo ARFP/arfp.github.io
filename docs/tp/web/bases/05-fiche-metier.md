@@ -50,4 +50,4 @@ Votre page HTML doit reprendre la base suivante :
 
 ## La suite 
 
-- [Accéder aux exercices de positionnement CSS](../positionnement/)
+- [Accéder aux exercices de positionnement CSS](../html-css/)
