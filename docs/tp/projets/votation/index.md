@@ -70,7 +70,7 @@ Fonctionnement au démarrage de l'application :
 2. L'administrateur s'identifie.
     - En cas d'erreur d'identification : 
         - Afficher un message d'erreur
-        - Recommenrcer à l'étape 1
+        - Recommencer à l'étape 1
 3. La liste des sessions de vote existantes est affichée 
     - Les sessions sont classées en 2 catégories :
         - active ou terminée
@@ -101,8 +101,32 @@ Fonctionnement :
 
 ---
 
+> Valider le fonctionnement de vos 2 applications avec vos formateurs avant de passer à la suite.
 
 
+## Déployer la V1
 
-## Le back-office
+Lorsque vos 2 logiciels sont fonctionnels, créez une `release` sur GitHub (ou GitLab) et étiquetez là `1.0.0`.
 
+
+## La machine à Voter :  Version 2
+
+Vous devez maintenant développer une version améliorée de la machine à voter.
+
+Les nouveaux éléments à prendre en compte sont les suivants :
+
+- Lors de certaines élections, on vote pour une liste plutôt qu'un candidat.
+- Un liste est identifiée par un nom.
+- Une liste contient 2 à 10 candidats.
+- Le 1er nom de la liste est le représentant de la liste.
+- Les autres candidats sont classés par ordre d'importance dans la liste.
+- Lors d'une élection, toutes les listes inscrites doivent posséder le même nombre de candidats.
+
+--- 
+
+> Valider le fonctionnement de vos 2 applications V2 avec vos formateurs avant de passer au déploiement.
+
+
+## Déployer la V2
+
+Lorsque vos 2 logiciels V2 sont fonctionnels, créez une `release` sur GitHub (ou GitLab) et étiquetez là `2.0.0`.

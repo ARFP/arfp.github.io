@@ -12,4 +12,14 @@
         </article>
     {% endfor %}
 </section>
+<hr>
+<h1>Tous les modules</h1>
+<section class="flex cards">
+{% assign modules = site.pages | where: "layout", "module" | sort: "id" %}{% for module in modules %}
+<article><h2><a href="{{ module.url }}">{{ module.title }}</a></h2>
+{% assign series = site.pages | where_exp: "item", "item.index > 0" | sort: "index" %}{% assign series = series | where_exp: "item", "item.module == module.module" %}
+<ol>{% for serie in series %}
+    <li>{{ serie.title }}</li> 
+{% endfor %}</ol></article>
+{% endfor %}</section>
 {% include _foot.html %}

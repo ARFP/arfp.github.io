@@ -1,4 +1,4 @@
 ---
-title: "TP Map"
+title: "Site Map"
 layout: tpmap
 ---

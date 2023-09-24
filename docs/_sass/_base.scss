@@ -178,6 +178,10 @@ img {
     margin: 1rem auto;
 }
 
+hr {
+    margin: 2rem 1rem;
+}
+
 main li {
     margin: .4rem;
 }
@@ -223,7 +227,7 @@ body > footer p {
     border-top-right-radius: var(--border-radius);
 }
 
-.cards h2 {
+.cards h2, .cards h3 {
     padding: 1rem;
     margin: 0 0 1rem 0;
     background-color: var(--header-bg);
@@ -232,8 +236,11 @@ body > footer p {
     border-top-right-radius: var(--border-radius);
 }
 
-.cards h2 a {
+.cards h2 a, .cards h3 a {
     color: var(--crm-blue);
+}
+.cards h2 a:hover, .cards h3 a:hover {
+    color: var(--crm-secondary);
 }
 
 .cards a {

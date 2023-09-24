@@ -1,9 +1,9 @@
 {% include _head.html %}
 <h1>{{ page.title }}</h1>
 <section>
-<div class="flex cards">{% for formation in site.data.formations %}<article>
+<!-- <div class="flex cards">{% for formation in site.data.formations %}<article>
 <h2><a href="/{{ formation.slug }}/">{{ formation.name }}</a></h2>
-</article>{% endfor %}</div>
+</article>{% endfor %}</div> -->
 {{ content }}
 {% assign modules = site.pages | where: "layout", "module" | sort: "id" %}{% for module in modules %}<h2><a href="{{ module.url }}">{{ module.title }}</a></h2>
 {% assign series = site.pages | where_exp: "item", "item.index > 0" | sort: "index" %}{% assign series = series | where_exp: "item", "item.module == module.module" %}
