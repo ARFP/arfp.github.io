@@ -1,5 +1,6 @@
 ---
 title: "Aquarium"
+serie: "projets"
 order: 61
 ---
 

@@ -20,4 +20,10 @@ Suivez le tutoriel sur Gekkcode :
 - [Tutoriel VueJS pour les débutants](https://www.gekkode.com/developpement/tutoriel-vuejs-3-pour-les-debutants/)
 
 
-Lorsque vous avez terminé, réalisez les exercices listés ci-dessous.
+---
+
+Pour vous entrainer, Vous pouvez refaire [les exercices Javascript](../html-css-js/) en utilisant VueJS.
+
+---
+
+Lorsque vous êtes prêt, réalisez les exercices listés ci-dessous.
