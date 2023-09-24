@@ -5,4 +5,4 @@ id: 99
 level: 5
 ---
 
-Projets Web à réaliser en individuel !
+Projets à réaliser en individuel ou en petite équipe !

@@ -1,6 +1,6 @@
 ---
 title: "Exercices Algorithmes"
-index: 1
+index: 10
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

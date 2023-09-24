@@ -1,145 +1,156 @@
 ---
-title: "Projet Streaming"
+title: "Activités"
 order: 101
 ---
 
-Vous souhaitez lancer votre plateforme de streaming. Votre ambition est grande !
+Le CRM utilise un formulaire en ligne pour gérer les inscriptions des stagiaires de la formation professionnelle (OFP) aux différentes activités sportives.
 
 ## Contexte 
 
-Pour démarrer et acquérir des fonds, vous décidez de créer une plateforme qui permet de centraliser plusieurs abonnements d'autres plateformes en un compte unique. Plus tard, peut-être, déciderez-vous de lancer votre propre service de streaming ;) 
+Actuellement, les inscriptions sont gérées en plusieurs étapes :
 
-Vous avez décroché des partenariats avec des services de Streaming populaires. 
+1. Les stagiaires s'inscrivent à travers un formulaire accessible depuis une URL (avec Microsoft Form) en remplissant différentes informations.
+2. L’administrateur récupère un fichier Excel auto-généré par Microsoft Form, avec l'ensemble des données des stagiaires. Il copie ces données dans un second fichier Excel pour établir la « liste de présence » pour les différentes activités sportives.
+3. La liste de présence est ensuite envoyée, au format PDF, aux différents moniteurs sportifs, qui l'impriment.
 
-Chaque service partenaire vous donne accès à un catalogue de films que vous référencez dans votre base de données.
+Cette liste de présence permet aux moniteurs de vérifier la présence des différents stagiaires. Elle permet également aux stagiaires de valider leur présence en émargeant la feuille, à coté de leurs nom et prénom.
 
+Une grosse partie des actions sont réalisées « manuellement », notamment :
 
-## Le logiciel client (Front-office)
+- La copie des informations des stagiaires du fichier généré par le formulaire à la feuille de présence.
+- La gestion du nombre d'inscrits aux activités sportives.
+- La génération du formulaire, réalisé pour chaque date d’inscription.
+- La notification des stagiaires en cas de problème d’inscription : trop d'inscrits, moniteur absent, annulation d'activités sportives... La notification est actuellement réalisée à travers un mail envoyé par l’administratrice.
+- L'exportation de la feuille de présence au format PDF, ainsi que l’envoi aux moniteurs.
 
-Vous proposez les catalogues de films de vos partenaires sur un site web.
+Nous avons également quelques données à prendre en compte :
 
-Un utilisateur non-inscrit peut consulter l'ensemble des catalogues de films et peut accéder à la fiche détaillée de chaque film référencé.
+Il y a actuellement 4 activités sportives avec un certain nombre de places par activités :
 
-L'utilisateur inscrit à la plateforme peut s'abonner à différents services de streaming vidéo ce qui lui permet de lire les vidéos proposées par les services auquel il est abonné.
+- Le tennis de table, 12 places.
+- La salle de cardio et de muscu, 12 places.
+- Le badminton, 16 places.
+- L'accès à la piscine, 15 places.
 
-Sur la fiche détaillée d'un film : 
+Les activités sportives se déroulent toutes les semaines, le mardi et le jeudi, de 16h à 17h voire jusque 18h dans certains cas. 
 
-- Si l'utilisateur n'est pas abonné au service proposant ce film, un bouton "s'abonner à NOM_DU_SERVICE" permet à l'utilisateur de s'abonner au service.
-- Si l'utilisateur est abonné à un service proposant ce film, un bouton de lecture permet de lancer le film.
+Le formulaire d’inscription des stagiaires enregistre les données suivantes :
 
-Lorsqu'un utilisateur lance la lecture d'une vidéo : 
+- Le nom du stagiaire
+- Le prénom du stagiaire
+- La section du stagiaire
+- L'activité sportive voulue pour la prochaine date
 
- - Le système contrôle si son abonnement lui permet l'accès à la vidéo.
- - Le système ajoute/édite une entrée dans l'historique de lecture de l'utilisateur (une entrée par utilisateur/film).
-    - Si une entrée d'historique existe, la lecture reprend à la progression enregistrée.
- 
- Lors de la lecture d'une vidéo : 
+Le client a également 2 contraintes :
 
- - Le système enregistre la progression actuelle de la vidéo dans l'historique toutes les 2 minutes.
-
-
-## API 
-
-Les données (catalogues et vidéos) sont accessibles via une API Rest et sont récupérées via des requêtes AJAX.
-
-## Interface utilisateur
-
-L'interface doit être adaptative, mobile-first et utiliser une bibliothéque JS frontend (VueJS ou ReactJS).
-
-Pages à implémenter : 
-
-- Accueil
-- Identification
-- Profil utilisateur
-- Afficher la liste des services (avec tarif et bouton d'abonnement)
-- Afficher le catalogue d'un service
-   - Les films sont classés par catégorie
-- Afficher un film
-- Afficher l'historique de l'utilisateur identifié
+- Il ne peut y avoir une section complète inscrite aux activités sportives.
+- Il faut prévoir un système de roulement pour les activités "populaires".
 
 
-Logo :
+## Le logiciel 
 
-![logo](Streaming_logo.png)
+Le but de ce projet est d’aider l'administrateur dans la gestion des inscriptions, en automatisant le processus.
 
-Exemple d'interface que vous pouvez implémenter mais libre à vous de créer l'interface utilisateur de votre choix.
+Cette automatisation peut être mise en place à plusieurs niveaux :
 
- ![image](Streaming_ui.jpg)
+1. Générer automatiquement la feuille de présence à partir des données du formulaires.
+2. Mettre à jour le formulaire en fonction de la date, du nombre d’inscrits ou d’événements souhaités par l'administrateur.
+3. Récupérer les informations du stagiaire, comme son nom, son prénom et sa section.
+4. Gérer la priorité entre les stagiaires, notamment entre ceux qui ne s’inscrivent que rarement et ceux qui s’inscrivent régulièrement.
 
----
+**Il faudra proposer 2 interfaces graphiques :**
 
-## Kit de démarrage
+- Une interface pour les stagiaires, pour gérer leurs inscriptions aux activités.
+- Une interface administrateur, pour gérer les inscriptions, notamment :
+   - La gestion des dates, des activités sportives.
+   - L’affichage des stagiaires inscrits. 
 
-Pour démarrer, le modèle suivant doit être utilisé. 
+L’authentification se fera grâce au compte du CRM, lié à Microsoft.
 
-![image](Streaming_MCD.png)
+**D’autres demandes ont étés formulées par le client :**
 
-![image](Streaming_MLD.png)
+- Certaines inscriptions doivent pouvoir être désactivées par l’administrateur (moniteur absent, ou autre événement).
+- Pouvoir gérer l’annulation d’événements ayant déjà des inscriptions.
+- Pouvoir informer les stagiaires que les inscriptions sont complètes.
+- Pouvoir soit laisser à l'administrateur, soit définir dans l’application, l’ouverture des futures sessions d’inscriptions. 
 
-[Cliquez ici pour télécharger le fichier Looping MCD](Streaming_MCD.loo)
+**Système de roulement des stagiaires :**
 
+- A chaque inscription : vérifier si le stagiaire s’est inscrit à la même activité la session précédente
+   - si oui => le mettre sur une file d’attente et ne valider l'inscription que s'il reste des places à la fermeture des inscriptions.
 
-Complétez ce modèle avec les informations que vous jugerez nécessaire.
-
-### Script SQL 
-
-```sql
-CREATE TABLE clients(
-   client_id INT PRIMARY KEY,
-   client_name VARCHAR(50) NOT NULL
-);
-
-CREATE TABLE films(
-   film_id INT PRIMARY KEY,
-   film_title VARCHAR(50) NOT NULL
-);
-
-CREATE TABLE services(
-   service_id INT PRIMARY KEY,
-   service_name VARCHAR(50) NOT NULL
-);
-
-CREATE TABLE propose(
-   film_id INT,
-   service_id INT,
-   PRIMARY KEY(film_id, service_id),
-   FOREIGN KEY(film_id) REFERENCES films(film_id),
-   FOREIGN KEY(service_id) REFERENCES services(service_id)
-);
-
-CREATE TABLE abonner(
-   client_id INT,
-   service_id INT,
-   PRIMARY KEY(client_id, service_id),
-   FOREIGN KEY(client_id) REFERENCES clients(client_id),
-   FOREIGN KEY(service_id) REFERENCES services(service_id)
-);
-
-CREATE TABLE lire(
-   client_id INT,
-   film_id INT,
-   service_id INT,
-   date_lecture VARCHAR(50) NOT NULL,
-   position_lecture VARCHAR(50) NOT NULL,
-   PRIMARY KEY(client_id, film_id, service_id),
-   FOREIGN KEY(client_id) REFERENCES clients(client_id),
-   FOREIGN KEY(film_id) REFERENCES films(film_id),
-   FOREIGN KEY(service_id) REFERENCES services(service_id)
-);
-
-```
-
-> Complétez le modèle, insérez quelques services et quelques films.
+A la clôture des inscriptions, possibilité de générer Un PDF pour les moniteurs contenant la liste des inscrits.
 
 
+## Fonctionnalités 
 
-## Le back-office
+**Un administrateur peut :**
 
-Pour la partie "administration" du site, vous utiliserez un modèle MVC.
+- Se connecter
+- définir la fréquence
+- Afficher les types d'évènement
+- Ajouter un type d'évènement
+- Modifier un type d'évènement
+- Supprimer un type d'évènement
+- Afficher les évènements
+- Afficher un évènement
+- Ajouter un évènement
+- Modifier un évènement
+- Annuler un évènement
+- Supprimer un évènement
 
-Une section privée de votre site vous permet de gérer les données de votre application.
+**Un stagiaire peut :**
 
-Un administrateur peut ajouter modifier et supprimer des services et des films.
-Il a également la possibilité de créer, éditer et désactiver un utilisateur (un utilisateur ne peut-être supprimé).
+- S'identifier
+- Afficher les évènements à venir
+- Afficher un évènement
+- Afficher les évènements auquels il est inscrit(e)
+- S'inscrire à un évènement
+- Se désinscrire d'un évènement
 
-Par extension, un administrateur connecté est considéré comme un utilisateur abonné à tous les services et a donc accès à l'ensemble des catalogues du logiciel client.
+**L'API Rest permet de :**
+
+- S'identifier
+- Afficher les évènements à venir
+- Afficher un évènement
+- Afficher les évènements auquels je suis inscrit(e)
+- S'inscrire à un évènement
+- Se désinscrire d'un évènement
+
+## Maquettes 
+
+Inspirez-vous des maquettes ci-dessous pour réaliser les pages de l'application.
+
+
+### Couleurs
+
+![Maquette Couleurs](./img/00-zeform-design.png)
+
+### Login
+
+![Maquette Login](./img/01-zeform-login.png)
+
+### Planning
+
+![Maquette Planning](./img/02-zeform-planning.png)
+
+### Ajouter une Activité
+
+![Maquette ajouter activité](./img/10-zeform-activity-new.png)
+
+### Modifier une Activité
+
+![Maquette éditer activité](./img/11-zeform-activity-edit.png)
+
+### Ajouter une Scéance
+
+![Maquette ajouter scéance](./img/20-zeform-sceance-new.png)
+
+### Modifier une Scéance
+
+![Maquette éditer scéance](./img/21-zeform-sceance-edit.png)
+
+
+> Le cahier des charges a été réalisé avec la participation de Julien Millètre, stagiaire CDA.
+>
+> Les maquettes ont été conçues par Julien Millètre, stagiaire CDA.

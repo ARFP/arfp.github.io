@@ -36,20 +36,7 @@ Afin de pouvoir accéder à votre logiciel à distance, votre choix s'est porté
 
 ## Base de données
 
-### MCD
-
-![MCD](TP_Freelancer_MCD.png)
-
-### MLD
-
-![MCD](TP_Freelancer_MLD.png)
-
-### Script SQL 
-
-[TP_Freelancer.sql](TP_Freelancer.sql)
-
-> Le script SQL fourni est standard et initialement prévu pour fonctionner avec MySQL. Adaptez-le au serveur de base de données que vous utiliserez pour ce projet.
-
+Créer la base de données permettant de répondre au besoin.
 
 ## Maquette HTML
 
