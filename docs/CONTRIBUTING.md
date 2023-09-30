@@ -1,4 +1,7 @@
-# Contribuer
+---
+title: "Contribuer"
+layout: default
+---
 
 Merci de penser à vouloir nous aider ! Sur quoi souhaiteriez-vous travailler ?
 
