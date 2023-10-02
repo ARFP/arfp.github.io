@@ -1,6 +1,6 @@
 ---
-title: "Projet Freelancer"
-order: 100
+title: "Freelancer"
+order: 189
 ---
 
 Depuis peu, vous vous êtes lancé en tant que développeur indépendant, vous faites désormais partie de la grande famille des "développeurs Freelance".

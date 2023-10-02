@@ -162,10 +162,10 @@ Le joueur possédant le plus de PV en fin de partie a gagné !
 
 ### Exercice 3.2
 
-A la fin d'un partie, proposer ces 3 options : 
-- Arrêter de retourner au début du programme.
+A la fin d'une partie, proposer ces 3 options : 
+- Arrêter et retourner au début du programme.
 - Recommencer une partie contre le même joueur IA.
-- Recommencer une partie contre un nouveau Joueur IA (qui possèdera peut-être d'autres cartes).
+- Recommencer une partie contre un nouveau Joueur IA (qui possèdera d'autres cartes).
 
 ### Exercice 3.3
 
@@ -194,7 +194,7 @@ Maintenant que vous savez sauvegarder les joueurs, exporter les données du jeu 
 
 ### Exercice 4.1 
 
-Exporter les données du jeu (personnages, famille, éléments) dans un fichier `personnages.json` qui sera chargé au lancement du programme. Ceci permettra d'éditer les personnages sans devoir recompiler le programme.
+Exporter les données du jeu (personnages, familles, éléments) dans un fichier `personnages.json` qui sera chargé au lancement du programme. Ceci permettra d'éditer les personnages sans devoir recompiler le programme.
 
 ### Exercice 4.2 
 
@@ -203,7 +203,7 @@ Chaque partie terminée sera également sauvegardée dans un fichier `parties.js
 Pour chaque partie, on sauvegarde :
 - La date et l'heure de début de partie.
 - La date et l'heure de fin de partie.
-- L'issue des 4 tours (cartes et étoiles sélectionnées).
+- L'issue des 4 tours (cartes et étoiles sélectionnées, état des 2 joueurs).
 - Le pseudo du gagnant de la partie.
 
 Au démarrage du programme, et ce, pour chaque joueur, on affiche désormais son nombre de victoires.

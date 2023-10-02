@@ -1,6 +1,6 @@
 ---
-title: "Projet Streaming"
-order: 101
+title: "Video Streaming"
+order: 199
 ---
 
 Vous souhaitez lancer votre plateforme de streaming. Votre ambition est grande !

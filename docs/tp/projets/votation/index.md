@@ -1,6 +1,6 @@
 ---
 title: "La machine à voter"
-order: 104
+order: 103
 ---
 
 Votre mission consiste à concevoir une machine à voter ! 
