@@ -1,7 +1,7 @@
 ---
 title: "Boulangerie"
 serie: "vuejs"
-order: 12
+order: 30
 ---
 
 # La boulangerie

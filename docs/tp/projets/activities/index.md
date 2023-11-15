@@ -151,6 +151,6 @@ Inspirez-vous des maquettes ci-dessous pour réaliser les pages de l'application
 ![Maquette éditer scéance](./img/21-zeform-sceance-edit.png)
 
 
-> Le cahier des charges a été réalisé avec la participation de Julien Millètre, stagiaire CDA.
+> Le cahier des charges a été réalisé avec la participation de Julien Milletre, stagiaire CDA.
 >
-> Les maquettes ont été conçues par Julien Millètre, stagiaire CDA.
+> Les maquettes ont été conçues par Julien Milletre, stagiaire CDA.

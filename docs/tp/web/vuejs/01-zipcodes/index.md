@@ -1,7 +1,7 @@
 ---
 title: Codes postaux
-serie: "frontend"
-order: 16
+serie: "vuejs"
+order: 1
 ---
 
 ## Recherche de villes / codes postaux
@@ -14,7 +14,7 @@ Ces informations sont stockées dans le fichier "[zipcodes.json](zipcodes.json)"
 
 L'utilisateur peut saisir un code postal dans le champs de recherche. 
 
-A partir de 2 caractères saisis, une liste de suggestions de villes correspondant à la saisie est affichée.
+A la saisie, une liste de suggestions de villes correspondantes est affichée.
 
 Par exemple, si l'utilisateur saisit `59`, toutes les villes dont le code postal contient `59` sont affichées dans les suggestions.
 

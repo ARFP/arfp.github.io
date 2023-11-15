@@ -1,7 +1,7 @@
 ---
 title: "Employés"
-serie: "frontend"
-order: 21
+serie: "vuejs"
+order: 2
 ---
 
 ## Afficher une liste d'employés
