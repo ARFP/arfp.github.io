@@ -1,7 +1,7 @@
 ---
 title: "Introduciton aux dates"
 serie: "frontend"
-order: 2
+order: 4
 --- 
 
 L'objectif de ces exercices est de vous familiariser avec la manipulation des dates en Javascript.

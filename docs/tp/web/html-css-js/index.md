@@ -1,5 +1,5 @@
 ---
-title: "HTML/CSS/JS"
+title: "Javascript # 1"
 serie: "frontend"
 index: 4
 ---
