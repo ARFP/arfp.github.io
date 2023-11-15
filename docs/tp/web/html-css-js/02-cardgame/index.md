@@ -1,7 +1,7 @@
 ---
 title: "Jeu de cartes"
 serie: "frontend"
-order: 14
+order: 11
 --- 
 
 L'objectif de cet exercice est d'afficher les informations des cartes d'un jeu en ligne.

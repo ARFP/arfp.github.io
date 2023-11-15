@@ -45,9 +45,9 @@ Votre document HTML doit respecter ces conditions :
 
 **Pour vous aider** 
 
-- https://developer.mozilla.org/fr/docs/Web/HTML/Introduction_to_HTML5 
-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta 
+- [https://developer.mozilla.org/fr/docs/Web/HTML/Introduction_to_HTML5](https://developer.mozilla.org/fr/docs/Web/HTML/Introduction_to_HTML5) 
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+- [https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta) 
 
 
 ## Entête de la page
@@ -77,11 +77,11 @@ Votre page doit ressembler à ceci :
 
 **Pour vous aider** 
 
-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/header 
-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements 
-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav 
-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals  
-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks 
+- [https://developer.mozilla.org/fr/docs/Web/HTML/Element/header](https://developer.mozilla.org/fr/docs/Web/HTML/Element/header) 
+- [https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements)
+- [https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav](https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav) 
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)  
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks) 
 
 
 ## Contenu principal
@@ -97,21 +97,21 @@ Rendu de la page attendu:
 
 **Pour vous aider** 
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main  
-- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines 
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)  
+- [https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines)
 
 ## Pied de page
 
 Après la fermeture de la balise `</main>`, ajoutez une balise `<footer>` qui contiendra les éléments suivants :
 
 - Une mention "Copyright"
-- Un lien http://www.arfp.asso.fr 
+- Un lien vers https://crm68.fr  
 
 ![Footer](./img/plane03_footer.png)
 
 **Pour vous aider** 
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer 
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer) 
 
 
 > Valider votre travail avec vos formateurs avant de passer à la suite.
@@ -122,7 +122,7 @@ Après la fermeture de la balise `</main>`, ajoutez une balise `<footer>` qui co
 HTML permet de définir la structure d'un document.
 Le langage CSS est quant à lui utilisé pour mettre en forme le contenu (positionner le contenu, ajouter des couleurs etc....) d'une page HTML.
 
-- https://developer.mozilla.org/en-US/docs/Web/Tutorials#CSS_Tutorials 
+- [https://developer.mozilla.org/en-US/docs/Web/Tutorials#CSS_Tutorials](https://developer.mozilla.org/en-US/docs/Web/Tutorials#CSS_Tutorials) 
 
 ## Lier une feuille de style
 
@@ -131,7 +131,7 @@ Liez ensuite ce fichier à votre document HTML.
 
 **Pour vous aider**
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link 
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 
 ## Le langage CSS
 

@@ -1,5 +1,5 @@
 ---
-title: "Vue JS"
+title: "Javascript #2"
 serie: "vuejs"
 index: 20
 ---
