@@ -1,67 +1,31 @@
 ---
-title: "Exercices d'introduction"
+title: "Exercice Introduction #1"
 serie: "frontend"
 order: 1
 --- 
 
-L'objectif de ces exercices est de vous familiariser avec JS et la manipulation du DOM.
+L'objectif de cet exercice est de vous familiariser avec JS et la manipulation du DOM.
 
-## Exercice 1 : Bonjour
+## Exercice 1 : Compteur de clics
 
-Dans un document HTML: 
-1. Ajouter un titre de niveau 1.
-2. Ajouter un `label` et un `input` permettant de saisir un prénom.
-3. Ajouter un `label` et un `input` permettant de saisir un âge.
-4. Ajouter un `button` de validation (attention, le formulaire ne doit pas être soumis !).
-5. Ajouter un bouton permettant de vider le formulaire. 
-6. Un bloc pour l'affichage du résultat
+Créer un document HTML contenant : 
 
-Votre page devrait ressembler à la capture suivante :
+- 1 titre de niveau 1 
+- 1 bouton  
+- Un paragraphe
 
-![capture formulaire](./img/exo1-1.png)
+Votre page devrait ressembler à la capture suivante : 
 
-Au clic sur le bouton de validation :
-- Si le prénom n'est pas vide et que l'âge est un entier valide supérieur à 0 :
-    - Afficher le texte comme sur la capture suivante.
-- Sinon 
-    - Afficher "Compléter/corriger le formulaire"
+![capture](./img/increment-1-1.png)
 
-![capture formulaire validé](./img/exo1-2.png)
+Au clic sur le bouton, le compteur dans le paragraphe s'incrémente de 1.
 
+Par exemple, après 3 clics sur le bouton : 
 
-## Exercice 2 : Majorité
+![capture](./img/increment-1-1b.png) 
 
-Ajouter un message pour indiquer, selon l'âge saisi, si la personne est "mineure" ou "majeure".
+Ajouter ensuite un second bouton libellé "Réinitialiser". 
 
-![capture formulaire validé](./img/exo1-3.png)
+![capture](./img/increment-1-2.png) 
 
-
-## Exercice 3 : Retraite
-
-Ajouter un message pour indiquer, toujours selon l'âge saisi, le nombre d'années avant ou après la retraite. 
-
-Le message diffère selon le cas: 
-
-- age < 64 : "Il vous reste X année(s) avant la retraite"
-- age > 64 : "Vous êtes à la retraite depuis X année(s)"
-- age = 64 : "Vous prenez votre retraite cette année !"
-
-![capture formulaire validé](./img/exo1-4.png)
-
-
-## Exercice 4 : Mise en forme 
-
-Mettez en forme votre page afin qu'elle corresponde aux captures suivantes :
-
-Le cadre bleu fait 800px de large et est centré sur la page.
-
-La police utilisée est "Verdana".
-
-**Moins de 64 ans** 
-![capture formulaire validé](./img/exo1-5.png)
-
-**64 ans**
-![capture formulaire validé](./img/exo1-6.png)
-
-**Plus de 64 ans**
-![capture formulaire validé](./img/exo1-7.png)
+Un clic sur ce second bouton réinitialise le compteur à 0.
