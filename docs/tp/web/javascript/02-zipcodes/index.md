@@ -10,7 +10,7 @@ Créer une page web simple contenant un titre, un champ de type "search" et un b
 
 Le formulaire permet de rechercher les informations d'une ou plusieurs villes. 
 
-Ces informations sont stockées dans le fichier "[zipcodes.json](zipcodes.json)" et doivent être chargées avec l'[API "fetch"](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API) de Javascript.
+Ces informations sont stockées dans le fichier "**[zipcodes.json](zipcodes.json)**" et doivent être chargées avec l'[API "fetch"](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API) de Javascript.
 
 L'utilisateur peut saisir un code postal dans le champs de recherche. 
 
@@ -23,4 +23,4 @@ Pour les suggestions, vous utiliserez l'élément datalist :
 
 Le bouton de validation permet d'afficher les informations complètes de la ville sélectionnée (dans un div par exemple).
 
-Note: aucune mise en page CSS n'est nécessaire pour cet exercice.
+Note: Vous êtes libre d'utiliser la mise en page de votre choix.

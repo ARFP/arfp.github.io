@@ -7,7 +7,7 @@ order: 3
 ## Afficher une liste d'employés
 
 Pour cet exercice, vous devez créer une application web affichant la liste des employés d'une société. 
-Les informations proviennent d'une API fictive et sont rendues disponibles dans le fichier JSON [employees.json](employees.json).
+Les informations proviennent d'une API fictive et sont rendues disponibles dans le fichier JSON **[employees.json](employees.json)**.
 
 Les employés doivent être listés dans un tableau, avec les informations suivantes :
 

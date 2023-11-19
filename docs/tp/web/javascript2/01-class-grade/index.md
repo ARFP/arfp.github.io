@@ -25,7 +25,7 @@ Soit le fichier JSON suivant :
 
 Cette collection contient une liste d'étudiants ayant passé une évaluation.
 
-Votre travail consiste à développer une petite application de gestion de des notes obtenues.
+Votre travail consiste à développer une petite application de gestion des notes obtenues.
 
 1. Créer un répertoire pour votre projet.
 2. Créer un fichier **index.html** et y insérer la structure HTML standard.

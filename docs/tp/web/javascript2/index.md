@@ -22,7 +22,7 @@ Suivez le tutoriel sur Gekkcode :
 
 ---
 
-Pour vous entrainer, Vous pouvez refaire [les exercices Javascript](../html-css-js/) en utilisant VueJS.
+Pour vous entrainer, Vous pouvez refaire [les exercices Javascript](../javascript/) en utilisant VueJS ou ReactJS.
 
 ---
 
