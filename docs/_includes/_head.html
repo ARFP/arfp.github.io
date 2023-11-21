@@ -16,6 +16,7 @@
             <ul id="menu">
                 <li style="display: none;"><a id="menuToggle" href="#"><i class="fa fa-bars"></i></a></li>
                 {% for item in site.data.formations %}{% if item.name %}<li><a href="/{{ item.slug }}/">{{ item.name }}</a></li>{% endif %}{% endfor %}
+                <li><a href="/blog">Blog</a></li>
                 <li><a href="{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="{{ site.github }}"><i class="fa fa-github"></i></a></li>
                 <li><a href="#"><i class="fa fa-sun-o" id="theme"></i></a></li>
