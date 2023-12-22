@@ -1,0 +1,12 @@
+version: '2'
+services:
+  pages:
+    build: .
+    image: arfp/jekyll
+    container_name: arfpgithubio
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - ./docs:/srv/jekyll
+    command: jekyll serve --force_polling --incremental --livereload
