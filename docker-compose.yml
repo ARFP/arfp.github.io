@@ -1,0 +1,14 @@
+version: '2'
+name: arfp-io
+services:
+  pages:
+    build: https://raw.githubusercontent.com/mdevoldere/edu-docker/develop/jekyll/Dockerfile
+    # build: .
+    image: mdevoldere-jekyll-develop
+    container_name: arfpio
+    ports:
+      - 4000:4000
+      - 35728:35729
+    volumes:
+      - ./docs:/srv/jekyll
+    command: jekyll serve --force_polling --incremental --livereload
