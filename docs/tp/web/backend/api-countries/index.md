@@ -33,7 +33,7 @@ La 1ère étape consiste à créer une base de données qui accueillera les donn
 
 ```sql
 /* Exemple de création d'une base de données MySQL avec le jeu de caractères UTF8 */
-CREATE DATABASE IF NOT EXISTS `db_countries` CHARACTER SET utf8mb COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS `db_countries` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 /* Exemple de création d'une base de données PostgreSQL avec le jeu de caractères UTF8 */
 CREATE DATABASE db_countries ENCODING 'UTF8';
@@ -48,8 +48,6 @@ La base de données contiendra une table `pays` :
 > Le code d'un pays est au format ISO-3166. Chaque pays dispose d'un code unique à 2 caractères. 
 >
 > Voir le site [iso.org](https://www.iso.org/fr/iso-3166-country-codes.html) pour plus d'infos.
-
-> Validez votre travail avec vos formateurs avant de passer à la suite.
 
 
 ## Développer l'API
