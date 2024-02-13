@@ -43,15 +43,100 @@ Pour chaque session de vote, le système doit enregistrer :
 - Le nombre de tours de vote (1 ou 2).
 - Le nombre de représentants à élire.
 - l'identité des candidats (id, nom, prénom, slogan). 
-- le statut de la session de vote : à venir, active ou terminée
+- le statut de la session de vote : `à venir`, `active` ou `terminée`
 
-Note : Une session de vote avec le statut "terminée" ne peut être supprimée.
+Note : Une session de vote avec le statut `terminée` ne peut être supprimée.
 
+
+## Référentiel GIT
+
+Créer un dépôt GIT qui hébergera votre projet.
+
+Ce référentiel doit être synchronisé sur GitHub ou GitLab et être accessible en `public`.
 
 
 ## Base de données 
 
-Modéliser et créer la base de données relationnelle. 
+Créer la base de données relationnelle. 
+
+- Le nom de la base de données doit être: `db_votations`
+- La base de données utilise le jeu de caractères `UTF8`
+
+```sql
+/* Exemple de création d'une base de données MySQL avec le jeu de caractères UTF8 */
+
+CREATE DATABASE IF NOT EXISTS `db_votations` CHARACTER SET utf8mb COLLATE utf8mb4_unicode_ci;
+
+/* Exemple de création d'une base de données PostgreSQL avec le jeu de caractères UTF8 */
+CREATE DATABASE db_votations ENCODING 'UTF8';
+```
+
+Vous pouvez utiliser le modèle proposé ci-dessous ou la modéliser vous même.
+
+### Proposition de Modèle Conceptuel
+![votations_MCD](./db_votations_MCD.jpg)
+
+### Modèle logique associé
+![votations_MLD](./db_votations_MLD.jpg)
+
+
+## API 
+
+Une fois la base de données créée (sans les tables), développer l'API qui sera utilisée par le logiciel client.
+
+1. Créer le répertoire du projet et s'y positionner avec un terminal
+2. Créer un projet **Symfony** :  `composer create-project symfony/skeleton:"6.4.*" .`
+3. Installer **api-platform** : `composer require api`
+4. Installer **maker-bundle** : `composer require symfony/maker-bundle --dev`
+5. Créer les entités nécessaires 
+    - Tous les entités sont exposées dans l'API
+    - Les entités `candidats` et `sessions_vote` sont en lecture seule dans l'API (uniquement les opérations `GET` sont accessibles)
+    - L'entité `votes` expose les opérations `GET` et `POST` uniquement
+
+## Créer un jeu d'essai
+
+1. Ajouter 2 sessions de votes à 2 tours
+    - Session #1 : 2 tours et 3 représentants à élire 
+    - Session #2 : 1 tour et 2 représentants à élire
+2. Ajouter 10 candidats
+    - [Télécharger la liste des candidats et leur photos](./candidats.zip).
+    3. Associer les 10 candidats à la session de vote #1
+
+Votre base de données devrait contenir ces données (les slogans sont libres) : 
+
+![votations_DATA](./db_votations_DATA.jpg)
+
+## Le logiciel client 
+
+C'est la machine à voter. 
+
+**Fonctionnement :**
+
+La page d'accueil affiche la liste des sessions de votes dans un menu déroulant.
+
+![ui_votations_sessions](./ui_votations_sessions.jpg)
+
+L'application affiche la liste des candidats de la session sélectionnée.
+
+![ui_votations_home](./ui_votations_home.jpg)
+
+Un survol de la souris sur une photo affiche le nom du candidat dans le cadre de la photo : 
+
+![ui_votations_home_hover](./ui_votations_home_hover.jpg)
+
+L'utilisateur clique sur le bouton "Je vote"
+
+L'application affiche la liste des candidats dans un tableau
+
+![ui_votations_votes](./ui_votations_votes.jpg)
+
+Pour chaque candidat, l'utilisateur clique sur `Oui` ou `Non` pour exprimer son soutien ou pas.
+
+Tous les `Oui` sont enregistrés en base de données (les non sont ignorés).
+
+L'application affiche un message de remerciement.
+
+Au bout de 10 secondes, retour à l'étape 2.
 
 
 ## Le logiciel d'aministration 
@@ -62,7 +147,9 @@ Développer le logiciel permettant l'administration du système :
 2. Gestion des sessions de votes
 3. Export des résultats de vote au format JSON
 
-Le logiciel doit obligatoirement respecter l'architecture MVC.
+**Le logiciel doit obligatoirement respecter l'architecture MVC.**
+
+Vous proposerez une interface utilisateur sobre et intuitive.
 
 Fonctionnement au démarrage de l'application : 
 
@@ -78,26 +165,7 @@ Fonctionnement au démarrage de l'application :
 Une fois identifié, l'administrateur peut : 
 - Ajouter, modifier ou supprimer une session de vote 
 - Ajouter, modifier ou supprimer des candidats
-
-
-## API 
-
-Développer l'API qui sera utilisée par le logiciel client.
-
-
-## Le logiciel client 
-
-C'est la machine à voter. 
-
-Fonctionnement : 
-
-1. La page d'accueil affiche la liste des candidats de la session en cours.
-2. L'utilisateur clique sur un candidat pour exprimer son vote.
-3. Le logiciel demande confirmation du vote.
-4. L'utilisateur confirme.
-    - (Retour à l'étape 1 si l'utilisateur ne confirme pas).
-5. La machine afiche un message de remerciement.
-6. Au bout de 10 secondes, retour à l'étape 1.
+- Afficher les résultats des sessions de vote dont le statut est `terminée`.
 
 ---
 
