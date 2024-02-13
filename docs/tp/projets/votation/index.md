@@ -136,7 +136,7 @@ Tous les `Oui` sont enregistrés en base de données (les non sont ignorés).
 
 L'application affiche un message de remerciement.
 
-Au bout de 10 secondes, retour à l'étape 2.
+Au bout de 10 secondes, la liste des candidats est ré-affichée.
 
 
 ## Le logiciel d'aministration 
