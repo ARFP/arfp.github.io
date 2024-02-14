@@ -55,3 +55,6 @@ Vous utiliserez le jeu d'essai fourni dans le fichier [cities.json](./cities.jso
 3. Effectuer la migration pour mettre à jour la base de données
 4. Lancer l'application dans un navigateur
 5. Ajouter toutes les villes du [jeu d'essai fourni](./cities.json). *Ajouter les pays correspondant si nécessaire*.
+
+
+## Partie 2 : Développer les interfaces utilisateur 
