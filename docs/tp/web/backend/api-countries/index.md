@@ -58,7 +58,7 @@ Une fois terminée, Votre API devra correspondre à la capture suivante :
 
 ![swagger](./db_countries_swagger.jpg)
 
-**jeu d'essai**
+**Jeu d'essai**
 
 Vous utiliserez le jeu d'essai fourni dans le fichier [countries.json](./countries.json).
 
