@@ -32,9 +32,11 @@ La base de données contient déjà une entité `pays` à laquelle vous ajoutere
 - `1` pays situe `0 ou plusieurs` villes
 
 **Modèle Conceptutel**
+
 ![db_cities_MCD](./db_cities_MCD.jpg)
 
 **Modèle Logique**
+
 ![db_cities_MLD](./db_cities_MLD.jpg)
 
 
@@ -85,7 +87,14 @@ Implémenter le code `HTML`, `CSS` et `JS` pour que la page corresponde à la ca
 
 1. Les données sont chargées à partir de l'API (utilisez `VueJS` et `fetch` de Javascript).
 2. Les données sont affichées dans un tableau.
+    - Pour afficher les drapeaux de chaque pays, vous utiliserez une API publique : [https://flagsapi.com/](https://flagsapi.com/).
+    - Taille des drapeaux: 
+        - 32px dans le tableau
+        - 64px dans la fenêtre modale
 3. Un clic sur le bouton `Détails` affiche une fenêtre modale avec les informations du pays correspondant comme sur la capture suivante.
+
+
+
 
 ![ui2](./db_cities_ui1b.jpg)
 
