@@ -1,0 +1,97 @@
+[
+    {
+        "annee": 1950,
+        "population": 45684000,
+        "naissances": 862301
+    },
+    {
+        "annee": 1960,
+        "population": 45684000,
+        "naissances": 819819
+    },
+    {
+        "annee": 1970,
+        "population": 50772000,
+        "naissances": 850381
+    },
+    {
+        "annee": 1980,
+        "population": 53880000,
+        "naissances": 800376
+    },
+    {
+        "annee": 1990,
+        "population": 56709000,
+        "naissances": 762407
+    },
+    {
+        "annee": 2000,
+        "population": 59049000,
+        "naissances": 774782
+    },
+    {
+        "annee": 2005,
+        "population": 61182000,
+        "naissances": 774355
+    },
+    {
+        "annee": 2010,
+        "population": 62765000,
+        "naissances": 802224
+    },
+    {
+        "annee": 2012,
+        "population": 63375000,
+        "naissances": 821047
+    },
+    {
+        "annee": 2013,
+        "population": 63697000,
+        "naissances": 811510
+    },
+    {
+        "annee": 2014,
+        "population": 64028000,
+        "naissances": 811384
+    },
+    {
+        "annee": 2015,
+        "population": 64301000,
+        "naissances": 798948
+    },
+    {
+        "annee": 2016,
+        "population": 64469000,
+        "naissances": 783640
+    },
+    {
+        "annee": 2017,
+        "population": 64639000,
+        "naissances": 769553
+    },
+    {
+        "annee": 2018,
+        "population": 64844000,
+        "naissances": 758590
+    },
+    {
+        "annee": 2019,
+        "population": 65097000,
+        "naissances": 753383
+    },
+    {
+        "annee": 2020,
+        "population": 65629000,
+        "naissances": 735196
+    },
+    {
+        "annee": 2021,
+        "population": 65450000,
+        "naissances": 742052
+    },
+    {
+        "annee": 2022,
+        "population": 65647000,
+        "naissances": 723125
+    }
+]
