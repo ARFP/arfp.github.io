@@ -1,6 +1,6 @@
 ---
 title: "api-countries"
-serie: "backend"
+serie: "api"
 order: 11
 ---
 
