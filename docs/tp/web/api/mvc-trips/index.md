@@ -46,7 +46,7 @@ Le schéma ci-dessous représente les entités attendues :
 
 ## Gestion des personnes 
 
-La gestion des personnes et des trajets est gérée en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
+Les personnes sont gérées en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
 
 1. Ajouter un contrôleur `Personnes`
 2. Développer les vues et formulaires permettant de :
@@ -59,7 +59,7 @@ La gestion des personnes et des trajets est gérée en utilisant le modèle MVC.
 
 ## Gestion des trajets 
 
-La gestion des des trajets est gérée en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
+Les trajets sont gérés en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
 
 1. Ajouter un contrôleur `Trajets`
 2. Développer les vues et formulaires permettant de :
