@@ -1,0 +1,74 @@
+[
+    {
+        "id": 101,
+        "brand": "AMD",
+        "family": "Ryzen 3",
+        "model": "3200G",
+        "ghz": 3.6,
+        "price": 99
+    },
+    {
+        "id": 102,
+        "brand": "AMD",
+        "family": "Ryzen 5",
+        "model": "3600",
+        "ghz": 3.6,
+        "price": 129
+    },
+    {
+        "id": 103,
+        "brand": "AMD",
+        "family": "Ryzen 5",
+        "model": "5600G",
+        "ghz": 3.9,
+        "price": 149
+    },
+    {
+        "id": 104,
+        "brand": "AMD",
+        "family": "Ryzen 7",
+        "model": "5800X",
+        "ghz": 3.8,
+        "price": 249
+    },
+    {
+        "id": 105,
+        "brand": "AMD",
+        "family": "Ryzen 7",
+        "model": "7800X3D",
+        "ghz": 4.2,
+        "price": 499
+    },
+    {
+        "id": 201,
+        "brand": "INTEL",
+        "family": "Core i5",
+        "model": "13500",
+        "ghz": 2.5,
+        "price": 139
+    },
+    {
+        "id": 202,
+        "brand": "INTEL",
+        "family": "Core i5",
+        "model": "13600K",
+        "ghz": 3.5,
+        "price": 159
+    },
+    {
+        "id": 203,
+        "brand": "INTEL",
+        "family": "Core i7",
+        "model": "13700K",
+        "ghz": 3.4,
+        "price": 169
+    },
+    {
+        "id": 204,
+        "brand": "INTEL",
+        "family": "Core i7",
+        "model": "4790",
+        "ghz": 3.6,
+        "price": 79
+    }
+]
