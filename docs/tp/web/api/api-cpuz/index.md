@@ -137,7 +137,7 @@ Ajouter ensuite les 2 lignes de production du jeu d'essai : [productions.json](.
 
 Les lignes de production sont gérées en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
 
-1. Ajouter un contrôleur `Productions`
+1. Ajouter un contrôleur `ProductionsController`
 2. Développer les vues et formulaires permettant de :
     - Afficher la liste des lignes de productions.
     - Ajouter une nouvelle ligne de production.
