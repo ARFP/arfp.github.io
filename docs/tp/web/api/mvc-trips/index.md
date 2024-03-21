@@ -1,7 +1,7 @@
 ---
 title: "mvc-trips"
 serie: "api"
-order: 12
+order: 14
 ---
 
 ## PreRequis
@@ -48,7 +48,7 @@ Le schéma ci-dessous représente les entités attendues :
 
 Les personnes sont gérées en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
 
-1. Ajouter un contrôleur `Personnes`
+1. Ajouter un contrôleur `PersonnesController`
 2. Développer les vues et formulaires permettant de :
     - Afficher la liste des personnes.
     - Ajouter une personne.
@@ -61,7 +61,7 @@ Les personnes sont gérées en utilisant le modèle MVC. Vous êtes libre de pro
 
 Les trajets sont gérés en utilisant le modèle MVC. Vous êtes libre de proposer la mise en page de votre choix.
 
-1. Ajouter un contrôleur `Trajets`
+1. Ajouter un contrôleur `TrajetsController`
 2. Développer les vues et formulaires permettant de :
     - Afficher la liste des trajets.
     - Afficher les détails d'un trajet (villes, pays, et personnes associées).
@@ -71,6 +71,7 @@ Les trajets sont gérés en utilisant le modèle MVC. Vous êtes libre de propos
 
 
 **A noter :**
+
 - Il ne doit pas être possible de renseigner la date d'arrivée d'un trajet si aucun participant n'est associé à ce trajet.
 - Un trajet terminé (la date d'arrivée est renseignée) ne peut être ni modifié, ni supprimé.
 - Une personne participant à au moins 1 trajet ne peut-être supprimée.
