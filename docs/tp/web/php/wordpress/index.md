@@ -1,7 +1,7 @@
 ---
 title: "PHP: Wordpress"
 serie: "php"
-order: 21
+order: 20
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :
