@@ -1,13 +1,14 @@
 ---
 title: "Panier de fruits"
-order: 41
+order: 10
+serie: "modelisation"
 ---
 
 ## Partie 1
 
-Codez le diagramme de classes suivant dans le langage indiqué par votre formateur. 
+Codez le diagramme de classes suivant dans le langage indiqué par vos formateurs. 
 
-Respectez la typo. 
+/!\ Respectez la typo. 
 
 ---
 

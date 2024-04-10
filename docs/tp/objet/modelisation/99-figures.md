@@ -1,6 +1,6 @@
 ---
-title: "Figures"
-serie: "retroconception"
+title: "Rétroconception"
+serie: "modelisation"
 order: 51
 ---
 
