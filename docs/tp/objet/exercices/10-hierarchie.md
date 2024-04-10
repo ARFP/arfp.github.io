@@ -1,6 +1,6 @@
 ---
 title: "Hiérarchie d'objets"
-order: 10
+order: 3
 ---
 
 ## La relation de généralisation/spécialisation

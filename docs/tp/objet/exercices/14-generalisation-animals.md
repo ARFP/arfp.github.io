@@ -1,6 +1,6 @@
 ---
 title: "Hiérarchie d'objets 2"
-order: 11
+order: 5
 ---
 
 ## Consignes
@@ -8,6 +8,10 @@ order: 11
 1. Représentez le diagramme de classe correspondant à la description ci-dessous.
 2. Validez votre diagramme avec votre formateur.
 3. Codez la solution dans le langage indiqué par votre formateur.
+    - Créer un animal de chaque espèce
+    - Faites le manger
+    - Faites le se déplacer
+    - Si l'animal peut crier, faites le crier (le chien aboit, le chat miaule etc...)
 
 ## Contexte
 

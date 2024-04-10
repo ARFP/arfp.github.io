@@ -1,6 +1,7 @@
 ---
 title: "Bus"
-order: 22
+order: 6
+serie: "modelisation"
 ---
 
 

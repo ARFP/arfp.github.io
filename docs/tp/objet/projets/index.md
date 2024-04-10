@@ -1,7 +1,8 @@
 ---
 title: "Projets"
 serie: "projets"
-index: 3
+index: 4
+level: 5
 ---
 
 Petits projets pour monter en compétence en POO.
