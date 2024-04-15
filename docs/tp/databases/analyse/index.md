@@ -1,5 +1,5 @@
 ---
-title: "Merise"
+title: "Analyse"
 serie: "merise"
 index: 1
 ---
