@@ -1,7 +1,7 @@
 ---
-title: "Fan de Rock"
+title: "Concours de menuiserie"
 serie: "modelisation"
-order: 1
+order: 7
 ---
 
 Exercice de modélisation de base de données relationnelle.
@@ -12,7 +12,6 @@ Exercice de modélisation de base de données relationnelle.
 - Formaliser le dictionnaire des données
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
-- Réaliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
 - Créer un jeu d'essai cohérent
 

@@ -12,7 +12,6 @@ Exercice de modélisation de base de données relationnelle.
 - Formaliser le dictionnaire des données
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
-- Réaliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
 - Créer un jeu d'essai cohérent
 
@@ -131,8 +130,10 @@ Créer un fichier SQL contenant les requêtes suivantes :
 
 1. Afficher toutes les informations des soldats triés par âge (le plus jeune aparait en 1er).
 
-2. Le soldat N°2 refait le parcours et obtient les mêmes notes sauf pour les 3 derniers obstacles où il obtient respectivement les notes : **9**, **8** et **11**.
+2. Afficher toutes les informations des obstacles triés par difficulté (le plus difficile aparait en 1er).
 
-3. Certains soldats ont déjà fait le parcours. Pour certains des obstacles, ils n'ont pas atteint la note minimum. Afficher tous les obstacles que les soldats doivent repasser pour tenter d'améliorer leur note. Le résultat doit afficher : le nom de l'obstacle, la note minimale pour l'obstacle, le grade, nom et prénom du soldat ainsi que la meilleure note obtenue sur cet obstacle. (*Attention, la requête est plus difficile qu'elle n'y parait*).
+3. Le soldat N°2 refait le parcours et obtient les mêmes notes sauf pour les 3 derniers obstacles où il obtient respectivement les notes : **9**, **8** et **11**.
+
+4. Certains soldats ont déjà fait le parcours. Pour certains des obstacles, ils n'ont pas atteint la note minimum. Afficher tous les obstacles que les soldats doivent repasser pour tenter d'améliorer leur note. Le résultat doit afficher : le nom de l'obstacle, la note minimale pour l'obstacle, le grade, nom et prénom du soldat ainsi que sa meilleure note obtenue sur cet obstacle. (*Attention, la requête est plus difficile qu'elle n'y parait*).
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 
