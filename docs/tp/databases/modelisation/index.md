@@ -1,7 +1,7 @@
 ---
-title: "Projets"
-serie: "projets"
-index: 10
+title: "Modélisation"
+serie: "modelisation"
+index: 2
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :
@@ -11,9 +11,6 @@ Cette série d’exercices peut être réalisée dans les contextes suivants :
 - Construire un modèle conceptuel des données (MCD).
 - Transformer un modèle conceptuel en modèle logique (MLD).
 - Transformer un modèle logique en modèle physique (MPD).
-- Créer et utiliser une base de données relationnelle.
-- Manipuler une base de données avec le langage SQL.
-- Exécuter des requêtes SQL.
-- Développer des composants SQL (Procédures stockées, Déclencheurs).
+- Exécuter des requêtes SQL simples.
 
 Vous vous aiderez des supports d'apprentissage fournis par vos formateurs.

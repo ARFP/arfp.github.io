@@ -1,8 +1,8 @@
 ---
 title: "Vidéos"
 module: "databases"
-serie: "merise"
-order: 10
+serie: "analyse"
+order: 12
 ---
 
 Exercice de modélisation de base de données relationnelle.
