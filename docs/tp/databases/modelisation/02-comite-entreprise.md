@@ -1,7 +1,7 @@
 ---
 title: "Comité d'entreprise"
 serie: "modelisation"
-order: 1
+order: 2
 ---
 
 Exercice de modélisation de base de données relationnelle.

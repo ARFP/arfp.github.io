@@ -1,7 +1,7 @@
 ---
 title: "Parcours du combattant"
 serie: "modelisation"
-order: 5
+order: 6
 ---
 
 Exercice de modélisation de base de données relationnelle.

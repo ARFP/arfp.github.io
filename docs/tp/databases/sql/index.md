@@ -1,7 +1,7 @@
 ---
 title: "Langage SQL"
 serie: "sql"
-index: 3
+index: 4
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

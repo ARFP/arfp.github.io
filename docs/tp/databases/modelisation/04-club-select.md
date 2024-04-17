@@ -1,7 +1,7 @@
 ---
 title: "Club Select"
 serie: "modelisation"
-order: 3
+order: 4
 ---
 
 Exercice de modélisation de base de données relationnelle.

@@ -1,7 +1,7 @@
 ---
 title: "Ticket de caisse"
 serie: "modelisation"
-order: 6
+order: 7
 ---
 
 Exercice de modélisation de base de données relationnelle.
@@ -17,9 +17,10 @@ Exercice de modélisation de base de données relationnelle.
 
 ## Contexte 
 
-Au café : établir le modèle conceptuel des données correspondant aux données qui apparaissent sur le ticket de caisse d’un café.
+Au café : nous souhaitons enregistrer les données qui apparaissent sur le ticket de caisse d’un café.
 
 **Liste des données à enregistrer :**
+
 1. identifiant du serveur
 2. nom du serveur
 3. numéro de table
