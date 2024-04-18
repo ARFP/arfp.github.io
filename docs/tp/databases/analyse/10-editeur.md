@@ -1,7 +1,7 @@
 ---
 title: "Éditeur"
 module: "databases"
-serie: "merise"
+serie: "analyse"
 order: 10
 ---
 

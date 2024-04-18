@@ -1,7 +1,7 @@
 ---
 title: "Plages"
 module: "databases"
-serie: "merise"
+serie: "analyse"
 order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Bibliothèque"
 module: "databases"
-serie: "merise"
+serie: "analyse"
 order: 2
 ---
 

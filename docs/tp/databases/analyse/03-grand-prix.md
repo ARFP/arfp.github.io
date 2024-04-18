@@ -1,7 +1,7 @@
 ---
 title: "Grand-Prix"
 module: "databases"
-serie: "merise"
+serie: "analyse"
 order: 3
 ---
 

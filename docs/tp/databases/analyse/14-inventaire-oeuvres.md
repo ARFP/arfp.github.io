@@ -1,8 +1,8 @@
 ---
 title: "Inventaire des œuvres d'art"
 module: "databases"
-serie: "merise"
-order: 13
+serie: "analyse"
+order: 14
 ---
 
 Exercice de modélisation de base de données relationnelle.

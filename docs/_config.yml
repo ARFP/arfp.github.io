@@ -52,9 +52,9 @@ defaults:
       serie: "exercices"
   -
     scope:
-      path: "tp/algo"
+      path: "tp/algorithmes"
     values:
-      module: "algo"
+      module: "algorithmes"
   -
     scope:
       path: "tp/databases"
@@ -62,14 +62,14 @@ defaults:
       module: "databases"
   -
     scope:
-      path: "tp/objet"
+      path: "tp/poo"
     values:
-      module: "objet"
+      module: "poo"
   -
     scope:
-      path: "tp/projet-pro"
+      path: "tp/projet-professionnel"
     values:
-      module: "projet-pro"
+      module: "projet-professionnel"
   -
     scope:
       path: "tp/projets"
