@@ -10,8 +10,8 @@ order: 5
 3. Codez la solution dans le langage indiqué par votre formateur.
     - Créer un animal de chaque espèce
     - Faites le manger
-    - Faites le se déplacer
-    - Si l'animal peut crier, faites le crier (le chien aboit, le chat miaule etc...)
+    - Faites le se déplacer 3 fois
+    - Si l'animal peut crier, faites le crier 1 fois (le chien aboit, le chat miaule etc...)
 
 ## Contexte
 

@@ -1,8 +1,8 @@
 ---
 title: "Aéroport"
 module: "databases"
-serie: "merise"
-order: 12
+serie: "analyse"
+order: 13
 ---
 
 Exercice de modélisation de base de données relationnelle.

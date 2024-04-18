@@ -1,7 +1,7 @@
 ---
 title: "Courses de chevaux"
 module: "databases"
-serie: "merise"
+serie: "analyse"
 order: 11
 ---
 
