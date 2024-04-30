@@ -1,6 +1,7 @@
 ---
-title: "Exercices ABC"
-index: 10
+title: "Exercices DWWM/CDA"
+index: 20
+serie: "exercices2"
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

@@ -1,7 +1,7 @@
 ---
 title: "Tableaux #1"
 level: 4
-order: 7
+order: 4
 ---
 
 # Partie 4

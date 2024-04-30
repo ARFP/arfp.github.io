@@ -1,7 +1,8 @@
 ---
 title: "Les conditions  #2"
 level: 4
-order: 3
+order: 2
+serie: "exercices2"
 ---
 
 # Partie 2a

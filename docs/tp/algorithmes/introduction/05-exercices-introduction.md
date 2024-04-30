@@ -1,12 +1,13 @@
 ---
 title: "Exercices d'introduction"
 level: 4
-order: 1
+order: 5
+serie: "introduction"
 ---
 
 # Partie 1 
 
-Cette partie vous permettra de mettre en pratique les notions suivantes : 
+Ctte série d'exercices d'introduction vous permettra de mettre en pratique les notions suivantes : 
 - Les variables
 - Les chaines de caractères
 - Les calculs mathématiques simples 
@@ -47,8 +48,17 @@ Appuyez sur une touche pour quitter.
 ## Exercice 1.4 : Calcul de l’aire et du volume d’une sphère
 
 Lire le rayon `R` d'une sphère puis calculer et afficher :
-- Son aire = 	`4 π R²`
-- Son volume =	`(4 π R³)/3`
+- L'aire de la sphère = `4 π R²`
+- Le volume de la sphère = `(4 π R³)/3`
+
+Exemple de fonctionnement du programme en mode Console :
+
+```
+Veuillez saisir un rayon : 42 
+L'aire de la sphère est : 22167.0778
+Le volume de la sphère est : 310181.76
+Appuyez sur une touche pour quitter.
+```
 
 ## Exercice 1.5 : Calcul de la surface d’un secteur circulaire
 

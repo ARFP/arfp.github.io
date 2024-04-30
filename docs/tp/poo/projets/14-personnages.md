@@ -17,28 +17,63 @@ Lorsque vous avez terminé le projet en mode « console », vous pouvez envi
 
 ## CONTEXTE 
 
-Dans un petit jeu, 2 joueurs s'affrontent dans un duel de cartes. 
+Monsieur Takatoukitaï, Geek accompli, vous demande de réaliser un programme de simulation pour son prochain jeu : **Highglandeur, le dernier survivant**. Il souhaite positionner un certain nombre de personnages aux caractéristiques définies dans une "arène" et leur faire accomplir certaines actions (se nourrir, combattre, se soigner…).
+
+Votre mission (et vous l’acceptez) : lui concevoir un programme qui fera la chose suivante :
+
+> Je devrai pouvoir mettre des personnages et des plantes dans mon arène virtuelle, et faire passer le temps pour savoir si tout se passe bien. Au bout d'un certain temps, il ne devrait rester qu'un personnage dans l'arène (le dernier survivant). Parfois, il peut arriver qu'aucun personnage ne survit...
+
+Traduit en langage technique, cela signifie qu’il faudra un programme en deux phases :
+
+1. L’initialisation : au démarrage, les personnages et les plantes sont ajoutés dans l'arène.
+2. Le temps qui passe : on résout les actions d’un tour, et on fait un rapport de la situation.
 
 
-## Partie 1 : Les personnages du jeu
+## Partie 1 : L'arène
 
-Le jeu propose des cartes à jouer représentant des personnages fictifs.
+Dans cette 1ère partie, vous vous concentrerez sur la création de l'arène et le placement des personnages et plantes dans l'arène ainsi créée.
+
+### Exercice 1.1 : Concevoir l'arène 
+
+L'arène est représentée par un tableau à 2 dimensions où chaque "case" représente les coordonnées d'un emplacement dans l'arène.
+
+La taille de l'arène est de 8x8 cases.
+
+Dans chaque case il pourra y avoir :
+- Soit un personnage, représenté par un objet de type `Personnage`
+- Soit une plante, représenté par un objet de type `Plante`
+- Soit rien (représenté par la valeur `NULL`). 
+
+Initialiser l'arène avec toutes les cases "vides".
+
+### Exercice 1.2 : Peupler l'arène avec de la végétation
+
+Une plante peut-être une algue ou un cactus.
+- Une algue possède 10 points de vie et peut éventuellement être toxique
+    - La toxicité est déterminée au hasard à la naissance de l'algue.
+- Un cactus possède 5 points de vie est et toujours toxique
+
+Au démarrage du programme, placer aléatoirement dans l'arène : 
+- 30 plantes (15 algues et 15 cactus)
+
+> Rappel: les cases vides possèdent la valeur `NULL`.
+
+### Exercice 1.2 : Les personnages entrent dans l'arène
 
 Un personnage possède les caractéristiques suivantes :
 
 | Attribut | Signification | Type | Remarques
 | --- | --- | --- | --- |
 | nom | Nom du personnage | string | Obligatoire, unique |
-| puissance | Puissance d'attaque | int | Obligatoire, supérieur à 2 |
-| defense | Résistance aux attaques | int | Obligatoire, supérieur à 2 |
-| pouvoir | Description du pouvoir | string | Obligatoire |
-
-***La somme de la puissance et de la defense doit être strictement égale à 12.***
+| pv | Points de vie du personnage | int | Obligatoire |
+| pvMax | Points de vie maximum du personnage | int | Obligatoire, strictement égal à 10, non modifiable |
+| puissance | Puissance du personnage | int | Obligatoire, valeur comprise entre 2 et 10 |
+| pouvoir | Pouvoir du personnage | string | Obligatoire, unique |
 
 ### Exercie 1.1
 
 1. Modéliser les éléments ci-dessus dans un diagramme de classes UML.
-2. Représentez les 10 cartes ci-dessous dans un programme simple. 
+2. Ajouter les 10 personnages ci-dessous dans un programme simple. 
 
 | Nom | Puissance | Défense | Pouvoir |
 | --- | --- | --- | --- |

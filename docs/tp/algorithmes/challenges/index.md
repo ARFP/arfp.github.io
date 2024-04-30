@@ -1,7 +1,7 @@
 ---
 title: "Challenges"
 serie: "challenge"
-index: 20
+index: 30
 ---
 
-Travaux pratiques et études de cas.
+Travaux pratiques et études de cas complexes.

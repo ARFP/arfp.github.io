@@ -1,7 +1,7 @@
 ---
 title: "Les Boucles  #1"
 level: 4
-order: 4
+order: 3
 ---
 
 # Partie 3
