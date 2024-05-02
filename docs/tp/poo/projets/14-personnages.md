@@ -1,5 +1,5 @@
 ---
-title: "Mini Jeu de cartes"
+title: "L'arène"
 serie: "projets"
 order: 51
 ---
@@ -17,7 +17,7 @@ Lorsque vous avez terminé le projet en mode « console », vous pouvez envi
 
 ## CONTEXTE 
 
-Monsieur Takatoukitaï, Geek accompli, vous demande de réaliser un programme de simulation pour son prochain jeu : **Highglandeur, le dernier survivant**. Il souhaite positionner un certain nombre de personnages aux caractéristiques définies dans une "arène" et leur faire accomplir certaines actions (se nourrir, combattre, se soigner…).
+Monsieur Takatoukitaï, Geek accompli, vous demande de réaliser un programme de simulation pour son prochain jeu : **HighGlandeur, le dernier survivant**. Il souhaite positionner un certain nombre de personnages aux caractéristiques définies dans une "arène" et leur faire accomplir certaines actions (se nourrir, combattre, se soigner…).
 
 Votre mission (et vous l’acceptez) : lui concevoir un programme qui fera la chose suivante :
 
@@ -35,213 +35,167 @@ Dans cette 1ère partie, vous vous concentrerez sur la création de l'arène et 
 
 ### Exercice 1.1 : Concevoir l'arène 
 
-L'arène est représentée par un tableau à 2 dimensions où chaque "case" représente les coordonnées d'un emplacement dans l'arène.
+L'arène est représentée par un objet contenant un tableau à 2 dimensions où chaque "case" représente les coordonnées d'un emplacement dans l'arène.
 
 La taille de l'arène est de 8x8 cases.
+
+**Représentation de l'arène 8x8 cases :** 
+
+| \ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **0** | X | X | X | X | X | X | X | X |
+| **1** | X | X | X | X | X | X | X | X |
+| **2** | X | X | X | X | X | X | X | X |
+| **3** | X | X | X | X | X | X | X | X |
+| **4** | X | X | X | X | X | X | X | X |
+| **5** | X | X | X | X | X | X | X | X |
+| **6** | X | X | X | X | X | X | X | X |
+| **7** | X | X | X | X | X | X | X | X |
+
+*Chaque **X** représente un emplacement de l'arène*
 
 Dans chaque case il pourra y avoir :
 - Soit un personnage, représenté par un objet de type `Personnage`
 - Soit une plante, représenté par un objet de type `Plante`
 - Soit rien (représenté par la valeur `NULL`). 
 
-Initialiser l'arène avec toutes les cases "vides".
+**Modéliser les éléments ci-dessus dans un diagramme de classes UML.**
 
-### Exercice 1.2 : Peupler l'arène avec de la végétation
+Au démarrage du programme, initialiser l'arène avec toutes les cases "vides".
 
-Une plante peut-être une algue ou un cactus.
-- Une algue possède 10 points de vie et peut éventuellement être toxique
-    - La toxicité est déterminée au hasard à la naissance de l'algue.
-- Un cactus possède 5 points de vie est et toujours toxique
+### Exercice 1.2 : Peupler l'arène avec de la végétation 
 
-Au démarrage du programme, placer aléatoirement dans l'arène : 
-- 30 plantes (15 algues et 15 cactus)
+Il s'agit de la base du programme, avoir une arène avec un peu de végétation.
+
+Une plante possède **8** points de vie et peut-être une **fougère** ou un **cactus**.
+
+- Un cactus est toujours toxique
+- Une fougère peut éventuellement être toxique
+    - Au moment de sa création, une fougère a *1 chance sur 3* d'être toxique.
+
+**Ajouter les éléments ci-dessus dans votre diagramme de classes UML.**
+
+Après initialisation de l'arène, y placer aléatoirement : 
+
+- 15 fougères
+- 15 cactus
+
+> Info : il ne peut y avoir 2 objets dans la même case !
 
 > Rappel: les cases vides possèdent la valeur `NULL`.
 
-### Exercice 1.2 : Les personnages entrent dans l'arène
 
-Un personnage possède les caractéristiques suivantes :
+### Exercice 1.3 : La reproduction végétale 
+
+Les plantes sont des êtres vivants pleines de ressources !
+
+A chaque tour de jeu, les évènements suivants sont réalisés :
+- Chaque plante perd 1 point de vie.
+- Lorsque'une plante arrive à **4** points de vie :
+    - La plante regagne **3** points de vie et se clone.
+    - Le clone est placé aléatoirement dans une case vide de l'arène.
+
+> La toxicité d'une fougère clonée est identique à son parent (la plante mère).
+
+## Partie 2 : Les personnages entrent dans l'arène
+
+Dans cette partie, vous vous concentrerez sur les personnages ainsi que les actions qu'ils auront à réaliser.
+
+### Exercice 2.1 : 
+
+Ajoutons maintenant quelques personnages dans notre arène. Un personnage possède les caractéristiques suivantes :
 
 | Attribut | Signification | Type | Remarques
 | --- | --- | --- | --- |
 | nom | Nom du personnage | string | Obligatoire, unique |
-| pv | Points de vie du personnage | int | Obligatoire |
+| pv | Points de vie actuels du personnage | int | Obligatoire |
 | pvMax | Points de vie maximum du personnage | int | Obligatoire, strictement égal à 10, non modifiable |
 | puissance | Puissance du personnage | int | Obligatoire, valeur comprise entre 2 et 10 |
-| pouvoir | Pouvoir du personnage | string | Obligatoire, unique |
-
-### Exercie 1.1
-
-1. Modéliser les éléments ci-dessus dans un diagramme de classes UML.
-2. Ajouter les 10 personnages ci-dessous dans un programme simple. 
-
-| Nom | Puissance | Défense | Pouvoir |
-| --- | --- | --- | --- |
-| Ricko | 6 | 6 | Manger une pomme | 
-| Mike | 5 | 7 | Cuire un oeuf |
-| Mario | 7 | 5 | Réparer sa voiture | 
-| Zeldu | 4 | 8 | Chercher son Arc |
-| Chief | 8 | 4 | Éplucher une patate |
-| Snake | 3 | 9 | Parler aux serpents |
-| Freeman | 9 | 3 | Écrire une nouvelle loi |
-| Bellic | 6 | 6 | Chercher un ami |
-| Drake | 7 | 5 | Boire un verre d'eau |
-| Peach | 8 | 4 | Lire la doc SQL |
-
-Au démarrage le programme affiche un résumé : 
-
-- Le nom et le pouvoir des 10 cartes.
-
-### Exercice 1.2 
-
-Les personnages ont des spécificités et possèdent désormais d'autres caractérisques.
-
-Un personnage appartient à une famille (Paladin, Mage, Gardien, Sage ou Corsaire).
-
-Une famille manipule un élément (eau, air, feu, terre). 
-
-1. Prenez en compte ces nouveaux éléments dans votre diagramme de classes.
-2. Ajouter les 4 éléments : Air, Eau, Feu, Terre.
-3. Ajouter les 5 familles de personnages ci-dessous.
-
-| Famille | Description | Élément |
-| --- | --- | --- |
-| Corsaire | Les mercenaires | Eau |
-| Gardien | Les gardes royaux  | Terre |
-| Mage | Les magiciens | Feu |
-| Paladin | Les protecteurs des cités | Terre |
-| Sage | Les érudits | Air |
-
-La famille d'un personnage est déterminé à partir de sa puissance.
-- Gardien : Puissance inférieure à 5
-- Sage : Puissance égale à 5
-- Paladin : Puissance égale à 6
-- Corsaire : Puissance égale à 7
-- Mage : Puissance supérieure à 7
-
-Au démarrage le programme affiche un résumé plus complet : 
-
-- La famille, l'élément, le nom et le pouvoir des 10 cartes.
+| pouvoir | Pouvoir du personnage | string | Obligatoire, unique | 
 
 
-## Partie 2 : Les acteurs du jeu 
+**Ajouter ces nouvelles informations dans votre diagramme de classes UML.**
 
-Les cartes étant maintenant disponibles, nous pouvons les relier à nos joueurs. 
+**Créer et ajouter les 10 personnages ci-dessous dans l'arène.** (tous les personnages commencent avec leurs points de vie au maximum et sont placés au hasard dans l'arène).
 
-- Un personnage peut-être possédé par plusieurs joueurs.
-- Un exemplaire d'un personnage possédé par un joueur = une carte.
+> Rappel : il ne peut y avoir 2 objets dans la même case ! Si une case est déjà occupée, placer l'objet courant au hasard dans une autre case !
 
-**Un joueur :**
-- Est identifié par un pseudo et on connait sa date de naissance.
-- Possède au moins 5 cartes pour pouvoir jouer, mais aucun personnage en double.
+| Nom | Puissance |  Pouvoir |
+| --- | --- |  --- |
+| Ricko | 6 |  Mange une pomme | 
+| Mike | 5 |  Cuit un oeuf |
+| Mario | 7 |  Répare sa voiture | 
+| Zeldu | 4 |  Cherche son Arc |
+| Chief | 8 |  Épluche une patate |
+| Snake | 3 |  Parle aux serpents |
+| Freeman | 9 |  Écrit une nouvelle loi |
+| Bellic | 6 |  Cherche un ami |
+| Drake | 7 |  Boit un verre d'eau |
+| Peach | 8 |  Lit la doc SQL |
 
-### Exercice 2.1 
+### Exercice 2.2 : les déplacements
 
-Prenez en compte ces nouveaux éléments dans votre diagramme de classes.
+A chaque tour de jeu, après avoir réalisé les actions des plantes, chaque personnage se déplace aléatoirement dans une autre case de l'arène.
 
-Au démarrage du programme : 
+A chaque déplacement, un personnage peut atterir dans une case vide ou occupée.
 
-1. Le joueur indique son pseudo et sa date de naissance.
-2. Le joueur sélectionne 5 cartes parmi les 10 disponibles.
-3. Le programme affiche le résumé de l'exercice 1.2.
-4. Le programme affiche le pseudo et l'âge du joueur.
-5. Le programme affiche les noms des cartes possédées par le joueur.
+**Si la case de destination est vide :**
 
-### Exercice 2.2
+- Le personnage se positionne dans la case et il ne se passe rien d'autre.
 
-Le joueur seul n'a personne contre qui s'affronter en duel. Il est temps de développer une petite IA.
+**Si la case contient une plante :** 
 
-L'IA est en fait un joueur contrôlé par le programme. Il suffit donc de créer une instance spécifique pour ce joueur virtuel.
+- Si la plante est toxique, le personnage perd 1 point de vie.
+- Si la plante est non-toxique, le personnage regagne 1 point de vie sans pouvoir dépasser le nombre de point de vie maximum (pvMax = 10) et la plante perd 1 point de vie.
 
-Au démarrage du programme : 
+Le personnage est ensuite redirigé vers une case innocupée. 
 
-1. Les étapes de l'exercice précédent sont réalisées
-2. Un joueur IA est créé avec le pseudo "Toto" et la date de naissance "2000-01-01".
-3. 5 cartes au hasard parmi les 10 disponibles sont attribuées au joueur IA.
+**Si la case de destination est occupée par un autre personnage**
 
-Le programme ne révèle pas les cartes attribuées à l'IA.
-
-
-## Partie 3 : Le duel 
-
-Nos joueurs sont prêt à s'affronter ! 
-
-- Une partie de jeu est composée de 4 tours.
-- Au début d'une partie, chaque joueur possède :
-    - 12 points de vie (PV).
-    - 12 étoiles (STAR).
-- A l'issue des 4 tours de jeu (ou avant si l'un des joueurs n'a plus de PV), un gagnant est désigné.
-
-### Exercice 3.1 
-
-Modélisez et implémentez la partie de jeu.
-
-***Déroulement d'un tour de jeu :***
-1. Le joueur 1 sélectionne une de ses 5 cartes et un nombre d'étoiles
-2. Le joueur 2 sélectionne une de ses 5 cartes et un nombre d'étoiles
-3. Les 2 cartes sont comparées :
-    - ***Attaque*** = ( `1` + `Puissance` * `Nombre d'étoiles` )
-    - Celle qui possède le plus d'***Attaque*** gagne le tour.
-4. Le joueur perdant le tour perd des PV :
-    - ***Perte de PV*** = ( `2` + abs( `Puissance adversaire` - `Armure Joueur perdant` ))
-5. Si le joueur perdant a moins de 1 PV, le partie se termine.
-6. Les étoiles sélectionnées ne sont plus disponibles pour cette partie.
-7. Les cartes sélectionnées ne sont plus disponibles pour cette partie.
-8. Le joueur 1 devient le joueur 2 et inversement.
-9. Fin du tour de jeu
-
-***Fin de partie***
-
-Le joueur possédant le plus de PV en fin de partie a gagné !
+- Un combat se déroule, le personnage possédant le plus de puissance gagne le combat, invoque son pouvoir et fait perdre 2 points de vie à son adversaire.
+- Le perdant est ensuite ejecté de la case actuelle ce qui produit un déplacement vers une case vide.
+- Le gagnant prend place dans la case.
 
 
-### Exercice 3.2
 
-A la fin d'une partie, proposer ces 3 options : 
-- Arrêter et retourner au début du programme.
-- Recommencer une partie contre le même joueur IA.
-- Recommencer une partie contre un nouveau Joueur IA (qui possèdera d'autres cartes).
 
-### Exercice 3.3
+## Partie 3
 
-Il est contraignant de devoir repasser par toutes les étapes de sélection au début du programme. 
+Il peut être contraignant de devoir repasser par toutes les étapes au début du programme. 
 
-Notre joueur souhaiterait pouvoir retrouver ses personnages lorsque qu'il relance le jeu après l'avoir fermé.
+### Exercice 3.1 : La sauvagarde unique
 
-Il pourrait être une bonne idée de sauvegarder les informations d'un joueur lorsqu'il a terminé sa sélection de personnage après avoir entré son pseudo et date de naissance.
+Notre joueur souhaiterait pouvoir retrouver l'état actuel d'une partie dans le cas où il aurait fermé le programme avant qu'il ne soit terminé.
 
-Sauvegardez ces informations dans un fichier `joueurs.json` qui sera chargé automatiquement au lancement du programme.
+Il pourrait être une bonne idée de sauvegarder les informations d'une partie à la fin de chaque tour de jeu..
 
-### Exercice 3.4
+Sauvegardez ces informations dans un fichier `arene.json` qui sera chargé automatiquement au lancement du programme.
 
-Cependant, si un autre joueur lance le jeu, il sera "identifié". 
+### Exercice 3.2 : Les multiples sauvegardes
 
-Au lancement du programme : 
+Cependant, si un autre joueur lance le jeu, il souhaitera peut-être démarrer une nouvelle partie sans toutefois écraser la sauvegarde existante. 
+
+Un joueur devra désormais s'identifier avant de lancer une partie. Le fichier de sauvegarde se nommera désormais `arene-pseudo.json` où `pseudo` est le pseudonyme du joueur.
+
+Par exemple, la sauvegarde du joueur dont le pseudonyme est `toto` se fera dans un fichier nommé `arene-toto.json`.
+
+Au lancement du programme :
+
 1. Le joueur entre un pseudo
-2. S'il existe déjà dans la sauvegarde, le joueur correspondant est chargé (date de naissance + cartes)
-3. Sinon, procéder à la création du nouveau joueur.
+2. S'il existe déjà une sauvegarde à son nom, proposer : 
+     - de charger la partie sauvegardée 
+     - ou de démarrer une nouvelle partie
 
 
-## Partie 4 : Autant tout mettre en JSON
+### Exercice 3.3 : Les multiples sauvegardes temporelles
 
-Maintenant que vous savez sauvegarder les joueurs, exporter les données du jeu peut-être une bonne idée.
+Proposer une solution pour que chaque joueur puisse sauvagarder plusieurs parties à son nom.
 
+### Exercice 3.4 : Et la confidentialité la dedans ?
 
-### Exercice 4.1 
+Des joueurs se plaignent, si un joueur connait le pseudonyme d'un autre joueur, il peut charger ses parties et interférer avec ses sauvegardes !
 
-Exporter les données du jeu (personnages, familles, éléments) dans un fichier `personnages.json` qui sera chargé au lancement du programme. Ceci permettra d'éditer les personnages sans devoir recompiler le programme.
-
-### Exercice 4.2 
-
-Chaque partie terminée sera également sauvegardée dans un fichier `parties.json`.
-
-Pour chaque partie, on sauvegarde :
-- La date et l'heure de début de partie.
-- La date et l'heure de fin de partie.
-- L'issue des 4 tours (cartes et étoiles sélectionnées, état des 2 joueurs).
-- Le pseudo du gagnant de la partie.
-
-Au démarrage du programme, et ce, pour chaque joueur, on affiche désormais son nombre de victoires.
+Proposer une solution pour sécuriser l'accès !
 
 --- 
 
