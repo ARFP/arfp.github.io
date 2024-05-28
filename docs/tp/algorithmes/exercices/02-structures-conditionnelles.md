@@ -1,5 +1,5 @@
 ---
-title: "Les conditions #1"
+title: "Structures conditionnelles"
 level: 4
 order: 2
 ---
