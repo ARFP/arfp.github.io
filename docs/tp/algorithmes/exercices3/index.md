@@ -1,5 +1,5 @@
 ---
-title: "Challenges"
+title: "Exercices++"
 serie: "challenge"
 index: 30
 ---

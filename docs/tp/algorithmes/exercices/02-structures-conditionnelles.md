@@ -55,7 +55,30 @@ Un magasin proposant un service de Réprographie facture 0.10€ les 10 premièr
 
 Écrire l'algorithme qui demande à l'utilisateur de saisir le nombre de photocopies effectuées et affiche le montant de la facture correspondante.
 
-## Exercie 2.6 : Élections
+## Exercice 2.6 : Bisextille
+
+Ecrire un algorithme qui détermine si une année est bissextile. 
+
+Les années bissextiles sont :
+- les années divisibles par 4 mais non divisibles par 100
+- les années divisibles par 400.
+
+## Exercice 2.7 : Validité d'une date
+
+Écrivez un algorithme qui demande à l'utilisateur de saisir 3 nombres entiers
+
+1. Un numéro de jour
+2. Un numéro de mois
+3. Un numéro d'année
+
+L'algorithme indique ensuite s'il s'agit ou non d'une date valide.
+
+Il n'est sans doute pas inutile de rappeler que le mois de février compte 28 jours, sauf si l’année est bissextile, auquel cas il en compte 29. 
+
+L’année est bissextile si elle est divisible par quatre. Toutefois, les années divisibles par 100 ne sont pas bissextiles, mais les années divisibles par 400 le sont. **Ouf** !
+
+
+## Exercie 2.8 : Élections
 
 Les élections législatives, en Guignolerie Septentrionale, obéissent à la règle suivante :
 - Lorsque l'un des candidats obtient plus de 50% des suffrages, il est élu dès le premier tour.
@@ -65,7 +88,7 @@ Vous devez écrire un algorithme qui permet la saisie des scores de quatre candi
 
 Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il dira s'il est élu, battu, s'il se trouve en ballottage favorable (il participe au second tour en étant arrivé en tête à l'issue du premier tour) ou défavorable (il participe au second tour sans avoir été en tête au premier tour).
 
-## Exercice 2.7 : Tarif Assurance
+## Exercice 2.9 : Tarif Assurance
 
 Une compagnie d'assurance automobile propose à ses clients quatre familles de tarifs identifiables par une 
 couleur, du moins au plus onéreux : 
@@ -94,22 +117,3 @@ normalement "orange" devient "vert", et le "rouge" devient orange.
 Ecrire l'algorithme permettant de saisir les données nécessaires (sans contrôle de saisie) et de traiter ce 
 problème. Avant de se lancer à corps perdu dans cet exercice, on pourra réfléchir un peu et s'apercevoir 
 qu'il est plus simple qu'il n'en a l'air (cela s'appelle faire une analyse !)...
-
-## Exercice 2.8 : Validité d'une date
-
-Écrivez un algorithme qui demande à l'utilisateur de saisir 3 nombres entiers
-
-1. Un numéro de jour
-2. Un numéro de mois
-3. Un numéro d'année
-
-L'algorithme indique ensuite s'il s'agit ou non d'une date valide.
-
-Cet exercice est certes d’un manque d’originalité affligeant, mais après tout, en algorithmique comme 
-ailleurs, il faut connaître ses classiques ! Et quand on a fait cela une fois dans sa vie, on apprécie pleinement 
-l’existence d’un type « Date » dans certains langages…).
-
-Il n'est sans doute pas inutile de rappeler rapidement que le mois de février compte 28 jours, sauf si 
-l’année est bissextile, auquel cas il en compte 29. 
-
-L’année est bissextile si elle est divisible par quatre. Toutefois, les années divisibles par 100 ne sont pas bissextiles, mais les années divisibles par 400 le sont. **Ouf** !
