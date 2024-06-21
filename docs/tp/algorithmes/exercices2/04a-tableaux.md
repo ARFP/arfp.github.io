@@ -1,7 +1,8 @@
 ---
 title: "Tableaux #2"
 level: 4
-order: 8
+order: 4
+serie: "exercices2"
 ---
 
 # Partie 5

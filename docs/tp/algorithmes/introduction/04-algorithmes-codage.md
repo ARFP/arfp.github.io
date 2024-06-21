@@ -32,5 +32,6 @@ Après avoir posé son raisonnement algorithmique en pseudo-code et/ou dans un o
 
 ## Travaux pratiques 
 
-1. [Exercices Algorithmes](../exercices/)
-2. [Exercices Algorithmes Avancé](../challenges/)
+1. [Exercices Algorithmes ABC](../exercices/)
+2. [Exercices Algorithmes DWWM/CDA](../exercices2/)
+2. [Exercices Algorithmes Avancé](../exercices3/)

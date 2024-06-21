@@ -1,5 +1,5 @@
 ---
-title: "UML Objet"
+title: "Introduction"
 index: 1
 ---
 

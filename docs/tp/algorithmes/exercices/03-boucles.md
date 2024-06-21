@@ -1,7 +1,7 @@
 ---
-title: "Les Boucles  #1"
+title: "Structures itératives"
 level: 4
-order: 4
+order: 3
 ---
 
 # Partie 3
@@ -29,7 +29,7 @@ Lorsque la réponse convient, afficher le nombre saisi suivi de "Yes, you did it
 
 Écrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants. 
 
-Par exemple, si l'utilisateur entre le nombre **17**, le programme affichera : 
+Par exemple, si l'utilisateur saisit le nombre **17**, le programme affichera : 
 
 `Les 10 nombres après 17 sont: 18, 19 ,20 ,21 ,22 ,23 ,24 ,25 ,26 ,27`
 
@@ -82,7 +82,7 @@ Réécrire l’algorithme précédent, mais cette fois-ci on ne connaît pas d�
 
 ## Exercice 3.8 : Paiement et rendu monnaie
 
-Écrire un algorithme qui demande à l'utilisateur de saisir des prix en € (nombre à 1 décimale) correspondant aux achats d'un client. Lorsque l'utilisateur saisit le nombre `0`, on estime que la saisie est temrinée. Le programme calcule et affiche la somme totale à payer.
+Écrire un algorithme qui demande à l'utilisateur de saisir des prix en € (nombre à 1 décimale) correspondant aux achats d'un client. Lorsque l'utilisateur saisit le nombre `0`, on estime que la saisie est terminée. Le programme calcule et affiche la somme totale à payer.
 
 On estime que le client paie uniquement avec des billets de 5€.
 
@@ -105,7 +105,7 @@ Le client doit donner 8 billets de 5 Euros soit 40 Euros.
 Rendu monnaie : 2.30 Euros
 Répartition de la monnaie à restituer au client : 
 - 1 pièce de 2 Euros
-- 2 pièces de 0.20 Euros
+- 1 pièce de 0.20 Euros
 - 1 pièce de 0.10 Euros
 ```
 
@@ -115,11 +115,13 @@ Répartition de la monnaie à restituer au client :
 Écrire un algorithme qui permet de connaître ses chances de gagner au tiercé, quarté, quinté et autres impôts volontaires. 
 
 On demande à l’utilisateur le nombre de chevaux partants, et le nombre de chevaux joués. Les deux messages affichés devront être : 
+
 ```
 Dans l’ordre : une chance sur X de gagner 
 Dans le désordre : une chance sur Y de gagner 
 ```
-X et Y nous sont donnés par la formule suivante, si n est le nombre de chevaux partants et p le nombre de chevaux joués, le signe `!` signifie « factorielle » :
+
+`X` et `Y` nous sont donnés par la formule suivante:  si `n` est le nombre de chevaux partants et `p` le nombre de chevaux joués (le signe `!` signifie « factorielle ») :
 
 ```
 X = n! / (n - p)! 

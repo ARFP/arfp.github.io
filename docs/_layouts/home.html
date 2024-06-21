@@ -1,6 +1,6 @@
 {% include _head.html %}
 <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ site.subtitle }}{% endif %}</h1>
-<section class="flex cards">
+<!-- <section class="flex cards">
     {{ content }}
     {% for formation in site.data.formations %}
         <article class="card">
@@ -12,7 +12,7 @@
     {% endfor %}
 </section>
 <hr>
-<h1>Tous les modules</h1>
+<h1>Tous les modules</h1> -->
 <section class="flex cards">
 {% assign modules = site.pages | where: "layout", "module" | sort: "id" %}{% for module in modules %}
 <article><h2><a href="{{ module.url }}">{{ module.title }}</a></h2>
@@ -21,4 +21,9 @@
     <li>{{ serie.title }}</li> 
 {% endfor %}</ol></article>
 {% endfor %}</section>
+<hr>
+<section>
+    <h2><i class="fa fa-github"></i> <a href="https://github.com/orgs/ARFP/repositories">Dépôts GitHub des sections</a></h2>
+    <ul id="repos" class="flex chips repos"></ul>
+</section>
 {% include _foot.html %}
