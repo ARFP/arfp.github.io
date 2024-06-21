@@ -28,8 +28,8 @@ Soit le corps HTML suivant :
 
 Vous devez créer 2 versions CSS pour la même page : 
 
-1. Version 1: Uniquement GRID pour positionner les éléments
-2. Version 2: Uniquement FLEXBOX pour positionner les éléments
+1. **Version 1**: Uniquement GRID pour positionner les éléments
+2. **Version 2**: GRID + FLEXBOX pour positionner les éléments
 
 L'ensemble doit occuper tout l'espace disponible.
 

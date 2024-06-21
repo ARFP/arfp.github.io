@@ -1,20 +1,39 @@
 ---
-title: "Tableaux statiques"
+title: "Procédures et fonctions"
 level: 4
-order: 4
+order: 5
 ---
 
 # Partie 4
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes
-- Les tableaux
+- Les procédures
+- Les fonctions
+
+Pour chaque exercice : 
+- Créer et implémenter la procédure ou la fonction demandée
+- Tester votre fonction en l'invoquant depuis le main() de votre programme
 
 
-## Exercice 4.1 : Créer un tableau d'entiers
+## Exercice 4.1 : Hello World
 
-Écrire un algorithme qui déclare un tableau d'entiers et le remplit avec 7 valeurs numériques en les mettant toutes à 
-zéro.
+Écrire une procédure helloWorld() qui affiche le texte "Hello World !".
+
+Cette procédure sera appelée depuis le programme principal (main()) comme dans l'exemple ci-dessous : 
+
+```java
+class App {
+    public static void main(String args) {
+        App.helloWorld();
+    }
+
+    public static void helloWorld() {
+        // votre code ici
+    }
+}
+
+```
 
 
 ## Exercice 4.2 : Créer un tableau de chaines de caractères

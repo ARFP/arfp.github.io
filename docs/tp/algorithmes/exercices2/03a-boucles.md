@@ -1,7 +1,8 @@
 ---
 title: "Les Boucles  #2"
 level: 4
-order: 5
+order: 3
+serie: "exercices2"
 ---
 
 # Partie 3a

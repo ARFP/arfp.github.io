@@ -1,7 +1,8 @@
 ---
 title: "Révisions #2"
 level: 5
-order: 11
+order: 10
+serie: "exercices2"
 ---
 
 Cette série d'exercices vous permettra de consolider vos apprentissages précédents.
