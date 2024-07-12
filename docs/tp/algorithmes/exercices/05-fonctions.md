@@ -73,8 +73,8 @@ Le programme doit ensuite générer et afficher l'identifiant et l'email de l'ut
 - **Email** : Identifiant suivi de *@monentreprise.fr*
 
 Les 2 éléments doivent être générés dans 2 fonctions distinctes : 
-- obtenirIdentifiant(String nom, String prénom) : String;
-- obtenirEmail(String identifiant) : String;
+- obtenirIdentifiant(String nom, String prénom) : String
+- obtenirEmail(String identifiant) : String
 
 
 ## Exercice 5.4 : La plus grande valeur
