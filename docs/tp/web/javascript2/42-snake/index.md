@@ -26,7 +26,7 @@ Comme toujours, avant de nous lancer à l'aveuglette, nous devons définir les f
 
 ## Exemple d'interface
 
-Au démarrage, le programme affiche une dexription sommaire du jeu et un bouton pour démarrer une partie.
+Au démarrage, le programme affiche une description sommaire du jeu et un bouton pour démarrer une partie.
 
 ![](./snake_1.png)
 
