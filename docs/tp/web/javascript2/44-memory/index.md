@@ -154,13 +154,17 @@ A la fin d'une partie, le programme doit afficher et sauvegarder les statistique
 
 **Pour chaque niveau terminé :** 
 - Le temps écoulé 
-- Le meilleur score possible
+- Le meilleur score possible (en nombre de clics)
 - Le nombre de clics total effectués
 - Le nombre de clics effectué sur chaque carte 
-- Le pourcentage de réussite
+- Le pourcentage de réussite 
+    - `(nombre_total__clics - meilleur_score_possible) / nombre_total_clics * 100`
 
 **Pour la partie entière :**
+- Le nom et prénom de l'utilisateur renseignés sur l'écran d'accueil
+- La date et heure de démarrage de la partie
 - Le temps total écoulé
+- Le pourcentage de réussite
 
 
 L'utilisateur a également la possibilité de télécharger le résultat d'une partie via un bouton/lien affiché à la suite des statistiques.
