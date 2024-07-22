@@ -156,9 +156,10 @@ A la fin d'une partie, le programme doit afficher et sauvegarder les statistique
 - Le temps écoulé 
 - Le meilleur score possible (en nombre de clics)
 - Le nombre de clics total effectués
-- Le nombre de clics effectué sur chaque carte 
+- Le nombre d'essais
+    - 1 essai = 2 clics (sélection de la 1ère carte et de la seconde)
 - Le pourcentage de réussite 
-    - `(nombre_total__clics - meilleur_score_possible) / nombre_total_clics * 100`
+    - `100 - (nombre_essais - meilleur_score_possible) / nombre_essais * 100`
 
 **Pour la partie entière :**
 - Le nom et prénom de l'utilisateur renseignés sur l'écran d'accueil
