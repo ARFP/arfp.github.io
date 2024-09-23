@@ -70,5 +70,20 @@ Lors de la création de votre dépôt:
 
 ## Cloner le dépôt sur votre machine locale
 
-Lorsque votre dépôt et créé, clonez-le sur votre machine local à l'emplacement  :
+Lorsque votre dépôt et créé, clonez-le sur votre machine local à l'emplacement :
 - `C:\Users\VotreNomDutilisateur\Documents\GitHub\` 
+
+## Le 1er COMMIT 
+
+Editer le fichier `README.md` et y ajouter :
+
+- L'intitulé de votre formation
+- La date de début de votre formation
+- La date de fin de votre formation
+- Vos dates de début et fin de stage
+
+Lorsque vous avez terminé l'édition du fichier, effectuer un COMMIT avec le message "README mis à jour" puis pousser (PUSH) vos modifications vers GitHub.
+
+## Passer à la suite...
+
+- Rendez-vous sur la [page suivante](../03-repository-dwwm-cda/) pour la suite du TP.
