@@ -63,9 +63,8 @@ Lors de la création de votre dépôt:
 
 - Cochez la case "Add README"
 - Sélectionner le .gitignore "VisualStudio"
-- Choisissez une licence parmi celles proposées
-    -  Effectuez des recherches sur le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
-    - Vous devrez justifier votre choix
+- Sélectionner une licence parmi celles proposées
+    -  Consulter le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
 
 
 ## Cloner le dépôt sur votre machine locale
