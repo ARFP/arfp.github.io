@@ -37,8 +37,9 @@ A la racine du dépôt :
 - Implémenter le code correspondant à la demande suivante :
 
 ```
-Lire 3 nombres entier A, B et C (fournis par l'utilisateur) puis les afficher dans l’ordre croissant.
+Lire 3 nombres entier `A`, `B` et `C` fournis par l'utilisateur puis, les afficher dans l’ordre croissant.
 ```
+
 Pour tester votre programme, tapez la commande `dotnet run` dans votre terminal.
 
 Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin TriDeNombre" puis pousser votre travail sur GitHub.
