@@ -8,7 +8,6 @@ order: 1
 - Posséder un compte sur [Github](https://github.com)
 - Savoir lire et suivre un tutoriel
 
-
 ## Compétences mises en oeuvre : 
 - [Créer un dépôt sur github](https://github.com/new)
 - Synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
@@ -68,12 +67,14 @@ Lors de la création de votre dépôt:
 
 ![Options de création du dépôt de formation](./github-repo-options.jpg)
 
+
 ## Cloner le dépôt sur votre machine locale
 
 Lorsque votre dépôt et créé, clonez-le sur votre machine local à l'emplacement :
 - `C:\Users\VotreNomDutilisateur\Documents\GitHub\` 
 
 > Remplacer 'VotreNomDutilisateur' par le nom de votre répertoire personnel
+
 
 ## Le 1er COMMIT 
 
