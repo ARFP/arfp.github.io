@@ -4,7 +4,7 @@ level: 4
 order: 5
 ---
 
-# Partie 4
+# Partie 5
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes
@@ -13,12 +13,25 @@ Cette partie vous permettra de mettre en pratique les notions suivantes :
 
 Pour chaque exercice : 
 - Créer et implémenter la procédure ou la fonction demandée
-- Tester votre fonction en l'invoquant depuis le main() de votre programme
+- Tester votre fonction en l'invoquant depuis le `main()` de votre programme
 
+> Rappel
+>
+> Une procédure effectue un traitement et ne retourne pas de valeur
+> - Le type de retour d'une procédure est toujours "void"
+>
+> Une fonction effecture un traitement et retourne TOUJOURS une valeur
+> - Le type de retour d'une fonction est toujours différent de "void"
+> - Exemples de types de retour : String, int, float, double, DateTime...
 
-## Exercice 4.1 : Hello World
+--- 
 
-Écrire une procédure helloWorld() qui affiche le texte "Hello World !".
+> Reproduisez les 3 exemples suivant avant de commencer
+
+## Exemple 1 : Procédure Hello World
+
+- Créer un projet `HelloWorld`.
+- Écrire une **procédure** `helloWorld()` qui affiche le texte "Hello World !".
 
 Cette procédure sera appelée depuis le programme principal (main()) comme dans l'exemple ci-dessous : 
 
@@ -29,77 +42,146 @@ class App {
     }
 
     public static void helloWorld() {
-        // votre code ici
+        System.out.println("Hello World !");
     }
 }
+```
 
+## Exemple 2 : Fonction Hello You
+
+- Créer un projet `HelloYou`.
+- Écrire une **fonction** `helloYou()` qui retourne le texte "Hello You !".
+
+Cette fonction sera appelée depuis le programme principal (main()) qui affichera le résultat comme dans l'exemple ci-dessous : 
+
+```java
+class App {
+    public static void main(String args) {
+        String result = App.helloYou();
+        System.out.println(result);
+    }
+
+    public static String helloYou() {
+        return "Hello You !";
+    }
+}
+```
+
+## Exemple 3 : Fonction Hello {$name}
+
+- Créer un projet `HelloName`.
+- Le programme demande à l'utilisateur de saisir son prénom.
+- Le programme affiche ensuite "Bienvenue " suivi du prénom saisi.
+- 1 fonction `askFirstName` servira à demander le prénom à l'utilisateur.
+- 1 procédure `showFirstName` accceptant 1 argument de type `String` affichera le résultat.
+
+```java
+
+import java.util.Scanner;
+
+class App {
+    public static void main(String args) {
+        String result;
+        result = App.askFirstName(); // Demande du prénom
+        App.showResult(result); // Affichage du résultat
+    }
+
+    public static String askFirstName() {
+        String firstname;
+        Scanner sc = new Scanner(System.in); // Initialise le Scanner
+        System.out.println("Bonjour, saisissez votre prénom: "); 
+        firstname = sc.nextLine(); // Attente de la saisie utilisateur
+        return firstname; // On retourne le résultat
+    }
+
+    public static void showResult(String name) {
+        System.out.println("Bonjour " + name);
+    }
+}
+```
+
+## Exercice 5.1 : Les opérations mathématiques
+
+- Créer un projet "IntroFonctionsMaths".
+- Implémenter les 4 fonctions demandées ci-dessous.
+- Appeler ces 4 fonctions depuis le `main`.
+- Afficher les différents résultats à l'aide d'une procédure.
+
+```
+Créer une fonction « getSum » qui accepte deux arguments de type int. Elle devra retourner la somme des deux valeurs.
+
+Exemple :
+getSum(5, 3); // retourne 8
+```
+
+```
+Créer une fonction « getSub » qui accepte deux arguments de type int. Elle devra retourner la soustraction des deux valeurs. 
+
+Exemples :
+getSub(5, 3); // retourne 2 
+getSub(3, 5); // retourne -2
+```
+
+```
+Créer une fonction getMulti qui accepte deux arguments de type float. Elle devra retourner la multiplication des deux valeurs. Limitez le résultat à 2 décimales.
+
+Exemples :
+getMulti(5.6, 3); // retourne 16.8
+getMulti(5.6, -3.7); // retourne -20.72
+```
+
+```
+Créer une fonction getDiv qui accepte deux arguments de type int. Elle devra retourner la division des deux valeurs. 
+Limitez le résultat à 2 décimales. 
+Rappel : une division par zéro est impossible. Dans ce cas, retourner la valeur « 0 ».
+
+Exemples :
+getDiv(20, 3); // retourne 6.67
+getDiv(20, 0); // retourne 0
+```
+
+## Exercice 5.2 : Les chaines de caractère
+
+- Créer un projet "IntroFonctionsChaines".
+- Implémenter les 4 fonctions demandées ci-dessous.
+- Appeler ces 4 fonctions depuis le `main`.
+- Afficher les différents résultats à l'aide d'une procédure.
+
+```
+Créer une fonction « getMC2 ». 
+Cette fonction doit retourner Le nom de l’inventeur de la formule « E = MC² ».
+```
+
+```
+Créer une fonction « getUserName » qui accepte deux arguments (prénom et nom) de type string. 
+Cette fonction doit retourner la concaténation des deux valeurs. 
+
+Exemple : 
+getUserName ('mickaël', 'devoldère'); // retourne « mickaëldevoldère » 
+```
+
+```
+Créer une fonction « getFullName » acceptant deux arguments (nom et prénom) de type string. 
+Cette fonction doit retourner la concaténation des deux valeurs avec un espace entre les 2.
+Assurez vous que : 
+- Le prénom doit petre en minuscule (sauf la 1ère lettre qu idoit être en MAJUSCULE).
+- Le nom doit être en MAJUSCULE.
+
+Exemple : 
+getFullName ('devoldère', 'mickaël'); // retourne « Mickaël DEVOLDÈRE »
 ```
 
 
-## Exercice 4.2 : Créer un tableau de chaines de caractères
-
-Écrire un algorithme qui déclare et remplit un tableau contenant les six voyelles de l’alphabet latin.
-
-
-## Exercice 4.3 : Alimenter un tableau
-
-Écrire un algorithme permettant à l’utilisateur de saisir un nombre quelconque de valeurs, qui devront 
-être stockées dans un tableau. 
-
-L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs positives.
-
-
-## Exercice 4.4 : Somme des valeurs d'un tableau 
-
-Écrire un algorithme calculant la somme des valeurs d’un tableau (on suppose que le tableau a été 
-préalablement saisi avec 10 nombres réels (float)).
-
-
-## Exercice 4.5 : Somme des valeurs de 2 tableaux
-
-Écrire un algorithme qui respecte la demande suivante :
-1. Créer 2 tableaux d'entiers de même longueur.
-2. Créer un 3ème tableau dont les valeurs sont la somme des valeurs des 2 tableaux précédents.
+```
+Créer une fonction « askUser » acceptant deux arguments (nom et prénom) de type string. 
+Cette fonction doit retourner une chaîne de caractères sous la forme :
+« Bonjour Prénom NOM. Connaissez-vous Einstein ? »
+Cette fonction doit obligatoirement appeler et utiliser les résulats des fonctions
+- « getFullName() » pour obtenir la concaténation du prénom et du nom.
+- « getMC2() » pour obtenir le nom de l'inventeur de la formule E = MC².
 
 Exemple : 
-
-![Exemple somme de 2 tableaux](./img/tableaux-somme-2.jpg)
-
-
-## Exercice 4.6 : Somme des valeurs de 2 tableaux
-
-Toujours à partir de deux tableaux d'entiers précédemment saisis, écrivez un algorithme qui calcule la somme 
-des produits des deux tableaux. Pour calculer le résultat, il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout. 
-
-Par exemple si l'on a :
-
-![Exemple produit 2 tableaux](./img/tableaux-produit-3.jpg)
-
-Le résultat sera :
-
-`3 * 4` + `3 * 8` + `3 * 7` + `3 * 12` + `6 * 4` + `6 * 8` + `6 * 7` + `6 * 12` = `279`
-
-
-## Exercice 4.7 : Modifier un tableau
-
-Écrire un algorithme qui permet la saisie d’un nombre quelconque de valeurs, sur le principe de l’exercice 4.3. 
-
-Toutes les valeurs doivent être ensuite augmentées de 1, et le nouveau tableau sera affiché à l’écran.
-
-
-## Exercice 4.8 : Recherche dans un tableau
-
-Écrire un algorithme permettant, toujours sur le même principe, à l’utilisateur de saisir un nombre 
-déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant 
-quelle position elle occupe dans le tableau. On prendra soin d’effectuer la saisie dans un premier temps, et 
-la recherche de la plus grande valeur du tableau dans un second temps.
-
-
-## Exercice 4.9 : Recherche spécifique dans un tableau
-
-Toujours et encore sur le même principe, écrivez un algorithme permettant, à l’utilisateur de saisir les 
-notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieures 
-à la moyenne de la classe.
-
+askUser ('devoldère', 'mickaël'); // retourne « Bonjour Mickaël DEVOLDÈRE, connaissez-vous Einstein ? »
+```
 
 > Validez votre travail avec votre formateur avant de passer à la suite.

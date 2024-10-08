@@ -1,8 +1,7 @@
 ---
 title: "Exercices d'introduction"
 level: 4
-order: 5
-serie: "introduction"
+order: 1
 ---
 
 # Partie 1 
