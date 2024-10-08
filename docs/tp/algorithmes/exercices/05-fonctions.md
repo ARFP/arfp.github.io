@@ -4,7 +4,7 @@ level: 4
 order: 5
 ---
 
-# Partie 4
+# Partie 5
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes
@@ -16,9 +16,9 @@ Pour chaque exercice :
 - Tester votre fonction en l'invoquant depuis le main() de votre programme
 
 
-## Exercice 4.1 : Hello World
+## Exercice 5.1 : Hello World
 
-Écrire une procédure helloWorld() qui affiche le texte "Hello World !".
+Écrire une **procédure** *helloWorld()* qui affiche le texte "Hello World !".
 
 Cette procédure sera appelée depuis le programme principal (main()) comme dans l'exemple ci-dessous : 
 
@@ -36,70 +36,65 @@ class App {
 ```
 
 
-## Exercice 4.2 : Créer un tableau de chaines de caractères
+## Exercice 5.2 : Créer un tableau de chaines de caractères
 
-Écrire un algorithme qui déclare et remplit un tableau contenant les six voyelles de l’alphabet latin.
+Écrire un programme qui calcule la somme des 100 premiers nombres entiers (de 1 à 100 inclus).
 
+Le calcul doit être effectué dans une **fonction** *calculSomme()* qui retourne le résultat du calcul.
 
-## Exercice 4.3 : Alimenter un tableau
+```java
+class App {
+    public static void main(String args) {
 
-Écrire un algorithme permettant à l’utilisateur de saisir un nombre quelconque de valeurs, qui devront 
-être stockées dans un tableau. 
+        int resultatCalcul;
 
-L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs positives.
+        System.out.println("Calcul de la somme des 100 premiers nombres entiers.");
 
+        resultatCalcul = App.calculSomme();
 
-## Exercice 4.4 : Somme des valeurs d'un tableau 
+        // Afficher le résultat du calcul ici
+    }
 
-Écrire un algorithme calculant la somme des valeurs d’un tableau (on suppose que le tableau a été 
-préalablement saisi avec 10 nombres réels (float)).
+    public static int calculSomme() {
+        // implémenter ici le calcul et retourner le résultat sous forme de nombre entier
+    }
+}
 
+```
 
-## Exercice 4.5 : Somme des valeurs de 2 tableaux
+## Exercice 5.3 : Mon identifiant
 
-Écrire un algorithme qui respecte la demande suivante :
-1. Créer 2 tableaux d'entiers de même longueur.
-2. Créer un 3ème tableau dont les valeurs sont la somme des valeurs des 2 tableaux précédents.
+Ecrire un programme qui demande à l'utilisateur de saisir son nom et son prénom.
 
-Exemple : 
+Le programme doit ensuite générer et afficher l'identifiant et l'email de l'utilisateur.
 
-![Exemple somme de 2 tableaux](./img/tableaux-somme-2.jpg)
+- **Identifiant** : 1ère lettre du prénom suivi du nom, le tout en minuscule
+    - *Si le nom est composé, seul le 1er nom est utilisé pour générer l'identifiant*
+- **Email** : Identifiant suivi de *@monentreprise.fr*
 
-
-## Exercice 4.6 : Somme des valeurs de 2 tableaux
-
-Toujours à partir de deux tableaux d'entiers précédemment saisis, écrivez un algorithme qui calcule la somme 
-des produits des deux tableaux. Pour calculer le résultat, il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout. 
-
-Par exemple si l'on a :
-
-![Exemple produit 2 tableaux](./img/tableaux-produit-3.jpg)
-
-Le résultat sera :
-
-`3 * 4` + `3 * 8` + `3 * 7` + `3 * 12` + `6 * 4` + `6 * 8` + `6 * 7` + `6 * 12` = `279`
+Les 2 éléments doivent être générés dans 2 fonctions distinctes : 
+- obtenirIdentifiant(String nom, String prénom) : String
+- obtenirEmail(String identifiant) : String
 
 
-## Exercice 4.7 : Modifier un tableau
+## Exercice 5.4 : La plus grande valeur
 
-Écrire un algorithme qui permet la saisie d’un nombre quelconque de valeurs, sur le principe de l’exercice 4.3. 
+Écrire un programme qui recherche et affiche la plus grande valeur d'un tableau de nombres entiers. 
 
-Toutes les valeurs doivent être ensuite augmentées de 1, et le nouveau tableau sera affiché à l’écran.
+L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme calculera et affichera toutes les valeurs dans l'ordre dans lequel elles ont été saisies. Le programme affiche ensuite la valeur la plus grande.
 
+La recherche de l'élément le plus grand doit être implémenté dans une **procédure** ou une **fonction** (vous devrez motiver votre choix).
 
-## Exercice 4.8 : Recherche dans un tableau
-
-Écrire un algorithme permettant, toujours sur le même principe, à l’utilisateur de saisir un nombre 
-déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant 
-quelle position elle occupe dans le tableau. On prendra soin d’effectuer la saisie dans un premier temps, et 
-la recherche de la plus grande valeur du tableau dans un second temps.
+Vous prendrez soin de récolter les valeurs saisies dans un 1er temps et ensuite d'effectuer la recherche et l'affichage.
 
 
-## Exercice 4.9 : Recherche spécifique dans un tableau
+## Exercice 5.5 : Recherche spécifique dans un tableau
 
 Toujours et encore sur le même principe, écrivez un algorithme permettant, à l’utilisateur de saisir les 
-notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieures 
+notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes inférieures 
 à la moyenne de la classe.
+
+Le **calcul de la moyenne** et la **recherche des notes inférieures à la moyenne** doivent être implémentées dans des fonctions distinctes.
 
 
 > Validez votre travail avec votre formateur avant de passer à la suite.
