@@ -1,5 +1,5 @@
 ---
-title: "My ABCDEV Repository"
+title: "Mon dépôt ABCDEV"
 serie: "cicd"
 order: 2
 ---

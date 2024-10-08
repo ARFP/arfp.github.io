@@ -42,3 +42,7 @@ Les images :
 
 
 **Bonus :** Proposez une version « mobile » à 1 colonne.
+
+> Valider votre travail avec un formateur avant de passer à la suite
+
+Lorsque vous avez terminé et validé votre travail, vous pouvez passer à l'exercice suivant : [Publier un site sur GitHub](../ci-cd/11-cv/)

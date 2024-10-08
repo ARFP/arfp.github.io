@@ -1,5 +1,5 @@
 ---
-title: "My training Repository"
+title: "Mon dépôt de formation"
 serie: "cicd"
 order: 1
 ---
