@@ -6,14 +6,14 @@ order: 1
 
 ## Pré-requis : 
 - Posséder un compte sur [Github](https://github.com)
-- Savoir créer un dépôt sur github
-- Savoir synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
-- Savoir lire et suivre un tutoriel en Anglais
+- Savoir lire et suivre un tutoriel
+
 
 ## Compétences mises en oeuvre : 
+- [Créer un dépôt sur github](https://github.com/new)
+- Synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
 - Gérer ses fichiers sources avec GIT et Github
 - Utiliser l'Anglais dans un contexte professionnel
-
 
 ## Créer mon référentiel de formation
 
@@ -66,11 +66,14 @@ Lors de la création de votre dépôt:
 - Sélectionner une licence parmi celles proposées
     -  Consulter le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
 
+![Options de création du dépôt de formation](./github-repo-options.jpg)
 
 ## Cloner le dépôt sur votre machine locale
 
 Lorsque votre dépôt et créé, clonez-le sur votre machine local à l'emplacement :
 - `C:\Users\VotreNomDutilisateur\Documents\GitHub\` 
+
+> Remplacer 'VotreNomDutilisateur' par le nom de votre répertoire personnel
 
 ## Le 1er COMMIT 
 
@@ -85,4 +88,6 @@ Lorsque vous avez terminé l'édition du fichier, effectuer un COMMIT avec le me
 
 ## Passer à la suite...
 
-- Rendez-vous sur la [page suivante](../03-repository-dwwm-cda/) pour la suite du TP.
+**Si vous suivez la formation ABCDEV** : [C'est par ici...](../02-repository-abcdev/) pour la suite du TP.
+
+**Si vous suivez la formation DWWM ou CDA** : [C'est par là...](../03-repository-dwwm-cda/) pour la suite du TP.

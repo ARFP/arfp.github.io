@@ -13,7 +13,7 @@ Cette partie vous permettra de mettre en pratique les notions suivantes :
 
 Pour chaque exercice : 
 - Créer et implémenter la procédure ou la fonction demandée
-- Tester votre fonction en l'invoquant depuis le main() de votre programme
+- Tester votre fonction en l'invoquant depuis le `main()` de votre programme
 
 > Rappel
 >
@@ -21,7 +21,7 @@ Pour chaque exercice :
 > - Le type de retour d'une procédure est toujours "void"
 >
 > Une fonction effecture un traitement et retourne TOUJOURS une valeur
-> - Le type de retour d'une fonction est tjours différent de "void"
+> - Le type de retour d'une fonction est toujours différent de "void"
 > - Exemples de types de retour : String, int, float, double, DateTime...
 
 --- 
@@ -50,7 +50,7 @@ class App {
 ## Exemple 2 : Fonction Hello You
 
 - Créer un projet `HelloYou`.
-- Écrire une **fonction** `helloYou()` qui affiche le texte "Hello You !".
+- Écrire une **fonction** `helloYou()` qui retourne le texte "Hello You !".
 
 Cette fonction sera appelée depuis le programme principal (main()) qui affichera le résultat comme dans l'exemple ci-dessous : 
 

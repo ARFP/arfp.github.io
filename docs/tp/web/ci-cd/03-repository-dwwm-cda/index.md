@@ -34,21 +34,29 @@ A la racine du dépôt :
 - Créer un projet C# .NET Console en tapant la commande :
     - `dotnet new console`
 - Effectuer un `COMMIT` avec le message "creation projet TriDeNombe"
-- Implémenter le code correspondant à la demande suivante :
+- Rédiger l'algorithme et implémenter le code correspondant à la demande suivante :
 
-```
-Lire 3 nombres entier `A`, `B` et `C` fournis par l'utilisateur puis, les afficher dans l’ordre croissant.
-```
+>
+>    - L'utilisateur entre son prénom et son âge.
+>    - Le programme affiche "Bonjour " suivi du prénom saisi.
+>    - Le programme affiche ensuite *Vous êtes majeur* ou *Vous êtes mineur* selon l'âge fourni.
+>    - Si l'âge est supérieur ou égal à 18 (majeur)
+>        - Le programme demande la ville de résidence à l'utilisateur.
+>    - Si l'âge est inférieur à 18 (mineur)
+>        - Le programme demande la couleur préférée de l'utilisateur.
+>    - Pour terminer, le programme affiche toutes les informations saisies : `prénom`, `âge`, `mineur ou majeur`, `ville de résidence ou couleur préférée`.
+>
+
 
 Pour tester votre programme, tapez la commande `dotnet run` dans votre terminal.
 
-Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin TriDeNombre" puis pousser votre travail sur GitHub.
+Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin Exercice Introduction" puis pousser votre travail sur GitHub.
 
 Rendez-vous ensuite sur GitHub puis créer un nouveau `PULL REQUEST` et fusionnez votre travail effectué sur la branche `develop` vers la branche `main`. (A la fin du processus, ne pas supprimer la branche develop).
 
 ## Entrainez vous
 
-Réalisez [les exercices de cette page](https://arfp.github.io/tp/algorithmes/exercices2/).
+Réalisez [les exercices de cette page](/tp/algorithmes/exercices2/).
 
 **Pour chaque exercice :**
 
