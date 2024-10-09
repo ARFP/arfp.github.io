@@ -4,7 +4,7 @@ level: 4
 order: 5
 ---
 
-# Partie 4
+# Partie 5
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes
@@ -100,7 +100,7 @@ class App {
 }
 ```
 
-## Exercice 4.1 : Les opérations mathématiques
+## Exercice 5.1 : Les opérations mathématiques
 
 - Créer un projet "IntroFonctionsMaths".
 - Implémenter les 4 fonctions demandées ci-dessous.
@@ -140,7 +140,7 @@ getDiv(20, 3); // retourne 6.67
 getDiv(20, 0); // retourne 0
 ```
 
-## Exercice 4.2 : Les chaines de caractère
+## Exercice 5.2 : Les chaines de caractère
 
 - Créer un projet "IntroFonctionsChaines".
 - Implémenter les 4 fonctions demandées ci-dessous.
@@ -171,6 +171,7 @@ Exemple :
 getFullName ('devoldère', 'mickaël'); // retourne « Mickaël DEVOLDÈRE »
 ```
 
+
 ```
 Créer une fonction « askUser » acceptant deux arguments (nom et prénom) de type string. 
 Cette fonction doit retourner une chaîne de caractères sous la forme :
@@ -182,7 +183,5 @@ Cette fonction doit obligatoirement appeler et utiliser les résulats des foncti
 Exemple : 
 askUser ('devoldère', 'mickaël'); // retourne « Bonjour Mickaël DEVOLDÈRE, connaissez-vous Einstein ? »
 ```
-
-
 
 > Validez votre travail avec votre formateur avant de passer à la suite.

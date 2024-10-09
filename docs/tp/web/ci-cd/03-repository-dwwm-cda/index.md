@@ -23,11 +23,13 @@ Créer une nouvelle branche que vous nommerez `develop`.
 
 Sur GitHub, rendez-vous dans les paramètres de votre dépôt et protégez la branche principale (main). Il s'agit ici d'interdire les `COMMIT` vers cette branche.
 
-> A partir de ce point, le travail doit être effectué sur la branche **develop** !
+> A partir de ce point, le travail ci-dessous doit être effectué sur la branche **develop** !
+
 
 ## Créer mon 1er projet .NET Console
 
 A la racine du dépôt :
+
 - Créer un répertoire "Algorithmes"
 - Dans ce répertoire, créer un sous-dossier "ConsoleIntroduction"
 - Ouvrir un terminal dans ce dossier
@@ -75,3 +77,4 @@ Réalisez [les exercices de cette page](/tp/algorithmes/exercices2/).
 - `COMMIT` et `PUSH`
 
 Lorsque la série d'exercice est terminée, fusionnez votre travail vers la branche principale à l'aide d'un `PULL REQUEST` sur GitHub.
+
