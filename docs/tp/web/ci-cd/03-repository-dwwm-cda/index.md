@@ -50,6 +50,7 @@ A la racine du dépôt :
 >    - Pour terminer, le programme affiche toutes les informations saisies : `prénom`, `âge`, `mineur ou majeur`, `ville de résidence ou couleur préférée`.
 >
 
+
 Pour tester votre programme, tapez la commande `dotnet run` dans votre terminal.
 
 Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin Exercice ConsoleIntroduction" puis pousser (`PUSH`) votre travail sur GitHub.

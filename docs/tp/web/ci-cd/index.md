@@ -42,6 +42,7 @@ L'approche CI/CD garantit une automatisation et une surveillance tout au long du
 - [Comprendre les branches GIT](https://grafikart.fr/tutoriels/branch-merge-587)
 - [Apprendre la gestion de branches en pratiquant](https://learngitbranching.js.org/?locale=fr_FR)
 
+
 ### Intégration et Déploiement Continu
 
 - [Le déploiement continu avec GitHub](https://docs.github.com/fr/github-ae@latest/actions/deployment/about-deployments/deploying-with-github-actions)
