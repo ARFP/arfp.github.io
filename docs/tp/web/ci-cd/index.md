@@ -39,7 +39,8 @@ L'approche CI/CD garantit une automatisation et une surveillance tout au long du
 
 ### Apprendre à gérer les branches
 
-- [Apprendre les commandes GIT et la gestion de branches](https://learngitbranching.js.org/?locale=fr_FR)
+- [Comprendre les branches GIT](https://grafikart.fr/tutoriels/branch-merge-587)
+- [Apprendre la gestion de branches en pratiquant](https://learngitbranching.js.org/?locale=fr_FR)
 
 ### Intégration et Déploiement Continu
 
