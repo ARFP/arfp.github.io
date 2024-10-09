@@ -61,4 +61,4 @@ Lorsque vous avez terminé les 2 séries d'exercices :
 
 - A la racine de votre dépôt, créer un dossier nommé `Algorithmes` dans lequel vous ajouterez un fichier `README.md` qui contient une description de ce qu'est un algorithme.
 - Par la suite, vous déposerez vos futurs exercices d'algorithmique dans ce même répertoire.
-- Commencez à vous documenter sur les algorithmes en suivant [ce lien](http://localhost:4000/tp/algorithmes/introduction/).
+- Commencez à vous documenter sur les algorithmes en suivant [ce lien](/tp/algorithmes/introduction/).

@@ -31,11 +31,12 @@ Sur GitHub, rendez-vous dans les paramètres de votre dépôt et protégez la br
 A la racine du dépôt :
 
 - Créer un répertoire "Algorithmes"
-- Dans ce répertoire, créer un sous-dossier "TriDeNombre"
+- Dans ce répertoire, créer un sous-dossier "ConsoleIntroduction"
 - Ouvrir un terminal dans ce dossier
 - Créer un projet C# .NET Console en tapant la commande :
     - `dotnet new console`
-- Effectuer un `COMMIT` avec le message "creation projet TriDeNombe"
+- Effectuer un `COMMIT` avec le message "creation projet ConsoleIntroduction"
+- Ouvrir le projet dans **Visual Studio Code** <img src="/assets/img/vscode.svg" alt="drawing" style="width:100px;"/>
 - Rédiger l'algorithme et implémenter le code correspondant à la demande suivante :
 
 >
@@ -52,11 +53,19 @@ A la racine du dépôt :
 
 Pour tester votre programme, tapez la commande `dotnet run` dans votre terminal.
 
-Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin Exercice Introduction" puis pousser votre travail sur GitHub.
+Lorsque vous avez terminé, effectuer un `COMMIT` avec le message "Fin Exercice ConsoleIntroduction" puis pousser (`PUSH`) votre travail sur GitHub.
 
 Rendez-vous ensuite sur GitHub puis créer un nouveau `PULL REQUEST` et fusionnez votre travail effectué sur la branche `develop` vers la branche `main`. (A la fin du processus, ne pas supprimer la branche develop).
 
+> Validez votre travail avec un formateur avant de passer à la suite 
+
 ## Entrainez vous
+
+Pour la suite, vous utiliserez **Visual Studio 2022**. <img src="/assets/img/visualstudio2022.svg" alt="drawing" style="width:1600px;"/>
+
+Avant de poursuivre, prenez le temps de vous documenter : 
+
+- [Création d'un projet dans Visual Studio](https://learn.microsoft.com/fr-fr/visualstudio/ide/create-new-project?view=vs-2022) 
 
 Réalisez [les exercices de cette page](/tp/algorithmes/exercices2/).
 
