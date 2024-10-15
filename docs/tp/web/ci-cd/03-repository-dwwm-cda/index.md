@@ -61,7 +61,7 @@ Rendez-vous ensuite sur GitHub puis créer un nouveau `PULL REQUEST` et fusionne
 
 ## Entrainez vous
 
-Pour la suite, vous utiliserez **Visual Studio 2022**. <img src="/assets/img/visualstudio2022.svg" alt="drawing" style="width:1600px;"/>
+Pour la suite, vous utiliserez **Visual Studio 2022**. <img src="/assets/img/visualstudio2022.svg" alt="drawing" style="width:160px;"/>
 
 Avant de poursuivre, prenez le temps de vous documenter : 
 
