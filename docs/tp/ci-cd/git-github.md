@@ -1,7 +1,6 @@
 ---
-title: "CI/CD"
-serie: "cicd"
-index: 3
+title: "Git & GitHub"
+index: 1
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

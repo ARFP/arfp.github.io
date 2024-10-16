@@ -1,6 +1,5 @@
 ---
 title: "Mon dépôt de formation"
-serie: "cicd"
 order: 1
 ---
 
@@ -65,7 +64,7 @@ Lors de la création de votre dépôt:
 - Sélectionner une licence parmi celles proposées
     -  Consulter le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
 
-![Options de création du dépôt de formation](./github-repo-options.jpg)
+![Options de création du dépôt de formation](./img/github-repo-options.jpg)
 
 
 ## Cloner le dépôt sur votre machine locale
@@ -89,6 +88,6 @@ Lorsque vous avez terminé l'édition du fichier, effectuer un COMMIT avec le me
 
 ## Passer à la suite...
 
-**Si vous suivez la formation ABCDEV** : [C'est par ici...](../02-repository-abcdev/) pour la suite du TP.
+**Si vous suivez la formation ABCDEV** : [C'est par ici...](./02-repository-abcdev) pour la suite du TP.
 
-**Si vous suivez la formation DWWM ou CDA** : [C'est par là...](../03-repository-dwwm-cda/) pour la suite du TP.
+**Si vous suivez la formation DWWM ou CDA** : [C'est par là...](./03-repository-dwwm-cda) pour la suite du TP.

@@ -1,6 +1,5 @@
 ---
 title: "Mon dépôt DWWM/CDA"
-serie: "cicd"
 order: 3
 ---
 
@@ -9,7 +8,7 @@ order: 3
 - Savoir créer un dépôt sur github
 - Savoir synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
 - Savoir lire et suivre un tutoriel en Anglais
-- [Avoir créé votre dépôt de formation](../01-training-repository/)
+- [Avoir créé votre dépôt de formation](./01-training-repository/)
 
 ## Compétences mises en oeuvre : 
 - Gérer ses fichiers sources avec GIT et Github

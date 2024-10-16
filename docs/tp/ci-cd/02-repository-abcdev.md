@@ -1,6 +1,5 @@
 ---
 title: "Mon dépôt ABCDEV"
-serie: "cicd"
 order: 2
 ---
 
@@ -9,7 +8,7 @@ order: 2
 - Savoir créer un dépôt sur github
 - Savoir synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
 - Savoir lire et suivre un tutoriel en Anglais
-- /!\ [Avoir terminé la 1ère partie du TP](../01-training-repository/)
+- /!\ [Avoir terminé la 1ère partie du TP](./01-training-repository/)
 
 
 ## Compétences mises en oeuvre : 
