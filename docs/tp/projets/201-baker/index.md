@@ -1,7 +1,7 @@
 ---
 title: "Boulangerie"
-serie: "js2"
-order: 20
+serie: "spa"
+order: 201
 ---
 
 # La boulangerie
