@@ -1,6 +1,6 @@
 ---
 title: "FlipQuiz"
-order: 102
+order: 303
 ---
 
 Un FlipQuiz est un jeu de quiz interactif conçu principalement pour animer des quiz en groupe. Il permet aux enseignants, aux animateurs, aux présentateurs ou à toute personne souhaitant organiser un jeu-questionnaire de créer et de personnaliser des tableaux de quiz.

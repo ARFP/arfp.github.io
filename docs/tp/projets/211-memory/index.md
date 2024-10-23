@@ -1,7 +1,7 @@
 ---
 title: "Memory Pair Match"
-serie: "js2"
-order: 44
+serie: "spa"
+order: 211
 ---
 
 > TP à réaliser avec HTML/CSS/JS et un framework Frontend (VueJS).

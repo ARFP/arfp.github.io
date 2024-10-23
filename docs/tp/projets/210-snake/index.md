@@ -1,7 +1,7 @@
 ---
 title: "Snake Eyes"
-serie: "js2"
-order: 42
+serie: "spa"
+order: 210
 ---
 
 > TP à réaliser avec HTML/CSS/JS et un framework Frontend (VueJS).
