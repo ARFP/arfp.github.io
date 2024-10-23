@@ -77,6 +77,11 @@ defaults:
       module: "projets"
   -
     scope:
+      path: "tp/ci-cd"
+    values:
+      module: "ci-cd"
+  -
+    scope:
       path: "tp/web"
     values:
       module: "web"

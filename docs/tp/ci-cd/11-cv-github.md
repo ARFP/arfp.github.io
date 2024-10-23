@@ -1,6 +1,5 @@
 ---
 title: "Publier un CV HTML"
-serie: "cicd"
 order: 11
 ---
 
