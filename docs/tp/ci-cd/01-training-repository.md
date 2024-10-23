@@ -1,6 +1,5 @@
 ---
 title: "Mon dépôt de formation"
-serie: "cicd"
 order: 1
 ---
 
@@ -58,22 +57,30 @@ Le nom du dépôt :
 >
 
 
-Lors de la création de votre dépôt: 
+Paramètres à appliquer à la création de votre dépôt: 
 
-- Cochez la case "Add README"
+- Le dépôt doit être `public`
+- La case `Add a README file` doit être cochée
 - Sélectionner le .gitignore "VisualStudio"
 - Sélectionner une licence parmi celles proposées
     -  Consulter le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
 
-![Options de création du dépôt de formation](./github-repo-options.jpg)
+**[Aide : Créer un dépôt sur GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository)**
 
+![Exemple de création du dépôt de formation](./img/github-repo-options.jpg)
+
+Une fois le formulaire complété, cliquer sur le bouton `Create repository`.
 
 ## Cloner le dépôt sur votre machine locale
 
-Lorsque votre dépôt et créé, clonez-le sur votre machine local à l'emplacement :
-- `C:\Users\VotreNomDutilisateur\Documents\GitHub\` 
+Lorsque votre dépôt et créé et GitHub Desktop installé, clonez votre dépôt sur votre machine local à l'emplacement :
+- `C:\Users\VotreNomDutilisateur\GitHub\` 
+
+**[Aide : Cloner un dépôt GitHub ](https://docs.github.com/fr/repositories/creating-and-managing-repositories/cloning-a-repository)**
 
 > Remplacer 'VotreNomDutilisateur' par le nom de votre répertoire personnel
+
+> Éviter de cloner votre dépôt dans le dossier `Documents` si la sauvegarde OneDrive est activée sur votre poste de travail (conflit d'accès aux fichiers)
 
 
 ## Le 1er COMMIT 
@@ -89,6 +96,6 @@ Lorsque vous avez terminé l'édition du fichier, effectuer un COMMIT avec le me
 
 ## Passer à la suite...
 
-**Si vous suivez la formation ABCDEV** : [C'est par ici...](../02-repository-abcdev/) pour la suite du TP.
+**Si vous suivez la formation ABCDEV** : [C'est par ici...](./02-repository-abcdev) pour la suite du TP.
 
-**Si vous suivez la formation DWWM ou CDA** : [C'est par là...](../03-repository-dwwm-cda/) pour la suite du TP.
+**Si vous suivez la formation DWWM ou CDA** : [C'est par là...](./03-repository-dwwm-cda) pour la suite du TP.
