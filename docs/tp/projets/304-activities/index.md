@@ -1,6 +1,6 @@
 ---
 title: "Activités"
-order: 101
+order: 304
 ---
 
 Le CRM utilise un formulaire en ligne pour gérer les inscriptions des stagiaires de la formation professionnelle (OFP) aux différentes activités sportives.

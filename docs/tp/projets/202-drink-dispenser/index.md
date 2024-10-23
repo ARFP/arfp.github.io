@@ -1,12 +1,12 @@
 ---
-title: "Station Service"
-serie: "js2"
-order: 31
+title: "Distributeur de boissons"
+serie: "spa"
+order: 202
 ---
 
-# La station service
+# Le distributeur de boissons
 
-Dans cet exercice, vous allez développer une application simulant la distribution de carburants.
+Dans cet exercice, vous allez développer une application simulant le fonctionnement d'un distributeur de boissons. 
 
 L'objectif ici est double : 
 1. Analyser le fonctionnement d'une application et effectuer la retro-ingénierie.
@@ -23,5 +23,5 @@ A partir de la vidéo suivante, développer la même application.
 - Vous avez la liberté de choisir les couleurs de votre choix tant que la mise en page est respectée.
 
 <video width="100%" height="auto" controls>
-  <source src="https://devoldere.net/ressources/demos/videos/gas-station.mp4" type="video/mp4">
+  <source src="https://devoldere.net/ressources/demos/videos/drink-dispenser.mp4" type="video/mp4">
 </video>

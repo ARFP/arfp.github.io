@@ -1,7 +1,7 @@
 ---
 title: "Aquarium"
-serie: "projets"
-order: 61
+serie: "poo"
+order: 102
 ---
 
 ## INTRODUCTION 
@@ -152,7 +152,7 @@ On distingue :
  
 Je rappelle que nous avons déjà des races herbivores et carnivores, ce qui nous donne le tableau suivant : 
 
-![Tableaux des espèces](./img/aquarium.jpg)
+![Tableaux des espèces](./aquarium.jpg)
 
  
 ## PARTIE 4 : RENDONS NOTRE SIMULATEUR D'AQUARIUM PRATIQUE 
