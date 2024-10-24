@@ -32,14 +32,9 @@ Imaginez Git comme un carnet de bord très intelligent pour vos projets informat
 - Branche: C'est une copie parallèle de votre projet, qui vous permet de travailler sur différentes fonctionnalités en même temps.
 
 
-Par exemple, vous pourriez me demander:
-
-"Comment créer une branche sur Git ?"
-"Quelle est la différence entre Git et GitHub ?"
-"Quelles sont les commandes Git les plus importantes à connaître ?"
-Je suis là pour vous aider à maîtriser cet outil indispensable pour tout développeur !
-
 ## Ressources en ligne
+
+- [Tutoriel pour apprendre les commandes GIT](https://www.ionos.fr/digitalguide/sites-internet/developpement-web/commandes-git/)
 
 ### Démarrer GIT et GitHub
 
