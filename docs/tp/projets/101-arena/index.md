@@ -96,6 +96,8 @@ A chaque tour de jeu, les évènements suivants sont réalisés :
     - Le clone est placé aléatoirement dans une case vide de l'arène.
 
 > La toxicité d'une fougère clonée est identique à son parent (la plante mère).
+>
+> Une plante ne peut pas mourir dans l'arène !
 
 ## Partie 2 : Les personnages entrent dans l'arène
 
@@ -125,10 +127,10 @@ Ajoutons maintenant quelques personnages dans notre arène. Un personnage possè
 | Ricko | 6 |  Mange une pomme | 
 | Mike | 5 |  Cuit un oeuf |
 | Mario | 7 |  Répare sa voiture | 
-| Zeldu | 4 |  Cherche son Arc |
+| Zeldu | 5 |  Cherche son Arc |
 | Chief | 8 |  Épluche une patate |
-| Snake | 3 |  Parle aux serpents |
-| Freeman | 9 |  Écrit une nouvelle loi |
+| Snake | 6 |  Parle aux serpents |
+| Freeman | 8 |  Écrit une nouvelle loi |
 | Bellic | 6 |  Cherche un ami |
 | Drake | 7 |  Boit un verre d'eau |
 | Peach | 8 |  Lit la doc SQL |
@@ -139,24 +141,39 @@ A chaque tour de jeu, après avoir réalisé les actions des plantes, chaque per
 
 A chaque déplacement, un personnage peut atterir dans une case vide ou occupée.
 
+**Trame :**
+1. Un personnage se déplace
+2. Les actions sont réalisées selon s'il atterit dans une case vide ou occupée (voir ci-dessous)
+3. Un autre personnage suivant se déplace... etc.. Retour à l'étape 1 et on recommance jusqu'à ce que tous les personnages se sont déplacés.
+
+Pour chaque déplacement,
+
 **Si la case de destination est vide :**
 
 - Le personnage se positionne dans la case et il ne se passe rien d'autre.
 
 **Si la case contient une plante :** 
 
-- Si la plante est toxique, le personnage perd 1 point de vie.
-- Si la plante est non-toxique, le personnage regagne 1 point de vie sans pouvoir dépasser le nombre de point de vie maximum (pvMax = 10) et la plante perd 1 point de vie.
+- Si la plante est toxique : 
+    - Cactus : le personnage perd 1 point de vie.
+    - Fougère : le personnage perd 1 de puissance
+- Si la plante est une fougère non-toxique, le personnage se nourrit et regagne 1 point de vie sans pouvoir dépasser le nombre de point de vie maximum (pvMax = 10) et la plante perd 1 point de vie.
 
-Le personnage est ensuite redirigé vers une case innocupée. 
+Le personnage est ensuite redirigé vers une case innocupée (vide). 
 
 **Si la case de destination est occupée par un autre personnage**
 
 - Un combat se déroule, le personnage possédant le plus de puissance gagne le combat, invoque son pouvoir et fait perdre 2 points de vie à son adversaire.
+- Le gagnant perd 1 de puissance sans pouvoir descendre sous le minimum (2)
+- Le perdant gagne 1 de puissance sans pouvoir dépasser le maximum (10)
 - Le perdant est ensuite ejecté de la case actuelle ce qui produit un déplacement vers une case vide.
 - Le gagnant prend place dans la case.
 
+En cas d'égalité (puissances identiques), les 2 personnages sont ejectés vers une autre case vide.
 
+A l'issue du "combat", on initie le déplacement du personnage suivant.
+
+Si un personnage tombe à 0 points de vie, il est ejecté de l'arène.
 
 
 ## Partie 3
@@ -184,7 +201,7 @@ Au lancement du programme :
 1. Le joueur entre un pseudo
 2. S'il existe déjà une sauvegarde à son nom, proposer : 
      - de charger la partie sauvegardée 
-     - ou de démarrer une nouvelle partie
+     - de démarrer une nouvelle partie
 
 
 ### Exercice 3.3 : Les multiples sauvegardes temporelles
