@@ -1,6 +1,6 @@
 ---
 title: "Projets Multipages"
-index: 1
+index: 3
 ---
 
 > Projets Web à réaliser en individuel ou en petite équipe !
