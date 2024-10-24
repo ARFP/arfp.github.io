@@ -1,6 +1,6 @@
 ---
 title: "Git & GitHub"
-index: 1
+index: 2
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :
@@ -8,6 +8,44 @@ Cette série d’exercices peut être réalisée dans les contextes suivants :
 - Se familiariser avec le déploiement et l'intégration continue.
 
 Vous vous aiderez des supports d'apprentissage fournis par vos formateurs.
+
+## Git et GitHub
+
+**Git** et **GitHub** sont souvent confondus, mais ils remplissent des rôles distincts dans le développement logiciel.
+
+*Git* est un outil en ligne de commande, c'est-à-dire un logiciel que vous installez sur votre ordinateur. Il vous permet de gérer les différentes versions de vos fichiers, un peu comme un carnet de bord pour votre projet. 
+
+**Grâce à Git, vous pouvez :**
+
+- Suivre l'évolution de votre projet: Chaque modification est enregistrée comme une "version" de votre projet.
+- Revenir en arrière: Si vous faites une erreur, vous pouvez revenir à une version précédente.
+- Travailler en équipe: Plusieurs personnes peuvent travailler sur le même projet en même temps, grâce à Git.
+
+**GitHub**, quant à lui, est une plateforme web qui utilise **Git**. C'est un peu comme un réseau social pour les développeurs. Il vous permet d'héberger vos projets Git en ligne, de les partager avec d'autres personnes et de collaborer sur des projets open source.
+
+### Pour résumer:
+
+- **Git** est l'outil qui vous permet de gérer les versions de vos fichiers.
+- **GitHub** est la plateforme en ligne qui vous permet d'héberger et de partager vos projets Git.
+
+
+**Une analogie pour mieux comprendre :**
+
+Imaginez **Git** comme un coffre-fort où vous rangez toutes les versions de votre roman. 
+
+**GitHub**, c'est l'endroit où vous installez ce coffre-fort dans une bibliothèque publique, pour que d'autres personnes puissent le consulter et y apporter leur contribution.
+
+## Pourquoi utiliser GitHub ?
+
+- Visibilité: C'est un excellent moyen de montrer vos projets, de créer un portfolio en ligne.
+- Collaboration: Vous pouvez facilement collaborer avec d'autres développeurs sur des projets open source ou privés.
+- Communauté: GitHub est une communauté très active où vous pouvez apprendre, poser des questions et trouver de l'aide.
+
+**Autres plateformes similaires à GitHub:**
+
+Il existe d'autres plateformes comme **GitLab** ou **Bitbucket** qui proposent des fonctionnalités similaires à **GitHub**.
+
+--- 
 
 ## Introduction à l'approche CI/CD
 
