@@ -6,7 +6,7 @@ serie: "git-cli"
 
 # Le terminal : Introduction aux lignes de commandes
 
-L'invite de commande de Windows est le terminal historique qui existe depuis les 1ères versions de Windows. Cet outil ne sera pas utilisé dans le cadre de votre formation.
+**L'invite de commande de Windows** est le terminal historique qui existe depuis les 1ères versions de Windows. Cet outil ne sera pas utilisé dans le cadre de votre formation.
 
 Nous préfèrerons utiliser : 
 
@@ -63,7 +63,7 @@ La commande `ls` permet de lister le contenu du répertoire courant
 
 Dans la capture ci-dessus, si vous observez la 1ère colonne **Mode**, vous pourrez vous rendre compte que certains éléments possèdent un marqueur `d-----`. La présence du `d` indique qu'il s'agit d'un répertoire (dans lequel on pourra naviguer). Les tirets suivants précisent les droits d'accès à l'élément dans les systèmes UNIX. Les droits d'accès ne nous concernent pas pour le moment.
 
-Si vous observez maintenant le dernier élément (**toto.txt**), vous remarquerez en 1ère colonne que le marqueur ne commence par par un `d` mais par un tiret `-`. Ceci indique qu'il s'agit d'un fichier. Vous pouvez d'ailleurs observer dans la colonne **Length** une valeur qui correspond à la taille du fichier exprimée en octets (ce qui n'est pas le cas pour les répertoires). Dans la capture précédente, le fichier **toto.txt** a une taille de **528 octets**.
+Si vous observez maintenant le dernier élément (**toto.txt**), vous remarquerez en 1ère colonne que le marqueur commence par un tiret `-` au lieu du `d`. Ceci indique qu'il s'agit d'un fichier. Vous pouvez d'ailleurs observer dans la colonne **Length** une valeur qui correspond à la taille du fichier exprimée en octets (ce qui n'est pas le cas pour les répertoires). Dans la capture précédente, le fichier **toto.txt** a une taille de **528 octets** (il contient donc 528 caractères car, dans la plupart des cas, 1 caractère prend 1 octet).
 
 ### La commande CD
 
@@ -89,6 +89,8 @@ Pour l'utiliser, on entre la commande `mkdir` suivie du nom du dossier que l'on 
 
 Dans la capture précédente, un répertoire `monSuperDossier` a été créé dans le dossier courant `C:\users\mdevoldere\Documents`.
 
+Nous pouvons maintenant naviguer vers ces répertoire en exécutant la commande `cd monSuperDossier`.
+
 --- 
 
 ## Conclusion 
@@ -102,3 +104,23 @@ Lorsque vous commencerez à utiliser un éditeur de code (Visual Studio, Eclipse
 Dans la capture ci-dessus, vous pouvez observer vers le haut **la zone d'édition** et en bas de la fenêtre, **le terminal PowerShell** intégré. Ceci est très pratique lors des phases de développement de pouvoir accéder aux code et au terminal dans la même fenêtre.
 
 > Note: PowerShell propose de nombreuses autres fonctionnalités avancées, comme la manipulation de texte, la gestion de processus, et l'interaction avec des objets .NET.
+
+
+# Exercices 
+
+Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.
+
+Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande que vous avez utilisé.
+
+
+1. Ouvrir PowerShell.
+2. Naviguer vers le répertoire `C:\users\VotreNomDutilisateur\Desktop`.
+3. Afficher le contenu du dossier.
+4. Dans ce répertoire, créer un dossier nommé `git-local`.
+5. Naviguer dans le dossier que vous venez de créer.
+6. Dans ce répertoire, créer un dossier nommé `mon-1er-depot-git`.
+7. Naviguer dans le dossier que vous venez de créer.
+8. Fermer PowrShell
+9. Rouvrir PowerShell
+10. Naviguer jusqu'au dossier que vous avez créé à l'étape 6.
+11. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
