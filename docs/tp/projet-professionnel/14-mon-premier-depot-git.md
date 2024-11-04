@@ -23,10 +23,8 @@ Dans le cadre de votre formation, vous utiliserez le logiciel [GIT](https://git-
 
 ## Créer mon référentiel de formation
 
-Si ce n'est déjà fait, créer votre compte sur [Github](https://github.com) avec votre adresse email personnelle.
+Si ce n'est déjà fait, créer votre compte sur [Github](https://github.com) avec votre **adresse email personnelle**.
 
 ## C'est parti !
 
-En vous aidant des ressources accessibles depuis [cette page](/tp/ci-cd/) : 
-
-- [Créer mon dépôt GIT de formation](/tp/ci-cd/01-training-repository)
+Commencez à apprendre à utiliser les lignes de commandes et GIT sur [cette page](/tp/git/) : 

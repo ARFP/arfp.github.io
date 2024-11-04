@@ -138,7 +138,7 @@ Dans la capture ci-dessus, vous pouvez observer vers le haut **la zone d'éditio
 
 **Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.**
 
-Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande que vous avez utilisé.
+Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande que vous avez utilisé et le résultat obtenu.
 
 
 1. Ouvrir PowerShell.
@@ -153,10 +153,5 @@ Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande 
 9. Rouvrir PowerShell.
 10. Naviguer jusqu'au dossier que vous avez créé à l'étape 6.
     - Faire une capture d'écran de la fenêtre PowerShell et la sauvegarder dans un fichier `powershell-capture-10.jpg`.
-11. Créer un nouveau fichier nommé `README.md`.
-12. Dans le fichier `README.md`, ajouter le contenu "Mon 1er fichier créé avec PowerShell" 
-    - Pour savoir comment réaliser cette tâche, Rechercher `powershell set-content` sur le Web.
-13. Afficher le contenu du fichier `README.md`.
-    - Pour savoir comment réaliser cette tâche, Rechercher `powershell get-content` sur le Web.
-14. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
+11. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
     - Si votre formateur est occupé ou absent, faire une capture d'écran du résultat des tâches 11, 12 et 13 et les sauvegarder dans les fichiers `powershell-capture-11.jpg`, `powershell-capture-12.jpg` et  `powershell-capture-13.jpg`.
