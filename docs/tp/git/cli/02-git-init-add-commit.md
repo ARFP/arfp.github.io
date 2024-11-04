@@ -1,7 +1,6 @@
 ---
 title: "Initialiser un dépôt GIT local"
 order: 2
-serie: "git-cli"
 ---
 
 

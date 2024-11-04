@@ -1,6 +1,7 @@
 ---
 title: "Mon dépôt ABCDEV"
 order: 2
+serie: "github"
 ---
 
 ## Pré-requis : 

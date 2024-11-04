@@ -1,6 +1,7 @@
 ---
 title: "Gestion d'un dépôt individuel"
 order: 11
+serie: "github"
 ---
 
 ## Pré-requis : 

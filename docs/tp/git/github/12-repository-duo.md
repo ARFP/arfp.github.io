@@ -1,6 +1,7 @@
 ---
 title: "Gestion d'un dépôt en binôme"
 order: 12
+serie: "github"
 ---
 
 ## Pré-requis : 

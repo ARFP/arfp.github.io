@@ -1,6 +1,7 @@
 ---
 title: "Publier un CV HTML"
 order: 21
+serie: "github"
 ---
 
 ## Pré-requis : 

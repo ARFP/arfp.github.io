@@ -1,6 +1,7 @@
 ---
 title: "Git & GitHub"
 index: 2
+serie: "github"
 ---
 
 Cette série d’exercices peut être réalisée dans les contextes suivants :

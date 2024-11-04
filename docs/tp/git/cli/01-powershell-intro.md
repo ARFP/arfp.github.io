@@ -1,7 +1,6 @@
 ---
 title: "Introduction au terminal Windows"
-order: 2
-serie: "git-cli"
+order: 1
 ---
 
 # Le terminal : Introduction aux lignes de commandes
@@ -91,6 +90,38 @@ Dans la capture précédente, un répertoire `monSuperDossier` a été créé da
 
 Nous pouvons maintenant naviguer vers ces répertoire en exécutant la commande `cd monSuperDossier`.
 
+
+### La commande NEW-ITEM
+
+`New-Item` : Créer un nouveau fichier.
+
+La commande `New-Item` fonctionne uniquement avec Powershell et permet de créer un fichier dans le répertoire courant.
+
+Pour l'utiliser, on entre la commande `New-Item` suivie du nom du fichier que l'on souhaite créer.
+
+![Powershell New-Item](./img/powershell-new-item.jpg)
+
+Dans la capture ci-dessus, vous pouvez observer que le répertoire courant est : `C:\Users\mdevoldere\Desktop`.
+
+Voici les commandes exécutées et le résultat obtenu : 
+
+| Commande exécutée | Résultat |
+| --- | --- |
+| **mkdir monRepertoire** | Création du dossier `monRepertoire` dans `C:\Users\mdevoldere\Desktop` |
+| **cd .\monRepertoire** | Navigation vers le répertoire créé |
+| **New-Item monFichier.txt** | Création d'un nouveau fichier nommé `monFichier.txt` dans `C:\Users\mdevoldere\Desktop\monRepertoire`  |
+| **ls** | Affichage du contenu du répertoire où l'on peut voir le fichier créé. |
+
+
+### Pour aller plus loin avec Powershell
+
+| Commande PowerSehll | Objectif |
+| --- | --- | 
+| **Get-Content** | Afficher le contenu d'un fichier dans le terminal PowerShell | 
+| **Set-Content** | Ajouter du contenu dans un fichier vide ou remplacer le contenu d'un fichier |  
+| **Add-Content** | Ajouter du contenu à la fin d'un fichier sans écraser le contenu déjà présent  |  
+
+
 --- 
 
 ## Conclusion 
@@ -116,11 +147,19 @@ Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande 
 1. Ouvrir PowerShell.
 2. Naviguer vers le répertoire `C:\users\VotreNomDutilisateur\Desktop`.
 3. Afficher le contenu du dossier.
+    - Faire une capture d'écran du résultat et la sauvegarder dans un fichier `powershell-capture-03.jpg`.
 4. Dans ce répertoire, créer un dossier nommé `git-local`.
 5. Naviguer dans le dossier que vous venez de créer.
 6. Dans ce répertoire, créer un dossier nommé `mon-1er-depot-git`.
 7. Naviguer dans le dossier que vous venez de créer.
-8. Fermer PowrShell
+8. Fermer PowerShell
 9. Rouvrir PowerShell
 10. Naviguer jusqu'au dossier que vous avez créé à l'étape 6.
-11. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
+    - Faire une capture d'écran de la fenêtre PowerShell et la sauvegarder dans un fichier `powershell-capture-10.jpg`.
+11. Créer un nouveau fichier nommé `README.md`.
+12. Dans le fichier `README.md`, ajouter le contenu "Mon 1er fichier créé avec PowerShell" 
+    - Pour savoir comment réaliser cette tâche, Rechercher `powershell set-content` sur le Web.
+13. Afficher le contenu du fichier `README.md`.
+    - Pour savoir comment réaliser cette tâche, Rechercher `powershell get-content` sur le Web.
+14. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
+    - Si votre formateur est occupé ou absent, faire une capture d'écran du résultat des tâches 11, 12 et 13 et les sauvegarder dans les fichiers `powershell-capture-11.jpg`, `powershell-capture-12.jpg` et  `powershell-capture-13.jpg`.

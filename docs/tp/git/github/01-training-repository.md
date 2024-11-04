@@ -1,6 +1,7 @@
 ---
 title: "Mon dépôt de formation"
 order: 1
+serie: "github"
 ---
 
 ## Pré-requis : 
@@ -65,7 +66,7 @@ Paramètres à appliquer à la création de votre dépôt:
 - Sélectionner une licence parmi celles proposées
     -  Consulter le site [choosealicense.com](https://choosealicense.com/) pour comparer les licences 
 
-**[Aide : Créer un dépôt sur GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository)**
+> [Aide : Créer un dépôt sur GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
 ![Exemple de création du dépôt de formation](./img/github-repo-options.jpg)
 
@@ -76,7 +77,7 @@ Une fois le formulaire complété, cliquer sur le bouton `Create repository`.
 Lorsque votre dépôt et créé et GitHub Desktop installé, clonez votre dépôt sur votre machine local à l'emplacement :
 - `C:\Users\VotreNomDutilisateur\GitHub\` 
 
-**[Aide : Cloner un dépôt GitHub ](https://docs.github.com/fr/repositories/creating-and-managing-repositories/cloning-a-repository)**
+> [Aide : Cloner un dépôt GitHub ](https://docs.github.com/fr/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 > Remplacer 'VotreNomDutilisateur' par le nom de votre répertoire personnel
 
@@ -90,7 +91,8 @@ Editer le fichier `README.md` et y ajouter :
 - L'intitulé de votre formation
 - La date de début de votre formation
 - La date de fin de votre formation
-- Vos dates de début et fin de stage
+- Si vous êtes en formation qualifiante : 
+    - Vos dates de début et fin de stage
 
 Lorsque vous avez terminé l'édition du fichier, effectuer un COMMIT avec le message "README mis à jour" puis pousser (PUSH) vos modifications vers GitHub.
 

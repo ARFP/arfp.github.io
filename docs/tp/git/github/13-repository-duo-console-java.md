@@ -1,6 +1,7 @@
 ---
 title: "Gestion d'un Projet Java en binôme"
 order: 13
+serie: "github"
 ---
 
 # Gestion d'un dépôt à plusieurs (ABC)

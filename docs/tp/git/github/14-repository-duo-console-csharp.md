@@ -1,6 +1,7 @@
 ---
 title: "Gestion d'un projet C# en binôme"
 order: 14
+serie: "github"
 ---
 
 # Gestion d'un dépôt à plusieurs (DWWM/CDA)

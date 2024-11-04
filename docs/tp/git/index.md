@@ -1,5 +1,5 @@
 ---
-title: "CI/CD"
+title: "GIT"
 layout: module
 id: 89
 level: 4
@@ -11,6 +11,8 @@ level: 4
 
 
 ## Compétences mises en oeuvre : 
+- [Utiliser les lignes de commande avec PowerShell](./cli/01-powershell-intro)
+- [Créer un dépôt GIT local en ligne de commande](./cli/02-git-init-add-commit)
 - [Créer un dépôt sur github](https://github.com/new)
 - Synchroniser un dépôt GIT en ligne de commande ou avec [Github Desktop](https://desktop.github.com)
 - Gérer ses fichiers sources avec GIT et Github
