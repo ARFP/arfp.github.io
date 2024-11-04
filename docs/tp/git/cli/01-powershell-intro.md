@@ -3,13 +3,16 @@ title: "Introduction au terminal Windows"
 order: 1
 ---
 
-# Le terminal : Introduction aux lignes de commandes
+Un terminal (ou console, ou invite de commandes) est une application permettant d'interagir directement avec votre ordinateur en utilisant des commandes textuelles. C'est un peu comme donner des ordres à votre ordinateur en écrivant, au lieu de cliquer sur des icônes. 
 
-**L'invite de commande de Windows** est le terminal historique qui existe depuis les 1ères versions de Windows. Cet outil ne sera pas utilisé dans le cadre de votre formation.
+Tous les systèmes d'exploitation disposent d'un terminal.
 
-Nous préfèrerons utiliser : 
+> La majorité des serveurs ne disposent pas d'interface graphique. Lorsque vous vous connectez à un serveur à distance, vous accédez directement à son terminal.
 
-- **PowerShell**: Ce shell (ou interpréteur en ligne de commande) offre une syntaxe similaire à celle des shells Unix comme Bash. Si vous êtes familier avec GNU/Linux et ses commandes comme `ls`, `cd` ou `mkdir`, vous vous sentirez rapidement à l'aise avec PowerShell.
+- **L'invite de commande de Windows** est le terminal historique qui existe depuis les 1ères versions de Windows. 
+
+- **PowerShell**: Ce shell (ou interpréteur en ligne de commande) offre une syntaxe similaire à celle des shells Unix comme Bash. Si vous êtes familier avec GNU/Linux et ses commandes comme `ls`, `cd` ou `mkdir`, vous vous sentirez rapidement à l'aise avec PowerShell. PowerShell propose également un langage orienté objet pour créer des scripts.
+
 - **Le Terminal Windows**: De son vrai nom `Windows Terminal` et disponible depuis Windows 11, ce shell offre une intégration plus fluide avec les outils en ligne de commande, notamment **PowerShell** et les distributions GNU/Linux via le Sous-système Windows pour Linux (WSL).
 
 
@@ -48,13 +51,11 @@ Par exemple, si je souhaite créer un nouveau dossier, il sera créé dans le r�
 
 ### La commande PWD
 
-`pwd`: Afficher le chemin du répertoire courant.
+La commande `pwd` permet d'afficher le chemin du répertoire courant.
 
 ![La commande PWD](./img/powershell-pwd.jpg)
 
 ### La commande LS
-
-`ls` : Lister le contenu d'un répertoire.
 
 La commande `ls` permet de lister le contenu du répertoire courant
 
@@ -66,8 +67,6 @@ Si vous observez maintenant le dernier élément (**toto.txt**), vous remarquere
 
 ### La commande CD
 
-`cd`: Changer de répertoire.
-
 La commande `cd` permet de changer de répertoire courant.
 
 Pour l'utiliser, on entre la commande `cd` suivie du répertoire ou chemin vers lequel on souhaite naviguer comme dans l'exemple ci-dessous.
@@ -78,15 +77,13 @@ Vous pouvez observer que le répertoire courant a changé suite à la commande `
 
 ### La commande MKDIR
 
-`mkdir` : Créer un nouveau répertoire.
-
 La commande `mkdir` permet de créer des répertoires.
 
 Pour l'utiliser, on entre la commande `mkdir` suivie du nom du dossier que l'on souhaite créer.
 
 ![La commande MKDIR](./img/powershell-mkdir.jpg)
 
-Dans la capture précédente, un répertoire `monSuperDossier` a été créé dans le dossier courant `C:\users\mdevoldere\Documents`.
+Dans la capture ci-dessus, un répertoire `monSuperDossier` a été créé dans le dossier courant `C:\users\mdevoldere\Documents`.
 
 Nous pouvons maintenant naviguer vers ces répertoire en exécutant la commande `cd monSuperDossier`.
 
@@ -132,14 +129,14 @@ Lorsque vous commencerez à utiliser un éditeur de code (Visual Studio, Eclipse
 
 ![PowerShell dans Visual Studio Code](./img/powershell-vscode.jpg)
 
-Dans la capture ci-dessus, vous pouvez observer vers le haut **la zone d'édition** et en bas de la fenêtre, **le terminal PowerShell** intégré. Ceci est très pratique lors des phases de développement de pouvoir accéder aux code et au terminal dans la même fenêtre.
+Dans la capture ci-dessus, vous pouvez observer vers le haut **la zone d'édition** et en bas de la fenêtre, **le terminal PowerShell** intégré. Ceci est très pratique lors des phases de développement de pouvoir accéder au code et au terminal dans la même fenêtre.
 
 > Note: PowerShell propose de nombreuses autres fonctionnalités avancées, comme la manipulation de texte, la gestion de processus, et l'interaction avec des objets .NET.
 
 
-# Exercices 
+# Exercices
 
-Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.
+**Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.**
 
 Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande que vous avez utilisé.
 
@@ -152,8 +149,8 @@ Pour chaque tâche, vous indiquerez dans un document texte la méthode/commande 
 5. Naviguer dans le dossier que vous venez de créer.
 6. Dans ce répertoire, créer un dossier nommé `mon-1er-depot-git`.
 7. Naviguer dans le dossier que vous venez de créer.
-8. Fermer PowerShell
-9. Rouvrir PowerShell
+8. Fermer PowerShell.
+9. Rouvrir PowerShell.
 10. Naviguer jusqu'au dossier que vous avez créé à l'étape 6.
     - Faire une capture d'écran de la fenêtre PowerShell et la sauvegarder dans un fichier `powershell-capture-10.jpg`.
 11. Créer un nouveau fichier nommé `README.md`.

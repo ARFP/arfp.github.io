@@ -27,6 +27,10 @@ Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des 
 
 # Créer un nouveau dépôt 
 
+## git init
+
+La commande `git init` crée un nouveau dépôt GIT dans le répertoire courant.
+
 Ouvrir PowerShell puis naviguer jusqu'au répertoire `mon-1er-depot-git` créé dans la [partie précédente](./01-powershell-intro).
 
 Pour créer un nouveau dépôt **GIT**, taper la commande `git init`.
@@ -34,6 +38,19 @@ Pour créer un nouveau dépôt **GIT**, taper la commande `git init`.
 Un message confirme la création d'un nouveau dépôt vide.
 
 ![PowerShell GIT init](./img/git-local-init.jpg)
+
+Vous pouvez vérifier le contenu du répertoire en tapant la commande  `ls -h` ( ajouter `-h` à la commande `ls` affichera les fichiers et dossiers cachés). Vous devriez voir apparaitre un répertoire `.git` ce qui confirme que le répertoire courant héberge un dépôt GIT.
+
+> Le répertoire `.git` contient toutes les informations de votre dépôt et ne doit pas être supprimé. 
+
+## git status
+
+La commande `git status` affiche l'état actuel de votre dépôt.
+
+![git status](./img/git-local-status.jpg)
+
+
+# Ouvrir le dépôt dans un éditeur de code
 
 Lorsque le dépôt est créé, ouvrir le répertoire courant dans **Visual Studio Code** en tapant la commande `code .` 
 
@@ -44,3 +61,5 @@ Lorsque le dépôt est créé, ouvrir le répertoire courant dans **Visual Studi
 > - dans le répertoire courant (`.`)
 
 ![PowerShell start vscode](./img/git-local-vscode.jpg)
+
+Votre application  `Visual Studio Code` s'ouvre dans le répertoire courant.
