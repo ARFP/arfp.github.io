@@ -1,6 +1,6 @@
 ---
 title: "Initialiser un dépôt GIT local"
-order: 2
+order: 3
 ---
 
 
@@ -25,13 +25,15 @@ order: 2
 
 Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. L'objectif ici, est de bien comprendre le fonctionnement de GIT et du versionning.
 
+Avant de commencer, suivez ces quelques étapes pour configurer votre environnement GIT
+
 # Créer un nouveau dépôt 
 
 ## git init
 
 La commande `git init` crée un nouveau dépôt GIT dans le répertoire courant.
 
-Ouvrir PowerShell puis naviguer jusqu'au répertoire `mon-1er-depot-git` créé dans la [partie précédente](./01-powershell-intro).
+Ouvrir PowerShell puis naviguer jusqu'au répertoire `mon-1er-depot-git` créé dans la [1ère partie](./01-powershell-intro).
 
 Pour créer un nouveau dépôt **GIT**, taper la commande `git init`.
 
@@ -39,7 +41,7 @@ Un message confirme la création d'un nouveau dépôt vide.
 
 ![PowerShell GIT init](./img/git-local-init.jpg)
 
-Vous pouvez vérifier le contenu du répertoire en tapant la commande  `ls -h` ( ajouter `-h` à la commande `ls` affichera les fichiers et dossiers cachés). Vous devriez voir apparaitre un répertoire `.git` ce qui confirme que le répertoire courant héberge un dépôt GIT.
+Vous pouvez vérifier le contenu du répertoire en tapant la commande  `ls -h`. Vous devriez voir apparaitre un répertoire `.git` ce qui confirme que le répertoire courant héberge un dépôt GIT.
 
 > Le répertoire `.git` contient toutes les informations de votre dépôt et ne doit pas être supprimé. 
 
@@ -60,7 +62,7 @@ Vous pouvez toutefois observer :
 - `No commits yet` : Aucune sauvegarde locale n'a été effectuée dans ce dépôt.
 - `Nothing to commit (create/copy files and use "git add" to track)` : Rien à sauvegarder pour le moment.
 
-### Exercices
+## Exercices
 
 **Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.**
 
@@ -78,9 +80,33 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 
 ---
 
+# Mon 1er commit
+
+La commande `git commit` enregistre l'état actuel des fichiers de votre dépôt.
+
+La commande `git commit` est utilisée lorsque : 
+- J'ai terminé un travail et je souhaite le sauvegarder.
+- Je dois quitter mon poste de travail pour éventuellement reprendre le code sur un autre ordinateur.
+- Je vais manger ou j'ai terminé ma journée et je souhaite sauvegarder mon travail.
+
+La commande `git commit` doit obligatoirement être accompagnée d'un message de commit (message de validation). Elle s'utilise de cette manière :
+
+```ps
+git commit -m "Mon premier commit"
+```
+
 # Ouvrir le dépôt dans un éditeur de code
 
-Lorsque le dépôt est créé, ouvrir le répertoire courant dans **Visual Studio Code** en tapant la commande `code .` 
+Si ce n'est déjà fait, [installer Visual Studio Code](https://code.visualstudio.com/Download) (choisissez le `User Installer` qui ne nécessite pas de privilèges élevés pour être installé).
+
+![Télécharger Visual Studio code](./img/vscode-dl.jpg)
+
+Lorsque le dépôt est créé et Visual Studio code installé :
+
+1. Ouvrir PowerShell et naviguer jusqu'au répertoire contenant votre dépôt GIT.
+2. Ouvrir le répertoire dans **Visual Studio Code** en tapant la commande `code .` 
+
+![PowerShell start vscode](./img/git-local-vscode.jpg)
 
 > /!\ Le point `.` fait partie de la commande et signifie : "répertoire courant".
 >
@@ -88,7 +114,11 @@ Lorsque le dépôt est créé, ouvrir le répertoire courant dans **Visual Studi
 > - Ouvrir Visual Studio Code (`code`)
 > - dans le répertoire courant (`.`)
 
-![PowerShell start vscode](./img/git-local-vscode.jpg)
 
 Votre application `Visual Studio Code` s'ouvre dans le répertoire courant.
 
+![vscode ouvert](./img/vscode-open.jpg)
+
+- **Sur la gauche**, le répertoire ouvert avec les fichiers qu'il contient (notez que le répertoire .git n'apparait pas, c'est normal).
+- **Sur la droite**, la partie éditeur
+- **En bas à gauche**, vous observez que Vscode a bien identifié qu'il s'agit d'un dépôt GIT et affiche le nom de la branche courante (main).
