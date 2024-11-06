@@ -85,7 +85,7 @@ Pour l'utiliser, on entre la commande `mkdir` suivie du nom du dossier que l'on 
 
 Dans la capture ci-dessus, un répertoire `monSuperDossier` a été créé dans le dossier courant `C:\users\mdevoldere\Documents`.
 
-Nous pouvons maintenant naviguer vers ces répertoire en exécutant la commande `cd monSuperDossier`.
+Nous pouvons maintenant naviguer vers ce répertoire en exécutant la commande `cd monSuperDossier`.
 
 
 ### La commande NEW-ITEM
