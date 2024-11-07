@@ -30,7 +30,7 @@ Si **GIT** est bien installé, vous devriez observer un résultat similaire à l
 
 ![git version](./img/git-version.jpg)
 
-Ci-dessus, vous observez que ****GIT** version 2.46.2** est installé (La version installée sur votre poste de travail peut différer).
+Ci-dessus, vous observez que "**GIT** version 2.46.2" est installé (La version installée sur votre poste de travail peut différer).
 
 
 Dans le cas où **GIT** n'est pas installé, vous devriez avoir un message similaire à la capture suivante.
@@ -80,4 +80,4 @@ En résumé, **user.name** et **user.email** sont essentiels pour assurer la tra
 
 ## Bravo !
 
-Votre GIT est installé et configuré, vous pouvez passer à l'étape suivante : [Créer un dépôt GIT local](./03-git-init-add-commit).
+Votre GIT est installé et configuré, vous pouvez passer à l'étape suivante : [Initialiser un dépôt GIT local](./03-git-init-add-commit).

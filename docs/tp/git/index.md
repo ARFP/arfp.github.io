@@ -27,3 +27,7 @@ Les logiciels de contrôle de version gardent une trace de chaque changement app
 --- 
 
 Dans le cadre de votre formation, vous utiliserez le logiciel [GIT](https://git-scm.com) et la plateforme [GitHub](https://github.com).
+
+## Ressources en ligne
+
+[Supports de présentation GIT](https://devoldere.net/ressources/git/)

@@ -47,6 +47,8 @@ Vous pouvez vérifier le contenu du répertoire en tapant la commande  `ls -h`. 
 
 > /!\ Attention, un répertoire ne peut contenir qu'un seul dépôt GIT. Vous ne devez JAMAIS créer un dépôt GIT dans un sous-répertoire d'un dépôt GIT existant. 
 
+> Les commandes GIT doivent être saisies dans le répertoire du depôt.
+
 ## git status
 
 La commande `git status` affiche l'état actuel de votre dépôt.
@@ -75,10 +77,30 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 4. Afficher le contenu du fichier `README.md`.
     - Pour savoir comment réaliser cette tâche, Rechercher `powershell get-content` sur le Web.
 5. Taper la commande `git status`. Vous devriez observer un résultat similaire à la capture ci-dessous.
+    - Faire une capture d'écran du résultat et la sauvegarder dans le fichier `C:\users\VotreNomDutilisateur\Pictures\git-status-avant-1er-commit.jpg`
 
 ![git status after files added](./img/git-local-status-2.jpg)
 
 ---
+
+# Référencer les fichiers à ajouter au prochain commit
+
+Comme vous avez pu le constater à l'étape 5 de l'exercice précédent, le fichier **README.md** que vous avez créé est noté comme "non traqué". Cela signifie que ce fichier ne sera pas intégré à la prochaine sauvegarde (commit).
+
+Avant d'effectuer un **commit**, vous devez référencer les fichiers qui y seront ajoutés.
+
+## GIT add
+
+La commande `git add` permet d'ajouter des fichiers au prochain `commit`.
+
+> Uniquement les fichiers ajoutés, modifiés ou supprimés depuis le dernier `commit` peuvent être référencés. Il est en effet inutile de référencer un fichier qui n'a pas été modifié !
+
+La commande `git add` peut être utilisée :
+- Pour référencer toutes les modifications depuis le dernier commit.
+- Pour référencer 1 ou plusieurs fichiers spécifique(s).
+
+
+`git add *` : ajoute TOUTES les modifications au prochain commit
 
 # Mon 1er commit
 
@@ -92,8 +114,28 @@ La commande `git commit` est utilisée lorsque :
 La commande `git commit` doit obligatoirement être accompagnée d'un message de commit (message de validation). Elle s'utilise de cette manière :
 
 ```ps
-git commit -m "Mon premier commit"
+git commit -m "Message du commit"
 ```
+
+Le message doit être explicite et indiquer quelles modifications ont été apportées depuis le commit précédent.
+
+Exemples de messages explicites permettant de rapidement comprendre le travail effectué par le développeur :
+- "Ajout de la fonction calculer() dans le composant Calculateur"  
+- "Correction du bug lors de l'enregistrement d'un nouvel utilisateur dans la fonction saveUser()"
+
+
+Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffisemment explicites :
+
+- "12 octobre 2024"
+- "Mise à jour"
+- "sauvegarde"
+
+
+# Exercice 
+
+1. Ouvrir PowerShell et naviguer jusqu'au répertoire `mon-1er-depot-git`.
+2. Ajouter
+
 
 # Ouvrir le dépôt dans un éditeur de code
 

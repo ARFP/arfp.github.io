@@ -144,7 +144,7 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 1. Ouvrir PowerShell.
 2. Naviguer vers le répertoire `C:\users\VotreNomDutilisateur\Desktop`.
 3. Afficher le contenu du dossier.
-    - Faire une capture d'écran du résultat et la sauvegarder dans un fichier `powershell-capture-03.jpg`.
+    - Faire une capture d'écran du résultat et la sauvegarder dans un fichier `C:\users\VotreNomDutilisateur\Pictures\powershell-capture-03.jpg`.
 4. Dans ce répertoire, créer un dossier nommé `git-local`.
 5. Naviguer dans le dossier que vous venez de créer.
 6. Dans ce répertoire, créer un dossier nommé `mon-1er-depot-git`.
@@ -152,6 +152,9 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 8. Fermer PowerShell.
 9. Rouvrir PowerShell.
 10. Naviguer jusqu'au dossier que vous avez créé à l'étape 6.
-    - Faire une capture d'écran de la fenêtre PowerShell et la sauvegarder dans un fichier `powershell-capture-10.jpg`.
+    - Faire une capture d'écran de la fenêtre PowerShell et la sauvegarder dans un fichier `C:\users\VotreNomDutilisateur\Pictures\powershell-capture-10.jpg`.
 11. Laisser la fenêtre PowerShell ouverte puis valider votre travail avec votre formateur.
-    - Si votre formateur est occupé ou absent, faire une capture d'écran du résultat des tâches 11, 12 et 13 et les sauvegarder dans les fichiers `powershell-capture-11.jpg`, `powershell-capture-12.jpg` et  `powershell-capture-13.jpg`.
+    - Si votre formateur est occupé ou absent, faire une capture d'écran du résultat des tâches 11, 12 et 13 et les sauvegarder dans les fichiers :
+        - `C:\users\VotreNomDutilisateur\Pictures\powershell-capture-11.jpg`
+        - `C:\users\VotreNomDutilisateur\Pictures\powershell-capture-12.jpg`
+        - `C:\users\VotreNomDutilisateur\Pictures\powershell-capture-13.jpg`
