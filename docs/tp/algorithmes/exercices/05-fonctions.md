@@ -36,8 +36,8 @@ Pour chaque exercice :
 Cette procédure sera appelée depuis le programme principal (main()) comme dans l'exemple ci-dessous : 
 
 ```java
-class App {
-    public static void main(String args) {
+public class App {
+    public static void main(String[] args) {
         App.helloWorld();
     }
 
@@ -55,8 +55,8 @@ class App {
 Cette fonction sera appelée depuis le programme principal (main()) qui affichera le résultat comme dans l'exemple ci-dessous : 
 
 ```java
-class App {
-    public static void main(String args) {
+public class App {
+    public static void main(String[] args) {
         String result = App.helloYou();
         System.out.println(result);
     }
@@ -79,8 +79,8 @@ class App {
 
 import java.util.Scanner;
 
-class App {
-    public static void main(String args) {
+public class App {
+    public static void main(String[] args) {
         String result;
         result = App.askFirstName(); // Demande du prénom
         App.showResult(result); // Affichage du résultat
@@ -91,6 +91,7 @@ class App {
         Scanner sc = new Scanner(System.in); // Initialise le Scanner
         System.out.println("Bonjour, saisissez votre prénom: "); 
         firstname = sc.nextLine(); // Attente de la saisie utilisateur
+        sc.close();
         return firstname; // On retourne le résultat
     }
 
