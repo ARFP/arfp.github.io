@@ -79,7 +79,7 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 5. Taper la commande `git status`. Vous devriez observer un résultat similaire à la capture ci-dessous.
     - Faire une capture d'écran du résultat et la sauvegarder dans le fichier `C:\users\VotreNomDutilisateur\Pictures\git-status-avant-1er-commit.jpg`
 
-![git status after files added](./img/git-local-status-2.jpg)
+![git status before files added](./img/git-local-status-2.jpg)
 
 ---
 
@@ -100,11 +100,20 @@ La commande `git add` peut être utilisée :
 - Pour référencer 1 ou plusieurs fichiers spécifique(s).
 
 
-`git add *` : ajoute TOUTES les modifications au prochain commit
+`git add *` : ajoute TOUTES les modifications au prochain commit.
+`git add monFichier.txt` : ajoute le fichier **monFichier.txt** au prochain commit.
+
+Notez que: 
+- **GIT** n'ajoute que les fichiers modifiés depuis le dernier commit. Si vous tentez d'ajouter un fichier qui n'a pas été modifié, GIT l'ignorera.
+- **GIT** gère les modifications sur les *fichiers*. Les *répertoires vides* ne sont pas synchronisés.
+
+
 
 # Mon 1er commit
 
-La commande `git commit` enregistre l'état actuel des fichiers de votre dépôt.
+La commande `git commit` enregistre l'état actuel de votre dépôt.
+
+> Uniquement les fichiers référencés avec la commande `git add` seront sauvegardés dans le prochain commit.
 
 La commande `git commit` est utilisée lorsque : 
 - J'ai terminé un travail et je souhaite le sauvegarder.
@@ -123,7 +132,6 @@ Exemples de messages explicites permettant de rapidement comprendre le travail e
 - "Ajout de la fonction calculer() dans le composant Calculateur"  
 - "Correction du bug lors de l'enregistrement d'un nouvel utilisateur dans la fonction saveUser()"
 
-
 Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffisemment explicites :
 
 - "12 octobre 2024"
@@ -133,8 +141,26 @@ Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffis
 
 # Exercice 
 
-1. Ouvrir PowerShell et naviguer jusqu'au répertoire `mon-1er-depot-git`.
-2. Ajouter
+1. Ouvrir PowerShell et naviguer jusqu'au répertoire **mon-1er-depot-git**.
+2. Entrer la commande `git status`
+    - Vous devriez obtenir le même résultat que précédemment
+
+![git status before files added](./img/git-local-status-2.jpg)
+
+3. Ajouter le fichier **README.md** créé précédemment à la liste des fichiers à sauvegarder au prochain commit.
+    - Utilisez la commande `git add`.
+4. Une fois le fichier **README.md** ajouté, tapez la commande `git status`
+    - Vous devriez obtenir un résultat similaire à la capture suivante qui indique que le fichier README.md est bien "tracké" pour le prochain commit.
+
+![git status after files added](./img/git-local-status-3.jpg)
+
+5. Effectuer le 1er commit en entrant la commande `git commit -m "ajout du fichier README"`.
+    - Vous devriez obtenir un résultat similaire à la capture suivante
+
+![git 1st commit](./img/git-local-commit.jpg)
+
+6. Entrer la commande `git status`
+    - Qu'observez-vous ?
 
 
 # Ouvrir le dépôt dans un éditeur de code
