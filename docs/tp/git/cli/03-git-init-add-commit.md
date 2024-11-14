@@ -97,11 +97,17 @@ La commande `git add` permet d'ajouter des fichiers au prochain `commit`.
 
 La commande `git add` peut être utilisée :
 - Pour référencer toutes les modifications depuis le dernier commit.
-- Pour référencer 1 ou plusieurs fichiers spécifique(s).
+- Pour référencer des fichiers spécifiques.
 
+**Exemples**
 
 `git add *` : ajoute TOUTES les modifications au prochain commit.
+
+`git add ./monDossier` : ajoute toutes les modifications du répertoire **./monDossier** au prochain commit.
+
 `git add monFichier.txt` : ajoute le fichier **monFichier.txt** au prochain commit.
+
+`git add ./monDossier/unFichier.txt` : ajoute le fichier **./monDossier/unFichier.txt** au prochain commit.
 
 Notez que: 
 - **GIT** n'ajoute que les fichiers modifiés depuis le dernier commit. Si vous tentez d'ajouter un fichier qui n'a pas été modifié, GIT l'ignorera.
@@ -119,6 +125,7 @@ La commande `git commit` est utilisée lorsque :
 - J'ai terminé un travail et je souhaite le sauvegarder.
 - Je dois quitter mon poste de travail pour éventuellement reprendre le code sur un autre ordinateur.
 - Je vais manger ou j'ai terminé ma journée et je souhaite sauvegarder mon travail.
+- Je passe le relais à un autre développeur qui va reprendre mon travail.
 
 La commande `git commit` doit obligatoirement être accompagnée d'un message de commit (message de validation). Elle s'utilise de cette manière :
 
@@ -154,13 +161,15 @@ Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffis
 
 ![git status after files added](./img/git-local-status-3.jpg)
 
-5. Effectuer le 1er commit en entrant la commande `git commit -m "ajout du fichier README"`.
+5. Effectuer le 1er commit à l'aide de la commande `git commit"`. Le message de commit doit être "Ajout du fichier README".
     - Vous devriez obtenir un résultat similaire à la capture suivante
 
 ![git 1st commit](./img/git-local-commit.jpg)
 
 6. Entrer la commande `git status`
     - Qu'observez-vous ?
+
+
 
 
 # Ouvrir le dépôt dans un éditeur de code
