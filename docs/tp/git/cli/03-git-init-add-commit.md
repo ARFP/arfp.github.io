@@ -64,7 +64,7 @@ Vous pouvez toutefois observer :
 - `No commits yet` : Aucune sauvegarde locale n'a été effectuée dans ce dépôt.
 - `Nothing to commit (create/copy files and use "git add" to track)` : Rien à sauvegarder pour le moment.
 
-## Exercices
+## Exercice
 
 **Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.**
 
@@ -113,6 +113,21 @@ Notez que:
 - **GIT** n'ajoute que les fichiers modifiés depuis le dernier commit. Si vous tentez d'ajouter un fichier qui n'a pas été modifié, GIT l'ignorera.
 - **GIT** gère les modifications sur les *fichiers*. Les *répertoires vides* ne sont pas synchronisés.
 
+## Exercice 
+
+1. Ouvrir PowerShell et naviguer jusqu'au répertoire **mon-1er-depot-git**.
+
+2. Entrer la commande `git status`
+    - Vous devriez obtenir le même résultat que précédemment
+
+![git status before files added](./img/git-local-status-2.jpg)
+
+3. Ajouter le fichier **README.md** créé précédemment à la liste des fichiers à sauvegarder au prochain commit.
+    - Utilisez la commande `git add`.
+4. Une fois le fichier **README.md** ajouté, tapez la commande `git status`
+    - Vous devriez obtenir un résultat similaire à la capture suivante qui indique que le fichier README.md est bien "traqué" pour le prochain commit.
+
+![git status after files added](./img/git-local-status-3.jpg)
 
 
 # Mon 1er commit
@@ -149,27 +164,44 @@ Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffis
 # Exercice 
 
 1. Ouvrir PowerShell et naviguer jusqu'au répertoire **mon-1er-depot-git**.
-2. Entrer la commande `git status`
-    - Vous devriez obtenir le même résultat que précédemment
 
-![git status before files added](./img/git-local-status-2.jpg)
-
-3. Ajouter le fichier **README.md** créé précédemment à la liste des fichiers à sauvegarder au prochain commit.
-    - Utilisez la commande `git add`.
-4. Une fois le fichier **README.md** ajouté, tapez la commande `git status`
-    - Vous devriez obtenir un résultat similaire à la capture suivante qui indique que le fichier README.md est bien "tracké" pour le prochain commit.
-
-![git status after files added](./img/git-local-status-3.jpg)
-
-5. Effectuer le 1er commit à l'aide de la commande `git commit"`. Le message de commit doit être "Ajout du fichier README".
+2. Effectuer le 1er commit à l'aide de la commande `git commit"`. Le message de commit doit être "Ajout du fichier README".
     - Vous devriez obtenir un résultat similaire à la capture suivante
 
 ![git 1st commit](./img/git-local-commit.jpg)
 
-6. Entrer la commande `git status`
+3. Entrer la commande `git status`
     - Qu'observez-vous ?
+    - Faites une capture d'écran du résultat et sauvegardez-la avec les précédentes.
 
+4. Ajouter un fichier **maFormation.md** dans le répertoire ou est situé le fichier **README.md** créé précédemment.
 
+5. Dans ce fichier, ajouter le nom de votre formation suivi de la date de démarrage.
+    - Utilisez la commande **Set-Content** de PowerShell
+
+6. Ajouter le fichier **maFormation.md** au prochain commit à l'aide de la commande `git add`.
+
+7. Faire un commit avec le message "ajout du fichier maFormation.md".
+    - Faire une capture d'écran du résultat et la sauvegarder avec les précédentes.
+
+8. Modifier le contenu du fichier maFormation.md et y ajouter le texte "PowerShell est mon ami."
+
+9. Ajouter les modifications au prochain commit
+
+10. Effectuer un commit avec le message "modification du fichier maFormation.md"
+    - Faire une capture d'écran du résultat et la sauvegarder avec les précédentes.
+
+# Voir l'historique des commits
+
+La commande `git log` permet de voir l'historique des validations (commits) effectuées dans un dépôt GIT.
+
+Par défaut, git log invoqué sans argument énumère en ordre chronologique inversé les commits réalisés. Cela signifie que les commits les plus récents apparaissent en premier. Comme vous le remarquez, cette commande indique chaque commit avec le nom et l’e-mail de l’auteur, la date et le message du commit.
+
+enter la commande `` dans le dépôt que vous utilisez dans les exercices de cette page.
+
+vous devriez observer un résultat similaire à la capture suivante : 
+
+![git log](./img/git-log.jpg)
 
 
 # Ouvrir le dépôt dans un éditeur de code
