@@ -114,9 +114,9 @@ Voici les commandes exécutées et le résultat obtenu :
 
 | Commande PowerSehll | Objectif |
 | --- | --- | 
-| **Get-Content** | Afficher le contenu d'un fichier dans le terminal PowerShell | 
-| **Set-Content** | Ajouter du contenu dans un fichier vide ou remplacer le contenu d'un fichier |  
-| **Add-Content** | Ajouter du contenu à la fin d'un fichier sans écraser le contenu déjà présent  |  
+| **[Get-Content](https://www.google.fr/search?q=powersehll+get-content)** | Afficher le contenu d'un fichier dans le terminal PowerShell | 
+| **[Set-Content](https://www.google.fr/search?q=powersehll+set-content)** | Ajouter du contenu dans un fichier vide ou remplacer le contenu d'un fichier |  
+| **[Add-Content](https://www.google.fr/search?q=powersehll+add-content)** | Ajouter du contenu à la fin d'un fichier sans écraser le contenu déjà présent  |  
 
 
 --- 
@@ -134,7 +134,7 @@ Dans la capture ci-dessus, vous pouvez observer vers le haut **la zone d'éditio
 > Note: PowerShell propose de nombreuses autres fonctionnalités avancées, comme la manipulation de texte, la gestion de processus, et l'interaction avec des objets .NET.
 
 
-# Exercices
+# Exercice
 
 **Exécutez les commandes PowerShell correspondant aux tâches demandées ci-dessous.**
 
