@@ -1,5 +1,5 @@
 ---
-title: "Initialiser un dépôt GIT local"
+title: "Initialiser un dépôt GIT"
 order: 3
 ---
 
@@ -11,21 +11,17 @@ order: 3
     - Savoir créer un répertoire
 - Savoir lire et suivre un tutoriel
 - Avoir terminé [l'introduction au terminal Windows](./01-powershell-intro)
+- Avoir terminé [l'installation et la configuration de votre environnement GIT](./02-git-config)
 
 ## Compétences mises en oeuvre : 
 - [Utiliser le terminal du système d'exploitation](./01-powershell-intro)
 - [Créer un dépôt GIT sur une machine locale](https://www.atlassian.com/fr/git/tutorials/setting-up-a-repository)
-- Valider des modifications avec GIT
-- Annuler des modifications avec GIT
-- Gérer l'historique de ses fichiers sources avec GIT
 - Utiliser l'Anglais dans un contexte professionnel
 
 
 ---
 
-Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. L'objectif ici, est de bien comprendre le fonctionnement de GIT et du versionning.
-
-Avant de commencer, suivez ces quelques étapes pour configurer votre environnement GIT
+Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. 
 
 # Créer un nouveau dépôt 
 
@@ -134,7 +130,7 @@ Notez que:
 
 La commande `git commit` enregistre l'état actuel de votre dépôt.
 
-> Uniquement les fichiers référencés avec la commande `git add` seront sauvegardés dans le prochain commit.
+> Uniquement les fichiers référencés avec la commande **git add** seront sauvegardés dans le prochain commit.
 
 La commande `git commit` est utilisée lorsque : 
 - J'ai terminé un travail et je souhaite le sauvegarder.
@@ -165,7 +161,7 @@ Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffis
 
 1. Ouvrir PowerShell et naviguer jusqu'au répertoire **mon-1er-depot-git**.
 
-2. Effectuer le 1er commit à l'aide de la commande `git commit"`. Le message de commit doit être "Ajout du fichier README".
+2. Effectuer le 1er commit à l'aide de la commande `git commit`. Le message de commit doit être "Ajout du fichier README".
     - Vous devriez obtenir un résultat similaire à la capture suivante
 
 ![git 1st commit](./img/git-local-commit.jpg)

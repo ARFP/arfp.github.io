@@ -1,5 +1,5 @@
 ---
-title: "Configurer GIT"
+title: "Installer & Configurer GIT"
 order: 2
 ---
 
@@ -16,10 +16,18 @@ order: 2
 
 ---
 
+# Les commandes GIT 
+
+Les commandes GIT commencent toujours par le terme `git` suivi de la commande à exécuter.
+
+Par exemple, 
+- `git init` permet de créer un nouveau dépôt vide
+- `git log` permet d'affichier l'historique d'un dépôt git
+- etc...
 
 # Installation de GIT
 
-**GIT** est probablement déjà installé de vos postes de travail en formation.
+> **GIT** est probablement déjà installé de vos postes de travail en formation.
 
 Pour vérifier que **GIT** est bien installé et pour contrôler la version installée sur votre poste, vous pouvez passer par la ligne de commande.
 
@@ -47,9 +55,7 @@ Pour fonctionner, **GIT** a besoin de 2 informations :
 - Un nom d'utilisateur
 - Une adresse email
 
-Ces 2 informations sont obligatoires pour le bon fonctionnement de GIT. Autrement dit, sans ces 2 données renseignées, **GIT** ne fonctionnera pas correctement.
-
-Pour rensseigner ces informations, suivez les étapes suivantes : 
+Pour renseigner ces informations, suivez les étapes suivantes : 
 
 1. Ouvrir PowerShell
 2. Entrez les commandes suivantes : 
@@ -80,4 +86,4 @@ En résumé, **user.name** et **user.email** sont essentiels pour assurer la tra
 
 ## Bravo !
 
-Votre GIT est installé et configuré, vous pouvez passer à l'étape suivante : [Initialiser un dépôt GIT local](./03-git-init-add-commit).
+Votre GIT est installé et configuré, vous pouvez passer à l'étape suivante : [Initialiser un dépôt GIT local](./03-git-init.md).
