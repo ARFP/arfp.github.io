@@ -19,3 +19,4 @@ enter la commande `` dans le dépôt que vous utilisez dans les exercices de cet
 vous devriez observer un résultat similaire à la capture suivante : 
 
 ![git log](./img/git-log.jpg)
+

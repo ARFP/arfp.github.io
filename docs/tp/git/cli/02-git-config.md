@@ -16,6 +16,10 @@ order: 2
 
 ---
 
+# Documentation officielle GIT
+
+La documentation complète de GIT est disponible sur le site officiel : [https://git-scm.com/doc](https://git-scm.com/doc)
+
 # Les commandes GIT 
 
 Les commandes GIT commencent toujours par le terme `git` suivi de la commande à exécuter.

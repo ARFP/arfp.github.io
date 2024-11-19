@@ -25,7 +25,6 @@ order: 4
 
 Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. L'objectif ici, est de bien comprendre le fonctionnement de GIT et du versionning.
 
-Avant de commencer, suivez ces quelques étapes pour configurer votre environnement GIT
 
 # Créer un nouveau dépôt 
 
@@ -190,44 +189,3 @@ Exemples de messages que vous ne devriez pas utiliser car ils ne sont pas suffis
 
 10. Effectuer un commit avec le message "modification du fichier maFormation.md"
     - Faire une capture d'écran du résultat et la sauvegarder avec les précédentes.
-
-# Voir l'historique des commits
-
-La commande `git log` permet de voir l'historique des validations (commits) effectuées dans un dépôt GIT.
-
-Par défaut, git log invoqué sans argument énumère en ordre chronologique inversé les commits réalisés. Cela signifie que les commits les plus récents apparaissent en premier. Comme vous le remarquez, cette commande indique chaque commit avec le nom et l’e-mail de l’auteur, la date et le message du commit.
-
-enter la commande `` dans le dépôt que vous utilisez dans les exercices de cette page.
-
-vous devriez observer un résultat similaire à la capture suivante : 
-
-![git log](./img/git-log.jpg)
-
-
-# Ouvrir le dépôt dans un éditeur de code
-
-Si ce n'est déjà fait, [installer Visual Studio Code](https://code.visualstudio.com/Download) (choisissez le `User Installer` qui ne nécessite pas de privilèges élevés pour être installé).
-
-![Télécharger Visual Studio code](./img/vscode-dl.jpg)
-
-Lorsque le dépôt est créé et Visual Studio code installé :
-
-1. Ouvrir PowerShell et naviguer jusqu'au répertoire contenant votre dépôt GIT.
-2. Ouvrir le répertoire dans **Visual Studio Code** en tapant la commande `code .` 
-
-![PowerShell start vscode](./img/git-local-vscode.jpg)
-
-> /!\ Le point `.` fait partie de la commande et signifie : "répertoire courant".
->
-> Nous pourrions traduire la commande précédente (`code .`) par : 
-> - Ouvrir Visual Studio Code (`code`)
-> - dans le répertoire courant (`.`)
-
-
-Votre application `Visual Studio Code` s'ouvre dans le répertoire courant.
-
-![vscode ouvert](./img/vscode-open.jpg)
-
-- **Sur la gauche**, le répertoire ouvert avec les fichiers qu'il contient (notez que le répertoire .git n'apparait pas, c'est normal).
-- **Sur la droite**, la partie éditeur
-- **En bas à gauche**, vous observez que Vscode a bien identifié qu'il s'agit d'un dépôt GIT et affiche le nom de la branche courante (main).
