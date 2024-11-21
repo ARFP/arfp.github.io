@@ -12,7 +12,7 @@ order: 2
 ## Compétences mises en oeuvre : 
 - [Utiliser le terminal du système d'exploitation](./01-powershell-intro)
 - Préparer son environnement de développement
-- Configurer le logiciel GIT
+- [Installer et configurer son environnement GIT](https://git-scm.com/book/fr/v2/D%c3%a9marrage-rapide-Param%c3%a9trage-%c3%a0-la-premi%c3%a8re-utilisation-de-Git)
 
 ---
 

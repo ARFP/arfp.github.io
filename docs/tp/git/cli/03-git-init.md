@@ -5,23 +5,18 @@ order: 3
 
 
 ## Pré-requis : 
-- Savoir utiliser le terminal
-    - Savoir se déplacer dans le système de fichiers
-    - Savoir lister les fichiers d'un répertoire
-    - Savoir créer un répertoire
-- Savoir lire et suivre un tutoriel
 - Avoir terminé [l'introduction au terminal Windows](./01-powershell-intro)
 - Avoir terminé [l'installation et la configuration de votre environnement GIT](./02-git-config)
 
 ## Compétences mises en oeuvre : 
 - [Utiliser le terminal du système d'exploitation](./01-powershell-intro)
-- [Créer un dépôt GIT sur une machine locale](https://www.atlassian.com/fr/git/tutorials/setting-up-a-repository)
+- [Créer un dépôt GIT sur une machine locale](https://git-scm.com/docs/git-init/fr)
 - Utiliser l'Anglais dans un contexte professionnel
 
 
 ---
 
-Dans cette 1ère partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. 
+Dans cette partie dédiée à **GIT**, vous allez apprendre à créer des dépôts sur votre machine locale. 
 
 # Créer un nouveau dépôt 
 
@@ -83,4 +78,4 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 
 > Validez votre travail avec un formateur
 
-Ue fois terminé, vous pouvez passer à l'étape suivante : [Valider des modifications dans un dépôt GIT](./04-git-status-add-commit)
+Une fois terminé, vous pouvez passer à l'étape suivante : [Valider des modifications dans un dépôt GIT](./04-git-status-add-commit)

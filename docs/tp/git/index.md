@@ -30,4 +30,6 @@ Dans le cadre de votre formation, vous utiliserez le logiciel [GIT](https://git-
 
 ## Ressources en ligne
 
-[Supports de présentation GIT](https://devoldere.net/ressources/git/)
+- [Site officiel de GIT](https://git-scm.com)
+- [Supports de cours et aide-mémoire GIT](https://devoldere.net/ressources/git/)
+- [Tutoriaux GIT](https://learn.microsoft.com/fr-fr/collections/xe7pfzpj6wdnwn)

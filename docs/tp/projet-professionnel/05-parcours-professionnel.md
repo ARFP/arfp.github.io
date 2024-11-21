@@ -1,13 +1,12 @@
 ---
-title: "Mon parcours"
-order: 12
+title: "Mon parcours professionnel"
+order: 5
 ---
 
 ## Compétences mises en oeuvre : 
 
 - Résumer et synthétiser des informations
 - Mettre en forme un document texte enrichi (Word ou équivalent)
-- Mettre en forme un document Excel ou équivalent
 
 
 ## Présenter son parcours professionnel
@@ -39,10 +38,13 @@ C’est à chaque fois l’occasion de présenter :
 
 ## Travail à réaliser
 
-1. Résumez votre parcours professionnel dans un document WORD.
-2. Résumez votre projet professionnel dans un autre document WORD.
-3. Récapitulez les éléments constitutifs d'un CV dans un tableau EXCEL.
-4. Réaliser votre CV au format Word ou équivalent.
+1. Créer un document Word
+2. Sur la 1ère page, inscrivez:
+    - votre nom et prénom
+    - le nom de votre formation
+    - Les dates de début de fin de votre formation
+3. Sur la 2ème page, résumez votre parcours professionnel en quelques lignes.
+4. Sur la 3ème page, résumez votre projet professionnel en quelques lignes.
 
 
-> Validez chaque étape avec vos formateurs avant de passer à la suivante.
+> Validez votre travail avec vos formateurs.

@@ -3,6 +3,17 @@ title: "Introduction au terminal Windows"
 order: 1
 ---
 
+## Pré-requis : 
+- Savoir utiliser l'explorateur de fichiers du système d'exploitation
+- Savoir lire et suivre un tutoriel
+
+## Compétences mises en oeuvre : 
+- [Exécuter des commandes dans le terminal PowerShell](https://learn.microsoft.com/fr-fr/collections/yd4wb5nq12kmd3)
+- Préparer son environnement de développement
+- [Installer et configurer son environnement GIT](https://git-scm.com/book/fr/v2/D%c3%a9marrage-rapide-Param%c3%a9trage-%c3%a0-la-premi%c3%a8re-utilisation-de-Git)
+
+--- 
+
 Un terminal (ou console, ou invite de commandes) est une application permettant d'interagir directement avec votre ordinateur en utilisant des commandes textuelles. C'est un peu comme donner des ordres à votre ordinateur en écrivant, au lieu de cliquer sur des icônes. 
 
 Tous les systèmes d'exploitation disposent d'un terminal.

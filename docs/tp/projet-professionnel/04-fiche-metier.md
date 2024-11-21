@@ -1,6 +1,6 @@
 ---
 title: "Ma fiche métier"
-order: 11
+order: 4
 ---
 
 ## Compétences mises en oeuvre : 
@@ -52,22 +52,12 @@ La fiche métier doit obligatoirement respecter l'ordre et la structure décrite
 ### Les opportunités d'emploi dans ma région
 - Indiquez les opportunités d'emploi dans les secteurs géographiques que vous visez. Vous pouvez par exemple lister quelques entreprises en précisant le lieu, le domaine d'activité...
 
-
-
 --- 
 
 ## Travail à réaliser
 
-Créez un répertoire pour votre projet.
-
-Dans ce répertoire,
-
-1. Rédigez et complétez votre fiche métier dans un document **Word** ou équivalent.
-
-2. Validez votre fiche métier avec vos formateurs.
-
----
-
-## A vous de jouer 
+1. Créer un document Word
+2. Rédigez et complétez votre fiche métier.
+3. Validez votre fiche métier avec vos formateurs.
 
 Vous avez la liberté de mettre en forme votre fiche comme vous le souhaitez tant que la structure demandée est rigoureusement respectée :)
