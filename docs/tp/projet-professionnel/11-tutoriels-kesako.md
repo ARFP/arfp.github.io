@@ -90,3 +90,11 @@ Créer un tutoriel écrit sur un sujet lié à l'informatique et qui respecte le
 - Le tutoriel doit être suffisemment illustré (images, shcémas...)
 - Le tutoriel doit pouvoir être lu en moins de 10 minutes.
 - Le tutoriel doit proposer un mini quiz permettant au lecteur de valider sa compréhension.
+
+**Si vous manquez d'inspiration, voici quelques exemples de sujets que vous pouvez traiter:**
+- L'ordinateur
+    - Expliquer les composants d'un ordinateur, leur rôle et comment ils fonctionnent ensemble.
+- Qu'est-ce qu'un algorithme ?
+    - Illustrer le concept d'algorithme avec des exemples simples de la vie quotidienne
+- Qu'est-ce qu'un développeur Web ?
+    - Décrire le métier de développeur web, journée type, missions...

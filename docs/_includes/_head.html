@@ -27,11 +27,11 @@
         <nav aria-label="breadcrumb" class="container breadcrumb{% if page.full %} full{% endif %}">
             <ol>                
                 <li><a href="/"><i class="fa fa-home"></i></a></li>
-                {% for crumb in crumbs offset: 1 %}
+                {% for crumb in crumbs offset: 2 %}
                 {% if forloop.last %}
                     <li>{{ page.title }}</li>
                 {% else %}
-                    <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+                    <li><a href="{% assign crumb_limit = forloop.index | plus: 2 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
                 {% endif %}
                 {% endfor %}
             </ol>
