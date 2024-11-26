@@ -21,12 +21,12 @@ Monsieur Takatoukitaï, Geek accompli, vous demande de réaliser un programme de
 
 Votre mission (et vous l’acceptez) : lui concevoir un programme qui fera la chose suivante :
 
-> Je devrai pouvoir mettre des personnages et des plantes dans mon arène virtuelle, et faire passer le temps pour savoir si tout se passe bien. Au bout d'un certain temps, il ne devrait rester qu'un personnage dans l'arène (le dernier survivant). Parfois, il peut arriver qu'aucun personnage ne survit...
+> Je devrais pouvoir mettre des personnages et des plantes dans mon arène virtuelle, et faire passer le temps pour savoir si tout se passe bien. Au bout d'un certain temps, il ne devrait rester qu'un personnage dans l'arène (le dernier survivant). Parfois, il peut arriver qu'aucun personnage ne survive...
 
 Traduit en langage technique, cela signifie qu’il faudra un programme en deux phases :
 
-1. L’initialisation : au démarrage, les personnages et les plantes sont ajoutés dans l'arène.
-2. Le temps qui passe : on résout les actions d’un tour, et on fait un rapport de la situation.
+1. **L’initialisation** : au démarrage, les personnages et les plantes sont ajoutés dans l'arène.
+2. **Le temps qui passe** : on résout les actions d’un tour, et on fait un rapport de la situation.
 
 
 ## Partie 1 : L'arène
@@ -90,7 +90,7 @@ Après initialisation de l'arène, y placer aléatoirement :
 Les plantes sont des êtres vivants pleines de ressources !
 
 A chaque tour de jeu, les évènements suivants sont réalisés :
-- Chaque plante perd 1 point de vie.
+- Chaque plante perd **1** point de vie.
 - Lorsque'une plante arrive à **4** points de vie :
     - La plante regagne **3** points de vie et se clone.
     - Le clone est placé aléatoirement dans une case vide de l'arène.
@@ -144,7 +144,7 @@ A chaque déplacement, un personnage peut atterir dans une case vide ou occupée
 **Trame :**
 1. Un personnage se déplace
 2. Les actions sont réalisées selon s'il atterit dans une case vide ou occupée (voir ci-dessous)
-3. Un autre personnage suivant se déplace... etc.. Retour à l'étape 1 et on recommance jusqu'à ce que tous les personnages se sont déplacés.
+3. Un autre personnage suivant se déplace... etc.. Retour à l'étape 1 et on recommence jusqu'à ce que tous les personnages se sont déplacés.
 
 Pour chaque déplacement,
 
@@ -169,7 +169,7 @@ Le personnage est ensuite redirigé vers une case innocupée (vide).
 - Le perdant est ensuite ejecté de la case actuelle ce qui produit un déplacement vers une case vide.
 - Le gagnant prend place dans la case.
 
-En cas d'égalité (puissances identiques), les 2 personnages sont ejectés vers une autre case vide.
+En cas d'égalité (puissances identiques), les 2 personnages sont ejectés vers une autre case vide sans perdre ni vie ni puissance.
 
 A l'issue du "combat", on initie le déplacement du personnage suivant.
 
@@ -202,11 +202,15 @@ Au lancement du programme :
 2. S'il existe déjà une sauvegarde à son nom, proposer : 
      - de charger la partie sauvegardée 
      - de démarrer une nouvelle partie
+3. Si aucune sauvegarde n'existe
+    - démarrer une nouvelle partie
 
 
 ### Exercice 3.3 : Les multiples sauvegardes temporelles
 
-Proposer une solution pour que chaque joueur puisse sauvagarder plusieurs parties à son nom.
+Proposer une solution pour que chaque joueur puisse  :
+- sauvegarder plusieurs parties à son nom.
+- sélectionner une de ses sauvegardes au démarrage du programme.
 
 ### Exercice 3.4 : Et la confidentialité la dedans ?
 

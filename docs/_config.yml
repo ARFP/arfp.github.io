@@ -77,9 +77,9 @@ defaults:
       module: "projets"
   -
     scope:
-      path: "tp/ci-cd"
+      path: "tp/git"
     values:
-      module: "ci-cd"
+      module: "git"
   -
     scope:
       path: "tp/web"

@@ -31,17 +31,17 @@ Pour chaque exercice :
 ## Exemple 1 : Procédure Hello World
 
 - Créer un projet `HelloWorld`.
-- Écrire une **procédure** `helloWorld()` qui affiche le texte "Hello World !".
+- Écrire une **procédure** `hello()` qui affiche le texte "Hello World !".
 
 Cette procédure sera appelée depuis le programme principal (main()) comme dans l'exemple ci-dessous : 
 
 ```java
-class App {
-    public static void main(String args) {
-        App.helloWorld();
+public class HelloWorld {
+    public static void main(String[] args) {
+        HelloWorld.hello(); // Appel de la procédure "hello" de la classe "HelloWorld"
     }
 
-    public static void helloWorld() {
+    public static void hello() {
         System.out.println("Hello World !");
     }
 }
@@ -50,18 +50,18 @@ class App {
 ## Exemple 2 : Fonction Hello You
 
 - Créer un projet `HelloYou`.
-- Écrire une **fonction** `helloYou()` qui retourne le texte "Hello You !".
+- Écrire une **fonction** `sayHello()` qui retourne le texte "Hello You !".
 
 Cette fonction sera appelée depuis le programme principal (main()) qui affichera le résultat comme dans l'exemple ci-dessous : 
 
 ```java
-class App {
-    public static void main(String args) {
-        String result = App.helloYou();
+public class HelloYou {
+    public static void main(String[] args) {
+        String result = HelloYou.sayHello(); // Appel de la fonction "sayHello" de la classe "HelloYou"
         System.out.println(result);
     }
 
-    public static String helloYou() {
+    public static String sayHello() {
         return "Hello You !";
     }
 }
@@ -79,11 +79,11 @@ class App {
 
 import java.util.Scanner;
 
-class App {
-    public static void main(String args) {
+public class HelloName {
+    public static void main(String[] args) {
         String result;
-        result = App.askFirstName(); // Demande du prénom
-        App.showResult(result); // Affichage du résultat
+        result = HelloName.askFirstName(); // Demande du prénom
+        HelloName.showResult(result); // Affichage du résultat
     }
 
     public static String askFirstName() {
@@ -91,6 +91,7 @@ class App {
         Scanner sc = new Scanner(System.in); // Initialise le Scanner
         System.out.println("Bonjour, saisissez votre prénom: "); 
         firstname = sc.nextLine(); // Attente de la saisie utilisateur
+        sc.close();
         return firstname; // On retourne le résultat
     }
 
@@ -105,40 +106,54 @@ class App {
 - Créer un projet "IntroFonctionsMaths".
 - Implémenter les 4 fonctions demandées ci-dessous.
 - Appeler ces 4 fonctions depuis le `main`.
-- Afficher les différents résultats à l'aide d'une procédure.
+- Afficher les différents résultats si possible à l'aide d'une procédure.
 
-```
-Créer une fonction « getSum » qui accepte deux arguments de type int. Elle devra retourner la somme des deux valeurs.
+1. Créer une fonction « getSum » qui accepte deux arguments de type int. 
+    - La fonction restourne la somme des deux valeurs.
+2. Créer une fonction « getSub » qui accepte deux arguments de type int. 
+    - La fonction restourne la soustraction des deux valeurs.
+3. Créer une fonction getMulti qui accepte deux arguments de type float. 
+    - La fonction restourne la multiplication des deux valeurs. 
+    - Limitez le résultat à 2 décimales.
+4. Créer une fonction getDiv qui accepte deux arguments de type double. 
+    - La fonction restourne la division des deux valeurs.
+    - Limitez le résultat à 2 décimales.
+    - Rappel : une division par zéro est impossible. Dans ce cas, retourner la valeur « 0 ».
+ 
 
-Exemple :
-getSum(5, 3); // retourne 8
+**Pour vous aider, voici le squelette du programme attendu**
+
+```java
+public class IntroFonctionsMaths {
+    public static void main(String[] args) {
+        // variables
+        int addition;
+
+        // Invoquer les fonctions depuis le main 
+        addition = IntroFonctionsMaths.getSum(2, 3);
+
+        // Afficher le résultat des opérations dans le main
+        System.out.println("Résultat de l'addition: " + addition);
+    }
+
+    public static int getSum(int a, int b) {
+        // Code à implémenter
+    }
+
+    public static int getSub(int a, int b) {
+        // Code à implémenter
+    }
+
+    public static float getMulti(float a, float b) {
+        // Code à implémenter
+    }
+
+    public static double getDiv(double a, double b) {
+        // Code à implémenter
+    }
+}
 ```
 
-```
-Créer une fonction « getSub » qui accepte deux arguments de type int. Elle devra retourner la soustraction des deux valeurs. 
-
-Exemples :
-getSub(5, 3); // retourne 2 
-getSub(3, 5); // retourne -2
-```
-
-```
-Créer une fonction getMulti qui accepte deux arguments de type float. Elle devra retourner la multiplication des deux valeurs. Limitez le résultat à 2 décimales.
-
-Exemples :
-getMulti(5.6, 3); // retourne 16.8
-getMulti(5.6, -3.7); // retourne -20.72
-```
-
-```
-Créer une fonction getDiv qui accepte deux arguments de type int. Elle devra retourner la division des deux valeurs. 
-Limitez le résultat à 2 décimales. 
-Rappel : une division par zéro est impossible. Dans ce cas, retourner la valeur « 0 ».
-
-Exemples :
-getDiv(20, 3); // retourne 6.67
-getDiv(20, 0); // retourne 0
-```
 
 ## Exercice 5.2 : Les chaines de caractère
 
@@ -147,41 +162,34 @@ getDiv(20, 0); // retourne 0
 - Appeler ces 4 fonctions depuis le `main`.
 - Afficher les différents résultats à l'aide d'une procédure.
 
-```
-Créer une fonction « getMC2 ». 
-Cette fonction doit retourner Le nom de l’inventeur de la formule « E = MC² ».
-```
 
-```
-Créer une fonction « getUserName » qui accepte deux arguments (prénom et nom) de type string. 
-Cette fonction doit retourner la concaténation des deux valeurs. 
+**Créer une fonction « getMC2 ».** 
+- Cette fonction doit retourner Le nom de l’inventeur de la formule « E = MC² ».
 
-Exemple : 
-getUserName ('mickaël', 'devoldère'); // retourne « mickaëldevoldère » 
-```
+--- 
 
-```
-Créer une fonction « getFullName » acceptant deux arguments (nom et prénom) de type string. 
-Cette fonction doit retourner la concaténation des deux valeurs avec un espace entre les 2.
-Assurez vous que : 
-- Le prénom doit petre en minuscule (sauf la 1ère lettre qu idoit être en MAJUSCULE).
-- Le nom doit être en MAJUSCULE.
+**Créer une fonction « getUserName » qui accepte deux arguments (prénom et nom) de type string.** 
+- Cette fonction doit retourner la concaténation des deux valeurs. 
+- *Exemple :* `IntroFonctionsChaines.getUserName ('mickaël', 'devoldère'); // retourne « mickaëldevoldère »` 
 
-Exemple : 
-getFullName ('devoldère', 'mickaël'); // retourne « Mickaël DEVOLDÈRE »
-```
+---
 
+**Créer une fonction « getFullName » acceptant deux arguments (nom et prénom) de type string.** 
+- Cette fonction doit retourner la concaténation des deux valeurs avec un espace entre les 2.
+- Assurez vous que : 
+    - Le prénom doit être en minuscule (sauf la 1ère lettre qui doit être en MAJUSCULE).
+    - Le nom doit être en MAJUSCULE.
+- *Exemple :* `getFullName ('devoldère', 'mickaël'); // retourne « Mickaël DEVOLDÈRE »`
 
-```
-Créer une fonction « askUser » acceptant deux arguments (nom et prénom) de type string. 
-Cette fonction doit retourner une chaîne de caractères sous la forme :
-« Bonjour Prénom NOM. Connaissez-vous Einstein ? »
-Cette fonction doit obligatoirement appeler et utiliser les résulats des fonctions
-- « getFullName() » pour obtenir la concaténation du prénom et du nom.
-- « getMC2() » pour obtenir le nom de l'inventeur de la formule E = MC².
+--- 
 
-Exemple : 
-askUser ('devoldère', 'mickaël'); // retourne « Bonjour Mickaël DEVOLDÈRE, connaissez-vous Einstein ? »
-```
+**Créer une fonction « askUser » acceptant deux arguments (nom et prénom) de type string.** 
+- Cette fonction doit retourner une chaîne de caractères sous la forme :
+    - « Bonjour Prénom NOM. Connaissez-vous Einstein ? »
+- Cette fonction doit obligatoirement appeler et utiliser les résulats des fonctions précédentes :
+    - « getFullName() » pour obtenir la concaténation du prénom et du nom.
+    - « getMC2() » pour obtenir le nom de l'inventeur de la formule E = MC².
+- Exemple : `askUser ('devoldère', 'mickaël'); // retourne « Bonjour Mickaël DEVOLDÈRE, connaissez-vous Einstein ? »`
+
 
 > Validez votre travail avec votre formateur avant de passer à la suite.

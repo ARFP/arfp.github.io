@@ -6,5 +6,22 @@
     {% assign exos = site.pages | where_exp: "item", "item.module == serie.module" %}{% assign exos = exos | where_exp: "item", "item.order > 0" %}
     {% assign exos = exos | where_exp: "item", "item.serie == serie.serie" | sort: "order" %}
     <ol>{% for exo in exos %}<li><a href="{{ exo.url }}">{{ exo.title }}</a></li>{% endfor %}</ol>
-</article>{% endif %}{% endfor %}</div></section>
+</article>{% endif %}{% endfor %}</div>
+<hr>
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        {% if crumbs.size > 0 %}
+        <nav aria-label="breadcrumb" class="container breadcrumb{% if page.full %} full{% endif %}" style="background: transparent;">
+            <ol>                
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                {% for crumb in crumbs offset: 2 %}
+                {% if forloop.last %}
+                    <li>{{ page.title }}</li>
+                {% else %}
+                    <li><a href="{% assign crumb_limit = forloop.index | plus: 2 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ol>
+        </nav>
+        {% endif %}
+</section>
 {% include _foot.html %}

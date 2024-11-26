@@ -1,9 +1,8 @@
 ---
-title: "Aquarium"
+title: "L'aquarium"
 serie: "poo"
 order: 102
 ---
-
 ## INTRODUCTION 
 
 Cet exercice vous permettra de mettre en œuvre vos compétences en développement orienté objet. 

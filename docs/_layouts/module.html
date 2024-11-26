@@ -7,4 +7,8 @@
     {% assign exos = exos | where_exp: "item", "item.serie == serie.serie" | sort: "order" %}
     <ol>{% for exo in exos %}<li><a href="{{ exo.url }}">{{ exo.title }}</a></li>{% endfor %}</ol>
 </article>{% endfor %}</div></section>
+<section>
+    <h2><a href="/">Tous les modules</a></h2>
+    {% assign modules = site.pages | where: "layout", "module" | sort: "id" %}<ul class="flex chips repos">{% for module in modules %}<li><a href="{{ module.url }}">{{ module.title }}</a></li>{% endfor %}</ul>
+</section>
 {% include _foot.html %}
