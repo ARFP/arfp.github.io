@@ -14,7 +14,7 @@ Par défaut, git log invoqué sans argument énumère en ordre chronologique inv
 
 Comme vous le remarquez, cette commande indique chaque commit avec le nom et l’e-mail de l’auteur, la date et le message du commit.
 
-enter la commande `` dans le dépôt que vous utilisez dans les exercices de cette page.
+Entrer la commande `git log` dans le dépôt que vous utilisez dans les exercices de cette page.
 
 vous devriez observer un résultat similaire à la capture suivante : 
 
