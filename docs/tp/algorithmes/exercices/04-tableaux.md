@@ -4,7 +4,6 @@ level: 4
 order: 4
 ---
 
-# Partie 4
 
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes

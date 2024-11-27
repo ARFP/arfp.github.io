@@ -78,4 +78,6 @@ Tâches à réaliser en ligne de commande avec PowerShell. Pour chaque tâche, v
 
 > Validez votre travail avec un formateur
 
+---
+
 Une fois terminé, vous pouvez passer à l'étape suivante : [Valider des modifications dans un dépôt GIT](./04-git-status-add-commit)

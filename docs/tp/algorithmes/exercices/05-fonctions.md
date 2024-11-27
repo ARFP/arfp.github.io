@@ -4,8 +4,6 @@ level: 4
 order: 5
 ---
 
-# Partie 5
-
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les notions des parties précédentes
 - Les procédures

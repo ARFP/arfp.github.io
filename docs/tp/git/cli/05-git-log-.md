@@ -20,3 +20,5 @@ vous devriez observer un résultat similaire à la capture suivante :
 
 ![git log](./img/git-log.jpg)
 
+
+# Annuler un ou plusieurs commit
