@@ -12,7 +12,7 @@ Codez le diagramme de classes suivant dans le langage indiqué par vos formateur
 
 ---
 
-![diagram](img/basket-class-diagram.png)
+![diagram](./img/basket-class-diagram.png)
 
 ---
 
