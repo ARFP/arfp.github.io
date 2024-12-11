@@ -9,9 +9,9 @@ Un FlipQuiz met en concurrence plusieurs équipes qui s’affrontent au tour par
 
 ## Contexte de l'application 
 
-L’interface du jeu présente 1 à 6 thèmes différents et chaque thème affiché propose 5 questions de niveaux différents (du plus facile au plus compliqué). 
+L’interface du jeu présente 1 à 6 catégories différentes et chaque catégorie affichée propose 5 questions de niveaux différents (du plus facile au plus compliqué). 
 
-Au début d’une partie de jeu, une équipe est sélectionnée au hasard pour commencer le 1er tour . A chaque tour, l’équipe courante sélectionne un thème et un niveau. Une question correspondante est alors affichée et un compte à rebours se déclenche. L’équipe peut se concerter et doit proposer une réponse dans un délai maximum de 3 minutes. Si la réponse donnée est correcte, les points correspondant sont attribués à l’équipe. Dans le cas contraire, aucun point n’est attribué. Une équipe ne peut proposer qu’une seule réponse par question.
+Au début d’une partie de jeu, une équipe est sélectionnée au hasard pour commencer le 1er tour . A chaque tour, l’équipe courante sélectionne une catégorie et un niveau. La question correspondante est alors affichée et un compte à rebours se déclenche. L’équipe peut se concerter et doit proposer une réponse dans un délai maximum de 3 minutes. Si la réponse donnée est correcte, les points correspondant sont attribués à l’équipe. Dans le cas contraire, aucun point n’est attribué. Une équipe ne peut proposer qu’une seule réponse par question.
 
 Le jeu est dirigé par un Maître de jeu qui est responsable de l’interaction avec le logiciel. 
 
@@ -34,7 +34,7 @@ L'application sera utilisable au travers d'un navigateur web.
 
 ## Règles de gestion 
 
-Un Quiz est caractérisé par un thème et une description. Chaque Quiz est relié à 6 catégories au maximum. Une catégorie ne peut être reliée qu’à un seul quiz.
+Un Quiz est caractérisé par un titre et une description. Chaque Quiz est relié à 6 catégories au maximum. Une catégorie ne peut être reliée qu’à un seul quiz.
 
 Une question est caractérisée par un contenu (la question), la réponse et un niveau (de 1 à 5). 
 Plus le niveau de la question est élevé, plus la question est difficile et rapporte de points.
@@ -136,6 +136,6 @@ Une équipe est caractérisée par un nom et le nombre de points accumulés lors
 
 Une partie de quiz connaît les identifiants les 2 équipes et est composé de plusieurs tours de jeu. 
 
-Chaque tour de jeu relie une équipe, un quiz et une question liée au thème sélectionné par l’équipe. On doit connaître, pour chaque tour, le nombre de points gagnés par l’équipe (0 si mauvaise réponse ou absence de réponse).
+Chaque tour de jeu relie une équipe, un quiz et une question liée à la catégorie sélectionnée par l’équipe. On doit connaître, pour chaque tour, le nombre de points gagnés par l’équipe (0 si mauvaise réponse ou absence de réponse).
 
 ---

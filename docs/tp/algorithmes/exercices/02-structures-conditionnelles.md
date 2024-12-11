@@ -4,15 +4,13 @@ level: 4
 order: 2
 ---
 
-# Partie 2
-
 Cette partie vous permettra de mettre en pratique les notions suivantes : 
 - Les structures conditionnelles
 
 
 ## Exercice 2.1 : Positif ou négatif ?
 
-Écrire un algorithme qui demande à l'utilisateur de saisir **1** nombre entier et l'informe ensuite si le nombre est positif ou négatif.
+Écrire un algorithme qui demande à l'utilisateur de saisir **1** nombre entier et l'informe ensuite si le nombre est **positif** ou **négatif**.
 
 Pour information, le nombre `0` est considéré **positif**.
 
@@ -21,99 +19,72 @@ Pour information, le nombre `0` est considéré **positif**.
 
 Écrire un algorithme qui demande à l'utilisateur de saisir **2** nombres entiers et l'informe ensuite si leur **produit** est positif ou négatif.
 
+## Exercice 2.3 : Tri de nombres
 
-## Exercice 2.3 : Ma catégorie au Football
+Lire 2 nombres entier `A` et `B` puis les afficher dans l'ordre croissant.
 
-Écrire un algorithme qui demande à l'utilisateur de saisir un âge et l'informe ensuite à quelle catégorie il appartient : 
+## Exercice 2.4 : Es-tu majeur ?
+
+1. Lire un nombre `A` correspondant à un âge (en années).
+2. Afficher "Vous êtes majeur" ou "Vous êtes mineur" selon le cas.  
+    - Pour un nombre négatif le message doit être "Vous n'êtes pas encore né".
+
+La majorité est fixée à 18 ans.
+
+
+## Exercice 2.5 : Ma retraite
+
+1. Lire un nombre `A` correspondant à un âge (en années).
+2. Selon l'âge fourni, le programme doit afficher l'un des messages suivants : 
+    - Vous êtes à la retraite depuis `X` années 
+    - Il vous reste `X` années avant la retraite.
+    - C'est le moment de prendre sa retraite.
+    - La valeur fournie n'est pas un âge valide.
+
+Pour cet exercice, la retraite est fixée à 62 ans.
+
+
+## Exercice 2.6 : Ma catégorie au club de sport
+
+Écrire un algorithme qui demande à l'utilisateur de saisir un **âge** et l'informe ensuite à quelle **catégorie** il appartient : 
 
 - **Trop jeune** : Moins de 5 ans
-- **Débutant** : De 5 à 6 ans
-- **Poussin** : De 7 à 8 ans
-- **Benjamin** : De 9 à 10 ans
-- **Pupille** : De 11 à 12 ans
-- **Minime** : De 13 à 14 ans
-- **Cadet** : De 15 à 16 ans
-- **Junior** : De 17 à 18 ans
-- **Sénior** : De 19 à 34 ans
-- **Vétéran** : 35 ans et + 
+- **Débutant** : De 5 à 10 ans
+- **Junior** : De 11 à 14 ans
+- **Espoir** : De 15 à 17 ans
+- **Adulte** : 18 ans et +
 
 
-## Exercice 2.4 : Je prédis l'avenir
+## Exercice 2.7 : Tri de nombres++
+
+Lire 3 nombres décimaux `A`, `B` et `C` puis les afficher dans l'ordre décroissant.
+
+
+## Exercice 2.8 : Je prédis l'avenir
 
 Cet algorithme est destiné à prévenir l'avenir et il doit être **infaillible** !
 
-Le programme demande à l'utilisateur de saisir 2 nombres entiers correspondant respectivement à des heures et des minutes. Le programme affichera ensuite l'heure qu'il sera 3 minutes plus tard.
+1. Le programme demande à l'utilisateur de saisir **2 nombres entiers** correspondant respectivement à des **heures** et des **minutes**. 
+2. Si l'heure saisie n'est pas valide (valeurs hors limites)
+    - Le programme affiche "Les données saisies sont invalides" et se termine.
+3. Si l'heure est valide 
+    - Le programme affiche l'heure saisie
+    - Le programme affiche ensuite l'heure qu'il sera 3 minutes plus tard.
 
-Par exemple, si l'utilisateur saisit **23** puis **12** (correspondant à **23h12**), le programme doit afficher **Dans 3 minutes, il sera 23h15**.
+*Par exemple:* 
 
-Si les nombres saisis par l'utilisateur sont "hors limite", le programme affichera "Les données saisies sont invalides"
+- Si l'utilisateur saisit **23** puis **12**:
+    1. Le programme affiche "**Vous avez saisi: 23h12**"
+    2. Le programme affiche "**3 minutes plus tard, il sera 23h15**".
+- Si l'utilisateur saisit **23** puis **59**:
+    1. Le programme affiche "**Vous avez saisi: 23h59**"
+    2. Le programme affiche "**3 minutes plus tard, il sera 00h02**".
 
 
-## Exercice 2.5 : Réprographie
+## Exercice 2.9 : Réprographie
 
-Un magasin proposant un service de Réprographie facture 0.10€ les 10 premières photocopies, 0.09€ les vingt suivants et 0.08 au delà.
+Un magasin proposant un service de Réprographie facture **0.10€** les 10 premières photocopies, **0.09€** les vingt suivantes et **0.08€** au delà.
 
 Écrire l'algorithme qui demande à l'utilisateur de saisir le nombre de photocopies effectuées et affiche le montant de la facture correspondante.
 
-## Exercice 2.6 : Bisextille
-
-Ecrire un algorithme qui détermine si une année est bissextile. 
-
-Les années bissextiles sont :
-- les années divisibles par 4 mais non divisibles par 100
-- les années divisibles par 400.
-
-## Exercice 2.7 : Validité d'une date
-
-Écrivez un algorithme qui demande à l'utilisateur de saisir 3 nombres entiers
-
-1. Un numéro de jour
-2. Un numéro de mois
-3. Un numéro d'année
-
-L'algorithme indique ensuite s'il s'agit ou non d'une date valide.
-
-Il n'est sans doute pas inutile de rappeler que le mois de février compte 28 jours, sauf si l’année est bissextile, auquel cas il en compte 29. 
-
-L’année est bissextile si elle est divisible par quatre. Toutefois, les années divisibles par 100 ne sont pas bissextiles, mais les années divisibles par 400 le sont. **Ouf** !
-
-
-## Exercie 2.8 : Élections
-
-Les élections législatives, en Guignolerie Septentrionale, obéissent à la règle suivante :
-- Lorsque l'un des candidats obtient plus de 50% des suffrages, il est élu dès le premier tour.
-- En cas de deuxième tour, peuvent participer uniquement les candidats ayant obtenu au moins 12.5% des voix au premier tour.
-
-Vous devez écrire un algorithme qui permet la saisie des scores de quatre candidats au premier tour. 
-
-Cet algorithme traitera ensuite le candidat numéro 1 (et uniquement lui) : il dira s'il est élu, battu, s'il se trouve en ballottage favorable (il participe au second tour en étant arrivé en tête à l'issue du premier tour) ou défavorable (il participe au second tour sans avoir été en tête au premier tour).
-
-## Exercice 2.9 : Tarif Assurance
-
-Une compagnie d'assurance automobile propose à ses clients quatre familles de tarifs identifiables par une 
-couleur, du moins au plus onéreux : 
-
-- Tarifs **bleu**, **vert**, **orange** et **rouge**. 
-
-Le tarif dépend de la situation du conducteur :
-
-- Un conducteur de moins de 25 ans et titulaire du permis depuis moins de deux ans, se voit attribuer 
-le tarif rouge, si toutefois il n'a jamais été responsable d'accident. Sinon, la compagnie refuse de 
-l'assurer.
-
-- Un conducteur de moins de 25 ans et titulaire du permis depuis plus de deux ans, ou de plus de 25 
-ans mais titulaire du permis depuis moins de deux ans a le droit au tarif orange s'il n'a jamais 
-provoqué d'accident, ou le tarif rouge s'il a été repsonsable d'un accident, sinon il est refusé.
-
-- Un conducteur de plus de 25 ans titulaire du permis depuis plus de deux ans bénéficie du tarif vert 
-s'il n'est à l'origine d'aucun accident et du tarif orange pour un accident, du tarif rouge pour deux 
-accidents, et refusé au-delà
-
-De plus, pour encourager la fidélité des clients acceptés, la compagnie propose un contrat de la 
-couleur immédiatement la plus avantageuse s'il est assuré depuis plus de cinq ans. 
-Ainsi, s'il satisfait à cette exigence, un client normalement "vert" devient "bleu", un client 
-normalement "orange" devient "vert", et le "rouge" devient orange.
-
-Ecrire l'algorithme permettant de saisir les données nécessaires (sans contrôle de saisie) et de traiter ce 
-problème. Avant de se lancer à corps perdu dans cet exercice, on pourra réfléchir un peu et s'apercevoir 
-qu'il est plus simple qu'il n'en a l'air (cela s'appelle faire une analyse !)...
+> Validez votre travail avec votre formateur avant de passer à la suite.
