@@ -4,9 +4,7 @@ level: 4
 order: 1
 ---
 
-# Partie 1 
-
-Ctte série d'exercices d'introduction vous permettra de mettre en pratique les notions suivantes : 
+Cette série d'exercices d'introduction vous permettra de mettre en pratique les notions suivantes : 
 - Les variables
 - Les chaines de caractères
 - Les calculs mathématiques simples 

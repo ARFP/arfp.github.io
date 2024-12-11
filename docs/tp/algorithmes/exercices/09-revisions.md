@@ -7,7 +7,7 @@ order: 10
 Cette série d'exercices vous permettra de réviser les parties précédentes.
 
 
-## Exercice 5.1 : Calcul des nombres parfaits
+## Exercice 9.1 : Calcul des nombres parfaits
 
 On souhaite écrire un programme de calcul des 4 premiers nombres parfaits. 
 
@@ -32,9 +32,9 @@ Affichage des 4 premiers nombres parfaits :
 
 ```
 
-## Exercice 5.2 : Conversion Kilomètres <-> Miles 
+## Exercice 9.2 : Conversion Kilomètres <-> Miles 
 
-### Exercice 5.2.1 
+### Exercice 9.2.1 
 
 L'utilisateur saisit une valeur en kilomètres comprise entre `0.01` et `1 000 000`. 
 
@@ -44,7 +44,7 @@ Formule km vers mi :  	`1 miles = 1.609 kilomètres`.
 
 Le programme affiche le résultat de la conversion sous forme de nombre réel double précision.
 
-### Exercice 5.2.2 : 
+### Exercice 9.2.2 : 
 
 L’utilisateur peut choisir le sens de la conversion.
 
@@ -53,9 +53,9 @@ Il saisit une valeur à convertir avec son unité de mesure (km ou mi).
 Si aucune unité de mesure n’est indiquée, le programme considère la valeur en kilomètres.
 
 
-## Exercice 5.3 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C)
+## Exercice 9.3 : Conversion Degrés Fahrenheit (°F) <--> Degrés Celsius (°C)
 
-### Exercice 5.3.1
+### Exercice 9.3.1
 
 Soit "X" une valeur à convertir.
 - Formule °F vers °C :       `°C = (X − 32) * 5/9`
@@ -73,7 +73,7 @@ Le programme affiche le résultat de la conversion sous forme de nombre réel do
 
 Pour information, le zéro absolu correspond à -459.67 Degrés Fahrenheit ou -273.15 degrés Celsius. 
 
-### Exercice 5.3.2 
+### Exercice 9.3.2 
 
 L’utilisateur saisit une unité de mesure (C ou F). 
 
