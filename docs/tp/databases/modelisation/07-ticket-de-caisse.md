@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -97,14 +98,14 @@ Toutes les lignes possédant le même "ID Ticket" correspondent au même ticket 
 
 Créer un fichier SQL contenant les requêtes suivantes :
 
-1. Afficher toutes les consommations triées par prix du plus cher au moins cher.
+1. Sélectionner toutes les consommations triées par prix du plus cher au moins cher.
 
-2. Afficher les serveurs ayant servi au moins 2 tables différentes 
+2. Sélectionner les serveurs ayant servi au moins 2 tables différentes 
 
-3. Afficher les serveurs avec, pour chaque serveur, le **nombre** total de consommations qu'il a servies.
+3. Sélectionner les serveurs avec, pour chaque serveur, le **nombre** total de consommations qu'il a servies.
 
-4. Afficher les serveurs avec, pour chaque serveur, le **montant** total des consommations qu'il a servies.
+4. Sélectionner les serveurs avec, pour chaque serveur, le **montant** total des consommations qu'il a servies.
 
-5. Afficher toutes les consommations avec, pour chaque consommation, le nombre d'unités vendues et le montant total correspondant.
+5. Sélectionner toutes les consommations avec, pour chaque consommation, le nombre d'unités vendues et le montant total correspondant.
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 

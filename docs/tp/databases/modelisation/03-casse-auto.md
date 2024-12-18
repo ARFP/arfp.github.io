@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -60,14 +61,14 @@ Ensuite, créer le script permettant l'insertion du jeu d'essai ci-dessous :
 
 Créer un fichier SQL contenant les requêtes suivantes :
 
-1. Afficher toutes les voitures
+1. Sélectionner toutes les voitures
 
-2. Afficher toutes les voitures produites après 2020.
+2. Sélectionner toutes les voitures produites après 2020.
 
-3. Afficher toutes les pièces détachées triées par prix du moins cher au plus cher.
+3. Sélectionner toutes les pièces détachées triées par prix du moins cher au plus cher.
 
-4. Afficher les pièces détachées de la catégorie "Carrosserie" dont le prix hors taxes est inférieur à 100€.
+4. Sélectionner les pièces détachées de la catégorie "Carrosserie" dont le prix hors taxes est inférieur à 100€.
 
-5. Afficher toutes les pièces détachées pour la marque Volkswagen.
+5. Sélectionner toutes les pièces détachées pour la marque Volkswagen.
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 
