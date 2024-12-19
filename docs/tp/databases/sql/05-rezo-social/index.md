@@ -8,6 +8,14 @@ Vous êtes en charge de l'implémentation d'une petite base de données pour un 
 
 L'ingénieur du projet s'est chargé de l'analyse du besoin et vous fournit le résultat de son travail.
 
+> Un utilisateur est caractérisé par un identifiant, un nom d'utilisateur et une adresse email.
+>
+> Un utilisateur peut publier du contenu.
+>
+> Une publication est caractérisée par un identifiant, une date de publication, un titre et un contenu et on doit connaitre l'auteur de la publication.
+>
+> Les utilisateurs peuvent "aimer" des publications.
+
 Votre tâche consiste à créer la base de données correspondante.
 
 ## La base de données 
@@ -28,9 +36,8 @@ Votre tâche consiste à créer la base de données correspondante.
     - l'instruction pour supprimer la base de données si elle existe
     - l'instruction pour créer la base de données
     - les instructions pour créer les différentes tables
-2. Créer un 2ème script SQL qui contiendra:
-    - Les intructions pour insérer le jeu d'essai fourni
-3. Créer un 3ème script SQL qui contiendra le requêtes à implémenter
+2. Créer un 2ème script SQL qui contiendra les intructions pour insérer le jeu d'essai fourni
+3. Créer un 3ème script SQL qui contiendra les requêtes à implémenter
 
 ## Jeu d'essai
 
