@@ -26,9 +26,9 @@ Votre tâche consiste à créer la base de données correspondante.
 
 ## Préparez-vous !
 
-- Lancer votre serveur SQL depuis Laragon
-- Connectez vous au serveur de base de données avec MySQL Workbench
 - Créer un répertoire pour le projet (pour stocker vos fichiers SQL).
+- Lancer votre serveur SQL depuis Laragon
+- Connectez vous au serveur de base de données avec MySQL Workbench ou équivalent
 
 ## Travail à réaliser 
 
@@ -50,7 +50,8 @@ Votre tâche consiste à créer la base de données correspondante.
 | 3 | Eva | eva.stt@example.com |
 
 **Publications**
- | pub_id | pub_date | pub_titre | pub_contenu | id |
+
+| pub_id | pub_date | pub_titre | pub_contenu | id |
 | --- | --- | --- | --- | --- |
 | 1 | 2024-11-23 14:30 | Il fait beau | Quel beau soleil aujourd'hui ! | 3 | 
 | 2 | 2024-11-23 09:15 | Les bonbons | Les bonbons, c'est bon | 2 | 
