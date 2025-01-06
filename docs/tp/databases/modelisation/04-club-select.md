@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -66,14 +67,14 @@ Compléter le fichier SQL en prenant en compte les éléments suivants :
 
 Créer un fichier SQL contenant les requêtes suivantes :
 
-1. Afficher les informations de tous les membres triés par date d'adhésion (le membre le plus ancien apparait en 1er)
+1. Sélectionner les informations de tous les membres triés par date d'adhésion (le membre le plus ancien apparait en 1er)
 
-2. Afficher le nom, prénom et email de tous les membres incluant le nombre de conférences dans lesquelles ils ont participé.
+2. Sélectionner le nom, prénom et email de tous les membres incluant le nombre de conférences dans lesquelles ils ont participé.
 
-3. Afficher toutes les informations des membres fondateurs.
+3. Sélectionner toutes les informations des membres fondateurs.
 
-4. Afficher toutes les informations des conférences qui ont lieu en soirée (après 18h) et dont la durée est strictement supérieure à 1 heure.
+4. Sélectionner toutes les informations des conférences qui ont lieu en soirée (après 18h) et dont la durée est strictement supérieure à 1 heure.
 
-5. Afficher le nom, prénom, date de naissance et date d'adhésion de tous les membres avec le nom et prénom du parrain 1 et l'adresse email du parrain 2. Les membres sans parrain ne doivent pas aparaitre dans les résultats.
+5. Sélectionner le nom, prénom, date de naissance et date d'adhésion de tous les membres avec le nom et prénom du parrain 1 et l'adresse email du parrain 2. Les membres sans parrain ne doivent pas aparaitre dans les résultats.
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 

@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -128,9 +129,9 @@ Le soldat N°3 a effectué le parcours 1 fois et a obtenu les notes suivantes :
 
 Créer un fichier SQL contenant les requêtes suivantes :
 
-1. Afficher toutes les informations des soldats triés par âge (le plus jeune aparait en 1er).
+1. Sélectionner toutes les informations des soldats triés par âge (le plus jeune aparait en 1er).
 
-2. Afficher toutes les informations des obstacles triés par difficulté (le plus difficile aparait en 1er).
+2. Sélectionner toutes les informations des obstacles triés par difficulté (le plus difficile aparait en 1er).
 
 3. Le soldat N°2 refait le parcours et obtient les mêmes notes sauf pour les 3 derniers obstacles où il obtient respectivement les notes : **9**, **8** et **11**.
 
