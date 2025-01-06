@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -70,14 +71,14 @@ Une fois votre base de données créée, implémentez un nouveau fichier SQL con
 
 Créer un fichier SQL contenant les requêtes suivantes :
 
-1. Afficher tous les apprentis triés par nom de famille et par ordre croissant.
+1. Sélectionner tous les apprentis triés par nom de famille et par ordre croissant.
 
-2. Afficher les tuteurs avec le nombre d'apprentis qu'ils suivent.
+2. Sélectionner les tuteurs avec le nombre d'apprentis qu'ils suivent.
 
-3. Afficher les apprentis qui participent à au moins 1 concours avec, pour chaque apprenti le nom du concours auquel il participe.
+3. Sélectionner les apprentis qui participent à au moins 1 concours avec, pour chaque apprenti le nom du concours auquel il participe.
 
-4. Afficher tous les apprentis avec, pour chaque apprenti le nom du concours auquel il participe. Si l'apprenti ne participe à aucun concours, afficher la valeur `NULL` à la place du nom du concours.
+4. Sélectionner tous les apprentis avec, pour chaque apprenti le nom du concours auquel il participe. Si l'apprenti ne participe à aucun concours, afficher la valeur `NULL` à la place du nom du concours.
 
-5. Afficher tous les concours avec, pour chaque concours, le nombre d'apprentis inscrits ainsi que la meilleure note obtenue.
+5. Sélectionner tous les concours avec, pour chaque concours, le nombre d'apprentis inscrits ainsi que la meilleure note obtenue.
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 

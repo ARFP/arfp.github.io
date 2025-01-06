@@ -13,6 +13,9 @@ Exercice de modélisation de base de données relationnelle.
 - Formalisez le dictionnaire des données
 - Répérez les dépendances fonctionnelles
 - Modélisez le diagramme *entité-association* (MCD)
+- Créer le script de création de la base de données
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -25,7 +28,7 @@ On traitera successivement deux hypothèses :
 
 **Etablir le dictionnaire des données, le MCD et le MLD pour les 2 deux cas.**
 
-Lorsque vous avez validé votre travail avec votre formateur, créer un fichier SQL contenant les instructions pour créer la base de données pour les cas N°2.
+Lorsque vous avez validé votre travail avec votre formateur, créer un fichier SQL contenant les instructions pour créer la base de données pour le cas N°2.
 
 
 ## Jeu d'essai

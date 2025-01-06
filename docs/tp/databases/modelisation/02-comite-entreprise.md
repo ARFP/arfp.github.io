@@ -13,7 +13,8 @@ Exercice de modélisation de base de données relationnelle.
 - Répérer les dépendances fonctionnelles
 - Modéliser le diagramme *entité-association* (MCD)
 - Créer le script de création de la base de données
-- Créer un jeu d'essai cohérent
+- Créer et insérer un jeu d'essai cohérent
+- Implémentez les requêtes SQL demandées
 
 ## Contexte 
 
@@ -32,5 +33,19 @@ Modéliser une base de données permettant de stocker ces informations de maniè
 Pour cela, établir le dictionnaire des données, le MCD et le MLD.
 
 Ensuite, implémenter le script de création de la base de données et insérer le jeu d'essai du tableau ci-dessus.
+
+> Valider votre travail avec vos formateurs avant de passer à la suite 
+
+## Requêtes SQL à implémenter
+
+1. Sélectionner tous les employés (nom, prénom, numéro de téléphone)
+
+2. Sélectionner tous les employés triés par nom et par ordre décroissant
+
+3. Sélectionner tous les employés avec, pour chaque employé, le nombre d'enfant
+
+4. Sélectionner les employés sans enfant
+
+4. Sélectionner les enfants (prénom, âge) triés par âge du plus jeune au plus agé. Pour chaque enfant, Le nom et prénom de son parent est également affiché.
 
 > Valider votre travail avec vos formateurs avant de passer à la suite 
