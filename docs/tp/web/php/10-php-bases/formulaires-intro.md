@@ -118,4 +118,10 @@ Lorsque vous avez terminé d'implémenter ces contrôles, ajouter la vérificati
     - Si l'âge est inférieur à 18, afficher l'erreur "vous êtes mineur, accès interdit".
     - si l'âge est supérieur ou égal à 18, afficher les données saisies dans le formulaire ainsi que l'âge calculé.
 
+## Pour vous aider : 
+
+- [Traiter des formulaires avec PHP (Apprendre PHP)](https://www.apprendre-php.com/tutoriels/tutoriel-12-traitement-des-formulaires-avec-get-et-post.html)
+- [Valider des formulaires avec PHP (Pierre GIRAUD)](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/securiser-valider-formulaire/)
+
+
 > Valider votre travail avec un formateur.
