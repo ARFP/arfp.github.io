@@ -108,11 +108,16 @@ if (!empty($_POST)) {
             throw new Exception('Le format du nom est incorrect');
         }
 
-        $date = new DateTime($dateDeNaissance);
-        $now = new DateTime();
-        // Si la date soumise n'est pas dans le passé: erreur
-        if($date >= $now) {
-            throw new Exception('La date est invalide');
+        // Contrôler le format de la date
+        // Si le format est incorrect, Datetime lève une exception.
+        $date = new DateTime($dateDeNaissance); // date fournie par l'utilisateur
+        $auj = new DateTime(); // date et heure courante
+        // Définit l'heure minute et seconde à 0 pour $auj (aujourd'hui)
+        $auj->setTime(0, 0, 0, 0);
+
+        // Si la date fournie est supérieure ou égale à la date du jour: erreur
+        if($date >= $auj) {
+            throw new Exception('La date doit être dans le passé !');
         }
 
         // Si le format de l'email est incorrect : erreur
@@ -140,8 +145,10 @@ if (!empty($_POST)) {
         exit;
     } // fin du try/catch 
 
-} // fin du if $_SERVER["REQUEST_METHOD"] == "POST"
+} // fin du if !empty($_POST)
 
 ```
 
-> 
+> Vérifiez votre code, corrigez le si nécessaire car il sera réutilisé dans les parties suivantes (vous allez faire évoluer votre petit projet de forumaire de contact)
+
+Une fois terminé ,vous pouvez [accéder à la suite](./formulaires-dao.md)

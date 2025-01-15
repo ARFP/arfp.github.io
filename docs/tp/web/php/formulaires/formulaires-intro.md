@@ -13,19 +13,17 @@ Le formulaire ci-dessous permet à un utilisateur de saisir son nom et son âge,
 ### Formulaire HTML
 
 ```html
-<body>
-    <h1>Formulaire PHP</h1>
-    <form action="traitement.php" method="post">
+<!-- index.html -->
+<form action="traitement.php" method="post">
 
-        <label for="monNom">Nom :</label> 
-        <input type="text" id="monNom" name="nom" required> 
+    <label for="monNom">Nom :</label> 
+    <input type="text" id="monNom" name="nom" required> 
 
-        <label for="monAge">Nom :</label> 
-        <input type="number" id="monAge" name="age" required>    
+    <label for="monAge">Nom :</label> 
+    <input type="number" id="monAge" name="age" required>    
 
-        <button type="submit">Envoyer</button>
-    </form>
-</body>
+    <button type="submit">Envoyer</button>
+</form>
 ```
 
 Dans le code précédent : 
@@ -41,7 +39,9 @@ Dans le code précédent :
 
 ```php
 <?php
+// traitement.php
 // Si la méthode HTTP de la requête est "POST"
+// if (!empty($_POST)) { // variante
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
     $nom = $_POST['nom'];
@@ -70,7 +70,7 @@ Selon la méthode utilisée par le formulaire, les données sont disponibles:
 
 Le formulaire contient 2 champs : `nom` et `age` (visible dans l'attribut `name` de chaque champ). 
 
-Lorsque le formulaire est soumis, PHP va utiliser la valeur de l'attribut `name` de chaque champ pour créer un tableau associatif dont les clés seront les `name` des différents champs et la valeur associée sera celle saisie dans le champs correspondant.
+Lorsque le formulaire est soumis, PHP va utiliser la valeur de l'attribut `name` de chaque champ pour créer un tableau associatif dont les clés seront les `name` des différents champs et la valeur associée sera celle saisie dans le champ correspondant.
 
 - Pour le champ "nom" (`<input name="nom">`), la valeur saisie sera disponible dans `$_POST['nom']`.
 - Pour le champ "age" (`<input name="age">`), la valeur saisie sera disponible dans `$_POST['age']`.
@@ -83,6 +83,56 @@ Lorsque le formulaire est soumis, PHP va utiliser la valeur de l'attribut `name`
 - etc...
 
 Les contrôles effectués côté serveur avec PHP **seront plus efficaces et sécurisés** que tous les contrôles côté client avec Javascript (Javascript peut être désactivé dans le navigateur client).
+
+Reprenons notre script traitement.php et ajoutons-y des contrôles de saisie : 
+
+```php
+<?php
+// traitement.php avec contrôles de saisie
+// Si la méthode HTTP de la requête est "POST"
+// if (!empty($_POST)) { // variante
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    try {
+        // Vérification que toutes les données ont bien été soumises
+        // Si l'une des donnée est manquante, on lève une exception qui sera attrapée dans le bloc "catch"
+        if(!isset($_POST['nom'], $_POST['age'])) {
+            throw new Exception('Le formulaire est incomplet');
+        }
+
+        // Récupérer les données du formulaire
+        $nom = $_POST['nom'];
+        $age = $_POST['age'];
+
+        // Contrôle du nom : Uniquement des lettres et entre 2 et 50 caractères
+        // Si le nom ne respecte pas le format attendu : erreur
+        if(!preg_math('/^[a-zA-Z]{2,50}$/', $nom)) {
+            throw new Exception('Le format du nom est incorrect');
+        }
+
+        // contrôle de l'age : Doit être un entier entre 1 et 120
+        // Si l'âge ne respecte pas les conditions : erreur
+        if(!filter_var(
+            $age, 
+            FILTER_VALIDATE_INT, 
+            ["options" => ['min_range' => 1, 'max_range' => 120]]
+        )) {
+            throw new Exception('L\âge renseigné est invalide');
+        }
+
+        // Une fois les contrôles effectués, et à partir de ce point, on considère les données valides. Nous pouvons donc les exploiter.
+
+        // Afficher les données
+        echo "<h2>Informations soumises :</h2>";
+        echo "Nom : " . $nom . "<br>";
+        echo "Âge : " . $age . "<br>";
+    } catch(Exception $ex) {
+        // Si une erreur est levée dans le bloc "try" ci-dessus, l'erreur correspondante est affichée et le script s'arrête
+        echo $ex->getMessage();
+        exit;
+    }    
+}
+```
 
 ## Exercez vous
 
