@@ -204,7 +204,7 @@ Une fois ces classes implémentées, nous pouvons maintenant invoquer la méthod
 
 Cette méthode sera appelée dans le fichier **traitement.php** après la validation des données.
 
-Le code ci-desosus illustre les modifications apportées au fichier **traitement.php** : 
+Le code ci-dessous illustre les modifications apportées au fichier **traitement.php** : 
 
 ```php
 <?php
@@ -252,7 +252,6 @@ if (!empty($_POST)) {
         }
 
         // Ajout d'un lien pour retourner vers le formulaire
-
         echo '<p><a href="index.html">Retour au formulaire</a></p>';
 
         
