@@ -125,3 +125,5 @@ Lorsque vous avez terminé d'implémenter ces contrôles, ajouter la vérificati
 
 
 > Valider votre travail avec un formateur.
+
+Lorsque vous avez terminé, vous pouvez [accéder à la suite](./formulaires-intro-correction)

@@ -12,54 +12,6 @@ order: 13
 
 Dans la partie précédente, vous avez implémenté un formulaire avec un traitement backend dans un script PHP.
 
-Le formulaire devrait ressembler à ceci : 
-
-### Formulaire HTML
-
-```html
-<form action="traitement-contact.php" method="post">
-
-    <div>
-        <label for="monNom">Votre Nom :</label> 
-        <input type="text" id="monNom" name="nom" required> 
-    </div>
-    <div>
-        <label for="maDate">Votre Date de naissance :</label> 
-        <input type="date" id="maDate" name="dateDeNaissance" required>  
-    </div>
-    <div>
-        <label for="monEmail">Votre Adresse email :</label> 
-        <input type="date" id="monEmail" name="email" required>  
-    </div>
-    <div>
-        <label for="monMessage">Votre message :</label> 
-        <input type="date" id="monMessage" name="message" required>    
-    </div>
-
-    <button type="submit">Envoyer</button>
-</form>
-```
-
-Lorsque le formulaire est soumis, le fichier `traitement-contact.php` récupère les informations saisies et les affichent :
-
-```php
-<?php
-/* traitement-contact.php */
-// Si la méthode HTTP de la requête est "POST"
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données du formulaire
-    $nom = $_POST['nom'];
-    $dateDeNaissance = $_POST['dateDeNaissance'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    // Afficher les données
-    echo "<h2>Informations soumises :</h2>";
-    echo "Nom : " . $nom . "<br>";
-    echo "Date de naissance : " . $dateDeNaissance . "<br>";
-    echo "Adresse Email : " . $email . "<br>";
-    echo "Message : " . $message . "<br>";
-}
-```
 
 
 ## Exercez vous

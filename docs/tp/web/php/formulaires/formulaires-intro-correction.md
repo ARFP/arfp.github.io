@@ -29,11 +29,11 @@ Le formulaire devrait ressembler à ceci :
     </div>
     <div>
         <label for="monEmail">Votre Adresse email :</label> 
-        <input type="date" id="monEmail" name="email" required>  
+        <input type="email" id="monEmail" name="email" required>  
     </div>
     <div>
         <label for="monMessage">Votre message :</label> 
-        <input type="date" id="monMessage" name="message" required>    
+        <textarea id="monMessage" name="message" required></textarea>    
     </div>
 
     <button type="submit">Envoyer</button>
@@ -64,12 +64,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ```
 
-Le script ci-dessus fonctionne mais n'effectue aucun contrôle sur la saisie utilisateur. Si un utilisateur malveillant soumets des informations vérolées (des balises HTML, du Javascript etc...), votre système et vos utilisateurs sont exposés.
+Le script ci-dessus fonctionne mais n'effectue aucun contrôle sur la saisie utilisateur. Si un utilisateur malveillant soumet des informations vérolées (des balises HTML, du Javascript etc...), votre système et vos utilisateurs sont exposés.
 
 En d'autres termes, le code précédent est une porte ouverte pour les eventuels pirates...
 
 Il convient donc de contrôler toutes les données transmises. Pour chaque champ du formulaire, vous devez : 
-1. Vérifier que champ a bien été soumis
+1. Vérifier que tous le champ a bien été soumis
 2. Vérifier que la donnée soumise correspond au format attendu
 3. Nettoyer les données qui peuvent contenir du code malveillant
 
@@ -80,13 +80,13 @@ Par exemple,
 
 PHP propose des fonctions permettant de contrôler la majorité des formats de données soumises dans les formulaires.
 
-Dans l'exercice courant, il convient donc de contrôler le nom, la date de naissance, l'adresse email et le message soumis dans le formulaire.
+Dans l'exercice courant, il convient donc de contrôler le nom, la date de naissance, l'adresse email et le message soumis dans le formulaire. Le code ci-dessous illustre ces contrôles de saisie.
 
 ```php
 <?php
 /* traitement-contact.php avec contrôle de saisie */
-// Si la méthode HTTP de la requête est "POST"
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Si le tableau $_POST n'est pas vide, il s'agit d'une requête de type POST
+if (!empty($_POST)) {
 
     try {
         // Vérification que toutes les données ont bien été soumises
@@ -143,3 +143,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } // fin du if $_SERVER["REQUEST_METHOD"] == "POST"
 
 ```
+
+> 
