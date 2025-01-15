@@ -53,7 +53,7 @@ if (!empty($_POST)) {
 
         // Contrôle du nom : Uniquement des lettres et entre 2 et 50 caractères
         // Si le nom ne respecte pas le format attendu : erreur
-        if(!preg_math('/^[a-zA-Z]{2,50}$/', $nom)) {
+        if(!preg_match('/^[a-zA-Z]{2,50}$/', $nom)) {
             throw new Exception('Le format du nom est incorrect');
         }
 
@@ -124,7 +124,7 @@ Ces 2 classes seront créées dans un sous dossier **Dao** du projet.
 
 L'arborescence du projet doit ressembler à ceci :
 
-```markdown
+```
 /mon-projet/
     - index.html (le formulaire)
     - traitement.php (traitement du formulaire)
