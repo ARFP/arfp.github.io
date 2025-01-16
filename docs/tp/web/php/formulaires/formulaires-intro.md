@@ -4,7 +4,7 @@ serie: "php"
 order: 12
 ---
 
-Le HTML permet de créer des formulaires. Cependant, pour récupérer et manipuler les données envoyées, un langage "serveur" (PHP, Java, C#...) est nécessaire. 
+Le HTML permet de créer des [formulaires](https://developer.mozilla.org/fr/docs/Learn_web_development/Extensions/Forms/Your_first_form). Cependant, pour récupérer et manipuler les données envoyées, un langage "serveur" (PHP, Java, C#...) est nécessaire. 
 
 Voici un exemple simple de formulaire traité avec PHP pour vous aider à démarrer. 
 
@@ -30,7 +30,7 @@ Dans le code précédent :
 
 - La balise `<form>` contient 2 attributs : 
     - **action="traitement.php"** : indique vers quel script les données du formulaire seront soumises. 
-    - **method="POST"** : indique la méthode HTTP utilisée pour transmettre les données au script indiqué par l'attribut *action*.
+    - **method="POST"** : indique la [méthode HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods) utilisée pour transmettre les données au script indiqué par l'attribut *action*.
 - Le formulaire utilise donc la méthode `POST` pour envoyer les données à `traitement.php`.
 - Le champ `nom` est de type text.
 - Le champ `age` est de type number.
@@ -57,10 +57,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 - Les données du formulaire sont récupérées.
 - Les informations saisies sont ensuite affichées.
 
+> Plus d'infos sur le traitement des formulaires avec PHP : [PHP: Utiliser les formulaires](https://www.php.net/manual/fr/tutorial.forms.php)
+
 --- 
 
 Lorsque le formulaire est soumis, les données sont transmises au script PHP indiqué dans l'attribut `action` de la balise `<form>`.
-La méthode HTTP utilisée (attribut `method` de la balise `<form>`) permet de déterminer où les données seront disponibles après soumission du formulaire.
+La [méthode HTTP](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods) utilisée (attribut `method` de la balise `<form>`) permet de déterminer où les données seront disponibles après soumission du formulaire.
 
 Selon la méthode utilisée par le formulaire, les données sont disponibles: 
 - Dans le tableau `$_GET` si le formulaire est soumis avec la méthode `GET`.
@@ -75,16 +77,28 @@ Lorsque le formulaire est soumis, PHP va utiliser la valeur de l'attribut `name`
 - Pour le champ "nom" (`<input name="nom">`), la valeur saisie sera disponible dans `$_POST['nom']`.
 - Pour le champ "age" (`<input name="age">`), la valeur saisie sera disponible dans `$_POST['age']`.
 
-*Il convient de contrôler les données soumises dans un formulaire car ... **NEVER TRUST USER INPUT !***
+### Never Trust User Input
 
-- Pour les champs de type texte, le contrôle sera généralement effectué avec une Regex.
-- Pour les données numériques, les fonctions intval() et/ou floatval() peuvent être utiles.
-- Pour les dates, contrôler le format de la date.
-- etc...
+*Il convient de contrôler les données soumises dans un formulaire car ... **[NEVER TRUST USER INPUT !](https://www.garybell.co.uk/never-trust-user-input/)**.*
 
-Les contrôles effectués côté serveur avec PHP **seront plus efficaces et sécurisés** que tous les contrôles côté client avec Javascript (Javascript peut être désactivé dans le navigateur client).
+Les contrôles effectués côté serveur avec PHP **seront plus efficaces et sécurisés** que tous les contrôles côté client avec Javascript (Javascript peut être désactivé dans le navigateur client). 
 
-Reprenons notre script traitement.php et ajoutons-y des contrôles de saisie : 
+- Mettre en place les contrôles coté *frontend* (avec l'attribut HTML *[pattern](https://developer.mozilla.org/fr/docs/Web/HTML/Attributes/pattern)* et/ou avec Javascript) offrira à l'utilisateur un confort d'utilisation amélioré (pas besoin de recharger la page pour voir les erreurs de saisie).
+
+- Mettre en place les contrôles coté *backend* sécurisera votre système (serveur, base de données) et vos utilisateurs.
+
+#### Contrôlez systématiquement les données entrantes
+
+- Pour les champs de type texte, le contrôle sera généralement effectué avec une **expression régulière (Regex)** et la fonction **[preg_match()](https://www.php.net/manual/fr/function.preg-match.php)**.
+- Pour les données numériques, les fonctions **[filter_var()](https://www.php.net/manual/fr/function.filter-var.php)**, **[intval()](https://www.php.net/manual/fr/function.intval.php)** et/ou **[floatval()](https://www.php.net/manual/fr/function.floatval.php)** peuvent être utiles.
+- Pour les dates, contrôler la validité et le format de la date avec la classe **[DateTime](https://www.php.net/manual/fr/class.datetime.php)**.
+
+Consultez la page de la fonction **[filter_var()](https://www.php.net/manual/fr/function.filter-var.php)** pour découvrir tous les contrôles disponibles dans le langage PHP.
+
+Si vous devez contrôler des formats de données particuliers, vous devrez probablement utiliser des expressions régulières.
+
+
+**Reprenons notre script traitement.php et ajoutons-y des contrôles de saisie :** 
 
 ```php
 <?php
@@ -170,6 +184,8 @@ Lorsque vous avez terminé d'implémenter ces contrôles, ajouter la vérificati
 
 ## Pour vous aider : 
 
+- [Les formulaires HTML (MDN)](https://developer.mozilla.org/fr/docs/Learn_web_development/Extensions/Forms/Your_first_form)
+- [Validation des formulaires coté frontend (MDN)](https://developer.mozilla.org/fr/docs/Learn_web_development/Extensions/Forms/Form_validation)
 - [Traiter des formulaires avec PHP (Apprendre PHP)](https://www.apprendre-php.com/tutoriels/tutoriel-12-traitement-des-formulaires-avec-get-et-post.html)
 - [Valider des formulaires avec PHP (Pierre GIRAUD)](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/securiser-valider-formulaire/)
 

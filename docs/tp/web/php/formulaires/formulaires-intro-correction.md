@@ -40,7 +40,7 @@ Le formulaire devrait ressembler à ceci :
 </form>
 ```
 
-Lorsque le formulaire est soumis, le fichier `traitement-contact.php` :
+Lorsque le formulaire est soumis, le fichier **traitement-contact.php** :
 1. Vérifie qu'il s'agit bien d'une requête **POST**,
 2. Récupère les informations saisies,
 3. Affiche les informations saisies.
@@ -77,6 +77,7 @@ Par exemple,
 
 - Pour du texte, une expression régulière permet de contrôler que la donnée respecte un certain format.
 - Pour les données numériques, il convient de s'assurer que la donnée soumise est bien un nombre (entier ou décimal, selon le besoin).
+- etc... ([Plus d'infos sur la page précédente](./formulaires-intro))
 
 PHP propose des fonctions permettant de contrôler la majorité des formats de données soumises dans les formulaires.
 
@@ -91,7 +92,7 @@ if (!empty($_POST)) {
     try {
         // Vérification que toutes les données ont bien été soumises
         // Si l'une des donnée est manquante, on affiche un message d'erreur
-        if(!isset($_POST['nom'], $_POST['dateDeNaissance'],     $_POST['email'], $_POST['message'])) {
+        if(!isset($_POST['nom'], $_POST['dateDeNaissance'], $_POST['email'], $_POST['message'])) {
             throw new Exception('Le formulaire est incomplet');
         }
 
@@ -149,6 +150,6 @@ if (!empty($_POST)) {
 
 ```
 
-> Vérifiez votre code, corrigez le si nécessaire car il sera réutilisé dans les parties suivantes (vous allez faire évoluer votre petit projet de forumaire de contact)
+> Vérifiez votre code, corrigez le si nécessaire car il sera réutilisé dans les parties suivantes (vous allez faire évoluer votre petit projet de formulaire de contact).
 
-Une fois terminé ,vous pouvez [accéder à la suite](./formulaires-dao.md)
+Une fois terminé, vous pouvez [accéder à la suite](./formulaires-dao)
