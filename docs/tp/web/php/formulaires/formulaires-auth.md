@@ -99,6 +99,9 @@ class AuthRepository
         /** @var PDO $db connexion à la base de données */
         $db = Dbconnect::getInstance();
 
+        /** @var array $user le tableau qui contiendra les données de l'utilisateur  */
+        $user = [];
+
 
         /** @var PDOStatement $stmt initialisation de la requête préparée */
         $stmt = $db->prepare("SELECT * FROM tbl_users WHERE username=:username");

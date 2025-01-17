@@ -16,7 +16,7 @@ Une fois les données validées, il vous a été demandé de les afficher.
 
 Dans cette partie, vous allez mettre en place la persistance dans une base de données.
 
-Reprenons l'exemple de la partie 1 : 
+Reprenons [l'exemple de la partie 1](./formulaires-intro). Le formulaire demande à l'utilisateur de saisir son nom et son âge : 
 
 **Le formulaire...** 
 
