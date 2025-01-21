@@ -1,5 +1,5 @@
 ---
 title: "Déploiement manuel"
-serie: "exercices"
-index: 1
+serie: "manuel"
+index: 2
 ---

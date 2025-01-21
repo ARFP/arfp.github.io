@@ -46,18 +46,11 @@ Une **classe** est une définition, un modèle, une recette pour fabriquer quelq
 
 A partir d'un concept générique (la classe **voiture**), nous pouvons construire des voitures différentes (les objets). Toutes les voitures possèderont des caractéristiques en commun (les attributs). 
 
-
-![Structure d'une classe](./img/poo-class-structure.png)
-
-
 Chaque voiture créée à partir du modèle possèdera des valeurs différentes pour chacune des caractéristiques.
-
-
-![Structure d'une classe 2](./img/poo-class-structure2.png)
 
 Pour résumer, à partir d'une classe, on instancie des objets : 
 
-![Structure d'une classe 2](./img/poo-class-car.jpg)
+![Classe Objet](./img/poo-class-car.jpg)
 
 ## Ressources 
 
