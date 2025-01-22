@@ -25,3 +25,28 @@ Parmi les plus courants, quatre ressortent :
 
 **Le déploiement canari :** il consiste à déployer une application par sous-ensemble. Au début, il est destiné à un petit groupe de personnes, puis il est déployé de manière incrémentielle au travers de versions progressives. Ce type de déploiement permet d'avoir des retours d'expérience anticipés d'utilisateurs et d'identifier les bugs afin de les supprimer pour la version finale. Le déploiement canari est intéressant pour les applications qui possèdent un groupe identifiable d'utilisateurs et non général.
 
+
+# Ressources
+
+**Lectures :** 
+
+- [Les environnements d'exécution](https://devoldere.net/ressources/docker/01%20-%20Environnements-dev-test-prod.pdf)
+- [Le déploiement manuel et automatique](https://devoldere.net/ressources/docker/02%20-%20Deploiement%20-%20manuel%20et%20auto.pdf)
+- [Définir un plan de déploiement](https://devoldere.net/ressources/docker/03%20-%20Deploiement%20-%20plan%20de%20deploiement.pdf)
+
+**Vidéos :**
+
+- Déploiement manuel avec un logiciel FTP
+    - [Mettre son site en ligne - FileZilla](https://www.youtube.com/watch?v=Mw9uoD346-k)
+- Déploiement automatique avec Github
+    - [Héberger un site gratuitement sur GitHub](https://www.youtube.com/watch?v=hNRxn5sKOdE)
+    - [Comment héberger un site web facilement avec GitHub](https://www.youtube.com/watch?v=dBAZ5Qc2bIk)
+
+
+# Travail à réaliser 
+
+Publier votre site web personnel (cv ou autre) sur Github Pages.
+
+[Documentation Github Pages](https://docs.github.com/fr/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+> Vous ne pouvez publier que du contenu statique (HTML, CSS, Javascript, images...). PHP et les langages serveurs ne fonctionnent pas sur Github Pages.
