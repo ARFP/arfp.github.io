@@ -74,6 +74,7 @@ FileZilla affichera la progression du transfert dans la partie inférieure de la
 # Exercice 
 
 1. Créer un compte sur le site [https://alwaysdata.com](https://alwaysdata.com)
+    - Sélectionnez le "Pack 100Mo gratuit"
 2. Regardez cette vidéo pour savoir comment publier votre 1er site web :
 
 [![Titre de la vidéo](https://img.youtube.com/vi/SmIdDn86i5M/0.jpg)](https://www.youtube.com/watch?v=SmIdDn86i5M)
