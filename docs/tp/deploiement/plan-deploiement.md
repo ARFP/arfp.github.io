@@ -77,7 +77,6 @@ Il est aussi conseillé de prévoir une formation pour les utilisateurs afin qu'
 Une fois l'application déployée, il est recommandé de surveiller le déploiement et de l'optimiser avec les corrections nécessaires en cas d'erreur. Les Logs vous seront alors très utiles pour détecter les éventuels problèmes.
 
 
-
 ## Avantages d’un déploiement informatique bien préparé
 
 Un déploiement informatique réussi offre de nombreux avantages pour les entreprises. Voici les 5 principaux avantages d’un plan de déploiement informatique bien conçu et bien exécuté.
@@ -91,6 +90,7 @@ Un déploiement informatique bien planifié permet d’automatiser et d’optimi
 L’automatisation et l’optimisation des processus grâce à un déploiement informatique permettent de réduire les coûts opérationnels. Les entreprises peuvent économiser sur les coûts de main-d’œuvre, de maintenance et d’exploitation en utilisant des technologies plus efficaces.
 
 ### Amélioration de la sécurité
+
 Un plan de déploiement informatique bien conçu inclut des mesures de sécurité robustes pour protéger les données sensibles de l’entreprise. Cela réduit le risque de violations de données, de cyberattaques et d’autres menaces de sécurité.
 
 ### Flexibilité et évolutivité

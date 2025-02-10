@@ -30,9 +30,11 @@ Parmi les plus courants, quatre ressortent :
 
 **Lectures :** 
 
-- [Les environnements d'exécution](https://devoldere.net/ressources/docker/01%20-%20Environnements-dev-test-prod.pdf)
-- [Le déploiement manuel et automatique](https://devoldere.net/ressources/docker/02%20-%20Deploiement%20-%20manuel%20et%20auto.pdf)
-- [Définir un plan de déploiement](https://devoldere.net/ressources/docker/03%20-%20Deploiement%20-%20plan%20de%20deploiement.pdf)
+- [Les environnements d'exécution](https://devoldere.net/ressources/deploiement/01%20-%20Environnements-dev-test-prod.pdf)
+- [Le déploiement manuel et automatique](https://devoldere.net/ressources/deploiement/02%20-%20Deploiement%20-%20manuel%20et%20auto.pdf)
+- [Définir un plan de déploiement](https://devoldere.net/ressources/deploiement/03%20-%20Deploiement%20-%20plan%20de%20deploiement.pdf)
+- [Rédiger une procédure de déploiement](https://devoldere.net/ressources/deploiement/04%20CDA%20DWWM%20Modele%20Documentation%20D%c3%a9ploiement%201.0.7.pdf)
+- [Rédiger un changelog](https://devoldere.net/ressources/deploiement/05%20CDA%20DWWM%20Changelog%201.0.0.pdf)
 
 **Vidéos :**
 
