@@ -7,6 +7,8 @@ level: 4
 
 Programmation Orientée Objet (POO), Vous en avez peut-être déjà entendu parler. En quoi cela consiste-t-il ?
 
+![Poo Concepts](./img/poo-concepts.png)
+
 ## Qu'est ce qu'un objet ?
 
 Un **objet** en programmation n’est pas si différent de ce qu’on considère comme objet dans la vie de tous les jours. Si je vous dis "*Donnez-moi un objet*", vous pourriez m’apporter un *stylo*, un *écran de télévision*, ou encore un *livre*.
@@ -38,8 +40,21 @@ Vous avez compris, dans la vie réelle, pour fabriquer quelque chose, vous avez 
 
 Une **classe** est une définition, un modèle, une recette pour fabriquer quelque chose : les fameux **objets** !
 
+**Partons sur un autre exemple : Une voiture**
+
+![Poo classes objets](./img/poo-class-object.png)
+
+A partir d'un concept générique (la classe **voiture**), nous pouvons construire des voitures différentes (les objets). Toutes les voitures possèderont des caractéristiques en commun (les attributs). 
+
+Chaque voiture créée à partir du modèle possèdera des valeurs différentes pour chacune des caractéristiques.
+
+Pour résumer, à partir d'une classe, on instancie des objets : 
+
+![Classe Objet](./img/poo-class-car.jpg)
 
 ## Ressources 
+
+Poursuivre la lecture : 
 
 - [Introduction aux concepts Objet](https://devoldere.net/ressources/objet/1.Cours%20Concepts_objet.pdf)
 - [Cours UML sur Developpez.com](https://laurent-audibert.developpez.com/Cours-UML/?page=diagramme-classes)

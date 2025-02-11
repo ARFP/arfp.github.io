@@ -82,6 +82,11 @@ defaults:
       module: "git"
   -
     scope:
+      path: "tp/deploiement"
+    values:
+      module: "deploiement"
+  -
+    scope:
       path: "tp/web"
     values:
       module: "web"

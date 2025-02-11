@@ -10,6 +10,7 @@ serie: "github"
 - Posséder un compte sur [Github](https://github.com)
 - Savoir créer un dépôt sur github
 - Savoir synchroniser un dépôt GIT avec [Github Desktop](https://desktop.github.com)
+- Savoir fusionner des branches avec l'outil "Pull request" de Github
 - Savoir lire et suivre un tutoriel en Anglais
 
 ## Compétences mises en oeuvre : 
