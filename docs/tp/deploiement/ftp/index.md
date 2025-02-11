@@ -1,6 +1,6 @@
 ---
 title: "Déploiement manuel"
 serie: "manuel"
-index: 2
+index: 1
 ---
 
