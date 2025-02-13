@@ -1,7 +1,7 @@
 ---
-title: "Déploiement manuel"
+title: "Le plan de déploiement"
 serie: "exercices"
-index: 1
+order: 2
 ---
 
 Le déploiement informatique est une étape cruciale pour intégrer de nouvelles applications, systèmes ou logiciels dans l’environnement d’une entreprise. Il s’agit d’un processus complexe qui nécessite une planification minutieuse et une exécution rigoureuse. 
@@ -100,3 +100,13 @@ Un déploiement informatique bien fait offre une flexibilité accrue, permettant
 ### Meilleure prise de décision
 
 L’intégration de nouvelles technologies permet de collecter et d’analyser des données en temps réel. Cela aide les décideurs à prendre des décisions plus éclairées et stratégiques, basées sur des informations précises et à jour.
+
+# Ressources
+
+**Lectures :** 
+
+- [Les environnements d'exécution](https://devoldere.net/ressources/deploiement/01%20-%20Environnements-dev-test-prod.pdf)
+- [Le déploiement manuel et automatique](https://devoldere.net/ressources/deploiement/02%20-%20Deploiement%20-%20manuel%20et%20auto.pdf)
+- [Définir un plan de déploiement](https://devoldere.net/ressources/deploiement/03%20-%20Deploiement%20-%20plan%20de%20deploiement.pdf)
+- [Rédiger une procédure de déploiement (Modèle)](https://devoldere.net/ressources/deploiement/04%20CDA%20DWWM%20Modele%20Documentation%20D%c3%a9ploiement%201.0.7.pdf)
+- [Rédiger un changelog](https://devoldere.net/ressources/deploiement/05%20CDA%20DWWM%20Changelog%201.0.0.pdf)

@@ -1,10 +1,14 @@
 ---
-title: "Déploiement manuel"
+title: "Déploiement via (S)FTP"
 serie: "manuel"
-index: 2
+order: 3
 --- 
 
 Dans cet article, vous apprendrez à publier du contenu sur un serveur distant en utilisant le protocole FTP et/ou SFTP et le logiciel FileZilla.
+
+
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Mw9uoD346-k?si=xARYMv2rD2Jmz52G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Téléchargez et installez FileZilla
@@ -78,4 +82,3 @@ FileZilla affichera la progression du transfert dans la partie inférieure de la
 2. Regardez cette vidéo pour savoir comment publier votre 1er site web :
 
 [![Titre de la vidéo](https://img.youtube.com/vi/SmIdDn86i5M/0.jpg)](https://www.youtube.com/watch?v=SmIdDn86i5M)
-
