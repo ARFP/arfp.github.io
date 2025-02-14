@@ -9,6 +9,8 @@ JSON (*Javascript Object Notation*) est un format permettant de structurer et tr
 Lien vers le support de cours : 
 - [Introduction au format JSON](https://devoldere.net/ressources/web/01%20-%20Le%20format%20JSON.pdf)
 
+<iframe width="800" height="450" src="https://www.youtube.com/embed/MhzKr1ZA-HA?si=6SL6Dzd_DdEL4lu6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Exercices
 
 ## 1.1 Utilisateurs 
