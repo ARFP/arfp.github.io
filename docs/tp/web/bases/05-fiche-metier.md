@@ -5,7 +5,7 @@ order: 5
 --- 
 
 Pré-requis : 
-[Exercice: Fiche Métier au format Word](../../projet-professionnel/11-fiche-metier)
+[Exercice: Fiche Métier au format Word](../../projet-professionnel/04-fiche-metier.md)
 
 Dans cet exercice, vous allez reprendre votre fiche métier précédemment rédigée au format Word et l'implémenter au format HTML. Vous vous aiderez du langage CSS pour la mise en forme.
 
