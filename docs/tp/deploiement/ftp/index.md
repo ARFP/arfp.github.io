@@ -22,7 +22,7 @@ Avant que se généralise les démarches de déploiement continu et automatique,
 
 **Ressources en ligne :**
 
-- [Comprendre les protocoles FTP et SFTP](./comprendre-ftp-et-sftp)
+- [Comprendre les protocoles FTP et SFTP](./01-comprendre-ftp-et-sftp)
 - [Mettre son site en ligne avec FileZilla](https://www.youtube.com/watch?v=Mw9uoD346-k)
 - [Définir un plan de déploiement](https://devoldere.net/ressources/deploiement/03%20-%20Deploiement%20-%20plan%20de%20deploiement.pdf)
 - [Rédiger une procédure de déploiement](https://devoldere.net/ressources/deploiement/04%20CDA%20DWWM%20Modele%20Documentation%20D%c3%a9ploiement%201.0.7.pdf)

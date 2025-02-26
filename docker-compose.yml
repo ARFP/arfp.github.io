@@ -3,8 +3,8 @@ services:
   pages:
     # build: https://raw.githubusercontent.com/mdevoldere/edu-docker/develop/jekyll/Dockerfile
     build: .
-    image: mdevoldere-jekyll-develop
-    container_name: arfpio
+    # image: mdevoldere-jekyll-develop
+    container_name: arfpjekyll
     ports:
       - 4000:4000
       - 35728:35729
