@@ -37,8 +37,24 @@ Les images Docker sont créées à partir d'un fichier appelé **Dockerfile**, q
 
 Sur votre machine, le moteur de Docker (Docker engine) doit être en fonctionnement.
 
-Sur vos postes de travail en formation, lancer Docker Desktop permet de démarrer le Docker Engine
+Sur vos postes de travail en formation, lancer Docker Desktop permet de démarrer le Docker Engine.
 
+
+## Play with Docker
+
+**Play with Docker** est un terrain de jeu interactif qui vous permet d'exécuter des commandes Docker sur un terminal Linux (aucun téléchargement requis).
+
+ 
+1. Connectez-vous à [labs.play-with-docker.com/](https://labs.play-with-docker.com/) pour accéder à votre terminal PWD.
+2. Cliquez sur le bouton "Start".
+3. Identifiez-vous avec votre compte Docker.
+4. Sur la gauche, cliquez sur "Add instance".
+5. Votre terminal aparaît.
+6. Tapez la commande suivante dans votre terminal PWD : `docker run -dp 80:80 docker/getting-started:pwd`.
+7. Attendez que le conteneur démarre et **cliquez sur le badge du port 80**. 
+8. Une nouvelle page s'ouvre.
+9. Suivez les instructions sur la page qui s'ouvre.
+10. Amusez-vous !
 
 ## En vidéo 
 
