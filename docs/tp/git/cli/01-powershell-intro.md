@@ -123,12 +123,13 @@ Voici les commandes exécutées et le résultat obtenu :
 
 ### Pour aller plus loin avec Powershell
 
-| Commande PowerSehll | Objectif |
-| --- | --- | 
-| **[Get-Content](https://www.google.fr/search?q=powersehll+get-content)** | Afficher le contenu d'un fichier dans le terminal PowerShell | 
-| **[Set-Content](https://www.google.fr/search?q=powersehll+set-content)** | Ajouter du contenu dans un fichier vide ou remplacer le contenu d'un fichier |  
-| **[Add-Content](https://www.google.fr/search?q=powersehll+add-content)** | Ajouter du contenu à la fin d'un fichier sans écraser le contenu déjà présent  |  
+- [Les bases de PowerShell (Microsoft Learn)](https://learn.microsoft.com/fr-fr/collections/yd4wb5nq12kmd3)
 
+| Commande PowerShell | Objectif |
+| --- | --- | 
+| **[Get-Content](https://www.google.fr/search?q=powershell+get-content)** | Afficher le contenu d'un fichier dans le terminal PowerShell | 
+| **[Set-Content](https://www.google.fr/search?q=powershell+set-content)** | Ajouter du contenu dans un fichier vide ou remplacer le contenu d'un fichier |  
+| **[Add-Content](https://www.google.fr/search?q=powershell+add-content)** | Ajouter du contenu à la fin d'un fichier sans écraser le contenu déjà présent  |  
 
 --- 
 

@@ -4,20 +4,20 @@
         "slug": "abcdev",
         "fullname": "Accès aux Bases des Compétences",
         "level": 4,
-        "url": "http://www.arfp.asso.fr/medias/orientation-formation/Fiches%20Com/ABC%20DEV%20INFO.pdf"
+        "url": "https://www.crm68.fr/orientation-et-formation-professionnelle/je-recherche-une-formation/me-former-a-un-metier/informatique/"
     },
     {
         "name": "DWWM",
         "slug": "dwwm",
         "fullname": "Développeur Web et Web Mobile",
         "level": 5,
-        "url": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/EGPResultat.aspx?ct=01280m04&type=t"
+        "url": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/titre-professionnel/01280m04"
     },
     {
         "name": "CDA",
         "slug": "cda",
         "fullname": "Concepteur Développeur d'Applications",
         "level": 6,
-        "url": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/EGPResultat.aspx?ct=01281m04&cd=&cr=&type=t"
+        "url": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/titre-professionnel/01281m04"
     }
 ]
