@@ -21,12 +21,12 @@ Ce document répertorie les commandes GNU/Linux de base que vous vous devez de c
 
 La commande `ls` est la première que de nombreux utilisateurs de Linux saisissent dans leur interpréteur de commandes. Cette commande affiche par défaut le contenu du répertoire courant. Il est toutefois possible d’afficher le contenu d’un dossier spécifique en indiquant son chemin d’accès en argument.
 
-Cette instruction a de multiples options que vous pouvez toutes découvrir avec la commande `ls –help`. 
+Cette instruction a de multiples options que vous pouvez toutes découvrir avec la commande `ls -help`.
 
 Exemples d'options de la commande **ls**:
 
-- **ls – l** : donne des informations sur les fichiers dans chacun des répertoires ;
-- **ls – al** : liste les fichiers et répertoires avec des informations détaillées ;
+- **ls -l** : donne des informations sur les fichiers dans chacun des répertoires ;
+- **ls -al** : liste les fichiers et répertoires avec des informations détaillées ;
 - **ls -R** : affiche également le contenu des sous-répertoires.
 
 
