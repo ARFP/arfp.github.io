@@ -7,7 +7,9 @@ services:
     container_name: arfpjekyll
     ports:
       - 4000:4000
-      - 35728:35729
+      - 35729:35729
+    networks:
+    - default
     volumes:
       - ./docs:/srv/jekyll
     command: jekyll serve --force_polling --livereload

@@ -18,6 +18,7 @@ docs/.jekyll-metadata
 docs/vendor
 docs/.bundle
 docs/api
+Gemfile.lock.*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
