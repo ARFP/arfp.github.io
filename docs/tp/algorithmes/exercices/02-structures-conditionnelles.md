@@ -4,87 +4,307 @@ level: 4
 order: 2
 ---
 
-Cette partie vous permettra de mettre en pratique les notions suivantes : 
-- Les structures conditionnelles
+
+# 📘 Support + Exercices + Corrigés — Conditions (if / else)
+
+**REAC 2023 – DWWM / CDA**  
+**Environnement : Node.js 20+ (console)**
+
+---
+
+## 🎯 Compétences visées
+
+- Utiliser les structures conditionnelles (`if`, `else`, `else if`)
+- Comparer des valeurs (`>`, `<`, `===`)
+- Gérer des cas métiers simples
+
+---
+
+## ⚙️ Pré-requis
+
+```bash
+npm install prompt-sync
+```
+
+```javascript
+const prompt = require('prompt-sync')();
+```
+
+***
+
+# 🧪 Exercice 2.1 — Positif ou négatif
+
+## 🛠️ Consignes
+
+1. Demande un nombre
+2. Vérifie s’il est positif ou négatif
+3. Affiche le résultat
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const n = Number(prompt("Nombre : "));
+
+if (n >= 0) {
+  console.log("Positif");
+} else {
+  console.log("Négatif");
+}
+```
+
+***
+
+# 🧪 Exercice 2.2 — Signe du produit
+
+## 🛠️ Consignes
+
+1. Demande deux nombres
+2. Détermine si leur produit est positif ou négatif
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const a = Number(prompt("A : "));
+const b = Number(prompt("B : "));
+
+if (a * b >= 0) {
+  console.log("Produit positif");
+} else {
+  console.log("Produit négatif");
+}
+```
+
+***
+
+# 🧪 Exercice 2.3 — Trier 2 nombres
+
+## 🛠️ Consignes
+
+1. Lire A et B
+2. Afficher dans l’ordre croissant
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const a = Number(prompt("A : "));
+const b = Number(prompt("B : "));
+
+if (a < b) {
+  console.log(a, b);
+} else {
+  console.log(b, a);
+}
+```
+
+***
+
+# 🧪 Exercice 2.4 — Être majeur
+
+## 🛠️ Consignes
+
+1. Lire un âge
+2. Gérer : négatif, mineur, majeur
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const age = Number(prompt("Âge : "));
+
+if (age < 0) {
+  console.log("Vous n'êtes pas encore né");
+} else if (age < 18) {
+  console.log("Vous êtes mineur");
+} else {
+  console.log("Vous êtes majeur");
+}
+```
+
+***
+
+# 🧪 Exercice 2.5 — Retraite
+
+## 🛠️ Consignes
+
+1. Lire un âge
+2. Afficher situation par rapport à 62 ans
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const age = Number(prompt("Âge : "));
+
+if (age < 0) {
+  console.log("Âge invalide");
+} else if (age < 62) {
+  console.log(`Il reste ${62 - age} années`);
+} else if (age === 62) {
+  console.log("C'est le moment de prendre sa retraite");
+} else {
+  console.log(`Retraité depuis ${age - 62} années`);
+}
+```
+
+***
+
+# 🧪 Exercice 2.6 — Catégorie sport
+
+## 🛠️ Consignes
+
+1. Lire un âge
+2. Déterminer catégorie
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const age = Number(prompt("Âge : "));
+
+if (age < 5) console.log("Trop jeune");
+else if (age <= 10) console.log("Débutant");
+else if (age <= 14) console.log("Junior");
+else if (age <= 17) console.log("Espoir");
+else console.log("Adulte");
+```
+
+***
+
+# 🧪 Exercice 2.7 — Trier 3 nombres
+
+## 🛠️ Consignes
+
+1. Lire A, B, C
+2. Trier décroissant
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+let a = Number(prompt("A : "));
+let b = Number(prompt("B : "));
+let c = Number(prompt("C : "));
+
+let tab = [a, b, c];
+tab.sort((x, y) => y - x);
+
+console.log(tab);
+```
+
+***
+
+# 🧪 Exercice 2.8 — Heure + 3 minutes
+
+## 🛠️ Consignes
+
+1. Lire heure et minutes
+2. Vérifier validité
+3. Ajouter 3 minutes
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+let h = Number(prompt("Heure : "));
+let m = Number(prompt("Minutes : "));
+
+if (h < 0 || h > 23 || m < 0 || m > 59) {
+  console.log("Données invalides");
+} else {
+  m += 3;
+
+  if (m >= 60) {
+    m -= 60;
+    h += 1;
+  }
+
+  if (h === 24) h = 0;
+
+  console.log(`Nouvelle heure : ${h}h${m}`);
+}
+```
+
+***
+
+# 🧪 Exercice 2.9 — Réprographie
+
+## 🛠️ Consignes
+
+1. Lire nombre copies
+2. Calculer prix selon paliers
+
+## ✅ Corrigé
+
+```javascript
+const prompt = require('prompt-sync')();
+
+const n = Number(prompt("Copies : "));
+let total = 0;
+
+if (n <= 10) {
+  total = n * 0.10;
+} else if (n <= 30) {
+  total = 10 * 0.10 + (n - 10) * 0.09;
+} else {
+  total = 10 * 0.10 + 20 * 0.09 + (n - 30) * 0.08;
+}
+
+console.log(`Total : ${total} €`);
+```
+
+***
+
+# ✅ Résumé
+
+* ✅ Utiliser `if / else`
+* ✅ Tester plusieurs cas
+* ✅ Gérer les entrées invalides
+
+***
+
+# ✅ Check apprenant
+
+* [ ] Je comprends les conditions
+* [ ] Je sais utiliser `if / else`
+* [ ] Je sais gérer plusieurs cas
 
 
-## Exercice 2.1 : Positif ou négatif ?
 
-Écrire un algorithme qui demande à l'utilisateur de saisir **1** nombre entier et l'informe ensuite si le nombre est **positif** ou **négatif**.
+---
 
-Pour information, le nombre `0` est considéré **positif**.
+## 💡 Feedback rapide (important pour la suite)
 
+Très bon chapitre 👍  
+👉 logique + progressif + exploitable en reconversion
 
-## Exercice 2.2 : Positif ou négatif (bis) ?
+### 🔥 Amélioration recommandée (si tu veux passer niveau premium)
+- ajouter **indices progressifs**
+- ajouter **version sans corrigé**
+- ajouter **évaluation REAC**
 
-Écrire un algorithme qui demande à l'utilisateur de saisir **2** nombres entiers et l'informe ensuite si leur **produit** est positif ou négatif.
+---
 
-## Exercice 2.3 : Tri de nombres
+## 🚀 Suite logique
 
-Lire 2 nombres entier `A` et `B` puis les afficher dans l'ordre croissant.
+👉 prochain module : **boucles (`for`, `while`)**
 
-## Exercice 2.4 : Es-tu majeur ?
+Je peux te faire :
+- support complet
+- exercices progressifs
+- corrigés
+- mini TP (console app)
 
-1. Lire un nombre `A` correspondant à un âge (en années).
-2. Afficher "Vous êtes majeur" ou "Vous êtes mineur" selon le cas.  
-    - Pour un nombre négatif le message doit être "Vous n'êtes pas encore né".
-
-La majorité est fixée à 18 ans.
-
-
-## Exercice 2.5 : Ma retraite
-
-1. Lire un nombre `A` correspondant à un âge (en années).
-2. Selon l'âge fourni, le programme doit afficher l'un des messages suivants : 
-    - Vous êtes à la retraite depuis `X` années 
-    - Il vous reste `X` années avant la retraite.
-    - C'est le moment de prendre sa retraite.
-    - La valeur fournie n'est pas un âge valide.
-
-Pour cet exercice, la retraite est fixée à 62 ans.
+Dis-moi 👍
 
 
-## Exercice 2.6 : Ma catégorie au club de sport
-
-Écrire un algorithme qui demande à l'utilisateur de saisir un **âge** et l'informe ensuite à quelle **catégorie** il appartient : 
-
-- **Trop jeune** : Moins de 5 ans
-- **Débutant** : De 5 à 10 ans
-- **Junior** : De 11 à 14 ans
-- **Espoir** : De 15 à 17 ans
-- **Adulte** : 18 ans et +
-
-
-## Exercice 2.7 : Tri de nombres++
-
-Lire 3 nombres décimaux `A`, `B` et `C` puis les afficher dans l'ordre décroissant.
-
-
-## Exercice 2.8 : Je prédis l'avenir
-
-Cet algorithme est destiné à prévenir l'avenir et il doit être **infaillible** !
-
-1. Le programme demande à l'utilisateur de saisir **2 nombres entiers** correspondant respectivement à des **heures** et des **minutes**. 
-2. Si l'heure saisie n'est pas valide (valeurs hors limites)
-    - Le programme affiche "Les données saisies sont invalides" et se termine.
-3. Si l'heure est valide 
-    - Le programme affiche l'heure saisie
-    - Le programme affiche ensuite l'heure qu'il sera 3 minutes plus tard.
-
-*Par exemple:* 
-
-- Si l'utilisateur saisit **23** puis **12**:
-    1. Le programme affiche "**Vous avez saisi: 23h12**"
-    2. Le programme affiche "**3 minutes plus tard, il sera 23h15**".
-- Si l'utilisateur saisit **23** puis **59**:
-    1. Le programme affiche "**Vous avez saisi: 23h59**"
-    2. Le programme affiche "**3 minutes plus tard, il sera 00h02**".
-
-
-## Exercice 2.9 : Réprographie
-
-Un magasin proposant un service de Réprographie facture **0.10€** les 10 premières photocopies, **0.09€** les vingt suivantes et **0.08€** au delà.
-
-Écrire l'algorithme qui demande à l'utilisateur de saisir le nombre de photocopies effectuées et affiche le montant de la facture correspondante.
-
-> Validez votre travail avec votre formateur avant de passer à la suite.
