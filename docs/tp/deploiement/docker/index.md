@@ -76,17 +76,11 @@ Par exemple, si on souhaite créer un conteneur contenant la distribution *Ubunt
 
 ![linux containers](../img/linux-containers.png) 
 
-### Les namespaces
-
-Les **namespaces** (ou **espaces de noms** en français) isolent les ressources partagées. Ils donnent à chaque processus sa propre vue unique du système, limitant ainsi leur accès aux ressources système sans que le processus en cours ne soit au courant des limitations.
-
-### Les cgroups 
-
-Que faire si nous souhaitons limiter la quantité de mémoire ou de CPU utilisée par l'un de nos processus ? 
-
-Les **groupes de contrôle**  ou **cgroups** permettent la gestion des ressources utilisées par les processus.
-
 
 ## En vidéo
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/kJrL9e5cfkE?si=qm0_OXP6A_NyNtws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Ressources en ligne 
+
+- [Formation Docker sur DynOps](https://dynops.fr/formations-docker/)
