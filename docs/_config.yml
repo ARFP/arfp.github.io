@@ -93,6 +93,10 @@ defaults:
 
 plugins:
   - jekyll-redirect-from 
+  - jekyll-remote-theme
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-remote-theme
+
+remote_theme: arfp/theme-jekyll-crm68
